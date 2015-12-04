@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="System.Windows.Controls.CircularItemsGroupVisualization"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  Height="150" Width="120"
+             d:DesignHeight="300" d:DesignWidth="300">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="pack://application:,,,/ZU.PresentationFramework;component/Styles/ZUTheme.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+	<Grid>
+		<Rectangle Grid.Row="1" Margin="-20,120,-20,0" Height="Auto" MinWidth="100" Width="120" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Opacity="0.15" x:Name="shadowRectangle">
+			<Rectangle.OpacityMask>
+				<LinearGradientBrush EndPoint="0.0,0.5" StartPoint="1.0,0.5">
+					<GradientStop Color="#00000000" Offset=".1"/>
+					<GradientStop Color="#00000000" Offset=".9"/>
+					<GradientStop Color="#FF000000" Offset="0.3"/>
+					<GradientStop Color="#FF000000" Offset="0.7"/>
+				</LinearGradientBrush>
+			</Rectangle.OpacityMask>
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF000000"/>
+					<GradientStop Color="#00000000" Offset="0.2"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+
+
+		<StackPanel Grid.Row="1">
+			<Border BorderBrush="Black" BorderThickness="0" VerticalAlignment="Center" x:Name="border">
+				<Grid>
+					<!--<Ellipse Stroke="#FFB2ADAD" StrokeThickness="1" Height="120" VerticalAlignment="Bottom" Width="120">
+						<Ellipse.OpacityMask>
+							<RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5">
+								<GradientStop Color="#00000000" Offset="1.1"/>
+								<GradientStop Color="#00000000" Offset="0.1"/>
+								<GradientStop Color="#FF000000" Offset="0.9"/>
+								<GradientStop Color="#FF000000" Offset="0.3"/>
+							</RadialGradientBrush>
+						</Ellipse.OpacityMask>
+						<Ellipse.Fill>
+							<RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+								<GradientStop Color="White" Offset="0" />
+								<GradientStop Color="LightGray" Offset="0.5" />
+								<GradientStop Color="#FFCBC7C7" Offset="0.99" />
+								<GradientStop Color="#FFC3C1C1" Offset="0.761" />
+							</RadialGradientBrush>
+						</Ellipse.Fill>
+					</Ellipse>-->
+					<Ellipse x:Name="ellipse" HorizontalAlignment="Center" Margin="0,0,0,0" Width="120" Height="120" VerticalAlignment="Center" StrokeThickness="1" Stroke="White" Stretch="Uniform">
+						<Ellipse.Effect>
+							<DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="#FFD8D8D8"/>
+						</Ellipse.Effect>
+					</Ellipse>
+
+					<Ellipse x:Name="ellipse1" HorizontalAlignment="Center" Width="118" Margin="0,0,0,0" Height="118" VerticalAlignment="Center" StrokeThickness="5" Stroke="#4CFFFFFF" Stretch="Uniform">
+						<Ellipse.Fill>
+							<RadialGradientBrush>
+								<GradientStop Color="{DynamicResource AZetWindowTitleBarColor}" Offset="1"/>
+								<GradientStop Color="#FFF3F3F3"/>
+							</RadialGradientBrush>
+						</Ellipse.Fill>
+					</Ellipse>
+					<Canvas HorizontalAlignment="Stretch" Height="115" VerticalAlignment="Stretch" Width="115" x:Name="canvas"/>
+				</Grid>
+			</Border>
+			<TextBlock Height="30" MaxHeight="30" MaxWidth="120" FontSize="10" Margin="0,0,0,0" VerticalAlignment="Top" Text="Many many even more many many many text" HorizontalAlignment="Stretch" TextAlignment="Center" x:Name="majorText" Foreground="#FF505050" FontFamily="Segoe UI Light" TextTrimming="CharacterEllipsis" TextWrapping="Wrap" />
+			<TextBlock Height="Auto" MaxWidth="180" FontSize="10" Margin="0,5,0,0" VerticalAlignment="Top" Text="Minor" HorizontalAlignment="Stretch" TextAlignment="Center" x:Name="minorText" Foreground="#FF505050" Visibility="Collapsed" />
+		</StackPanel>
+
+	</Grid>
+</UserControl>

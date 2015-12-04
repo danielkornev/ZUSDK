@@ -1,0 +1,213 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib" >
+    <!-- Created by Sascha Wolter (http://www.wolter.biz), 29th of April 2010 -->
+
+    <!--************ THEME RESOURCES ************-->
+    <!-- Color Resources -->
+    <Color x:Key="PhoneBackgroundColor">#FF1F1F1F</Color>
+    <Color x:Key="PhoneContrastForegroundColor">Black</Color>
+    <Color x:Key="PhoneForegroundColor">White</Color>
+    <Color x:Key="PhoneInactiveColor">#FF666666</Color>
+    <Color x:Key="PhoneDisabledColor">#FF808080</Color>
+    <Color x:Key="PhoneSubtleColor">#FF999999</Color>
+    <Color x:Key="PhoneContrastBackgroundColor">#FFFFFFFF</Color>
+    <Color x:Key="PhoneTextBoxColor">#FFBFBFBF</Color>
+    <Color x:Key="PhoneBorderColor">#FFCCCCCC</Color>
+    <Color x:Key="PhoneTextSelectionColor">Black</Color>
+    <Color x:Key="PhoneAccentColor">#FF1BA1E2</Color>
+
+    <!-- Brush Resources -->
+    <SolidColorBrush x:Key="PhoneAccentBrush" Color="{StaticResource PhoneAccentColor}"/>
+    <SolidColorBrush x:Key="PhoneBackgroundBrush" Color="{StaticResource PhoneBackgroundColor}"/>
+    <SolidColorBrush x:Key="PhoneContrastForegroundBrush" Color="{StaticResource PhoneContrastForegroundColor}"/>
+    <SolidColorBrush x:Key="PhoneForegroundBrush" Color="{StaticResource PhoneForegroundColor}"/>
+    <SolidColorBrush x:Key="PhoneInactiveBrush" Color="{StaticResource PhoneInactiveColor}"/>
+    <SolidColorBrush x:Key="PhoneDisabledBrush" Color="{StaticResource PhoneDisabledColor}"/>
+    <SolidColorBrush x:Key="PhoneSubtleBrush" Color="{StaticResource PhoneSubtleColor}"/>
+    <SolidColorBrush x:Key="PhoneContrastBackgroundBrush" Color="{StaticResource PhoneContrastBackgroundColor}"/>
+    <SolidColorBrush x:Key="PhoneTextBoxBrush" Color="{StaticResource PhoneTextBoxColor}"/>
+    <SolidColorBrush x:Key="PhoneBorderBrush" Color="{StaticResource PhoneBorderColor}"/>
+    <SolidColorBrush x:Key="PhoneTextSelectionBrush" Color="{StaticResource PhoneTextSelectionColor}"/>
+    <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
+
+    <!-- Touch Target Area -->
+    <Thickness x:Key="PhoneTouchTargetOverhang">12</Thickness>
+
+    <!-- Default Border Size-->
+    <Thickness x:Key="PhoneDefaultBorderThickness">3</Thickness>
+
+
+    <!-- Font Names -->
+    <FontFamily x:Key="PhoneFontFamilyNormal">Segoe WP</FontFamily>
+    <FontFamily x:Key="PhoneFontFamilyLight">Segoe WP Light</FontFamily>
+    <FontFamily x:Key="PhoneFontFamilySemiLight">Segoe WP SemiLight</FontFamily>
+    <FontFamily x:Key="PhoneFontFamilySemiBold">Segoe WP Semibold</FontFamily>
+
+    <!-- Font sizes -->
+    <!--14pt-->
+    <system:Double x:Key="PhoneFontSizeSmall">18.667</system:Double>
+    <!--15pt-->
+    <system:Double x:Key="PhoneFontSizeNormal">20</system:Double>
+    <!--17pt-->
+    <system:Double x:Key="PhoneFontSizeMedium">22.667</system:Double>
+    <!--19pt-->
+    <system:Double x:Key="PhoneFontSizeMediumLarge">25.333</system:Double>
+    <!--24pt-->
+    <system:Double x:Key="PhoneFontSizeLarge">32</system:Double>
+    <!--32pt-->
+    <system:Double x:Key="PhoneFontSizeExtraLarge">42.667</system:Double>
+    <!--54pt-->
+    <system:Double x:Key="PhoneFontSizeExtraExtraLarge">72</system:Double>
+
+    <!-- TextBlock styles -->
+    <Style x:Key="PhoneTextNormalStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextPageTitle1Style" TargetType="TextBlock" BasedOn="{StaticResource PhoneTextNormalStyle}">
+        <Setter Property="Margin" Value="20,20,0,0" />
+    </Style>
+
+    <Style x:Key="PhoneTextSubtleStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneSubtleBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextTitle1Style" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeExtraExtraLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextPageTitle2Style" TargetType="TextBlock" BasedOn="{StaticResource PhoneTextTitle1Style}">
+        <Setter Property="Margin" Value="20,43,0,0" />
+    </Style>
+
+    <Style x:Key="PhoneTextTitle2Style" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextTitle3Style" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMedium}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextExtraLargeStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeExtraLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextGroupHeaderStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneSubtleBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextLargeStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeLarge}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextSmallStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeSmall}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneSubtleBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextContrastStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiBold}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextAccentStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiBold}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneAccentBrush}"/>
+    </Style>
+
+    <Style x:Key="PhoneTextBodyTextStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiBold}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMedium}"/>
+        <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+        <Setter Property="LineHeight" Value="32"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Margin" Value="20,20,20,0" />
+    </Style>
+
+    <!--************ BUTTON TEMPLATE ************-->
+    <Style x:Key="PhoneButtonBase" TargetType="ButtonBase">
+        <Setter Property="Background" Value="{StaticResource TransparentBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource PhoneForegroundBrush}"/>
+        <!--<Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>-->
+        <Setter Property="MinHeight" Value="40" />
+        <!--<Setter Property="BorderThickness" Value="{StaticResource PhoneDefaultBorderThickness}"/>-->
+        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+        <Setter Property="Padding" Value="10,0,10,5"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Grid Background="Transparent">
+                        <!--<VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver"/>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="foregroundContainer" Storyboard.TargetProperty="Control.Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneBackgroundBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="Border.Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneForegroundColor}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="Border.BorderBrush">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneForegroundColor}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="foregroundContainer" Storyboard.TargetProperty="Control.Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="Control.BorderBrush">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonBackground" Storyboard.TargetProperty="Control.Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TransparentBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused"/>
+                                <VisualState x:Name="Unfocused"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>-->
+                        <!-- removed from content control Foreground="{TemplateBinding Foreground}" -->
+                        <Border x:Name="ButtonBackground" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5" Background="{TemplateBinding Background}" Margin="{StaticResource PhoneTouchTargetOverhang}">
+                            <ContentControl x:Name="foregroundContainer" Foreground="{TemplateBinding Foreground}" FontFamily="{TemplateBinding FontFamily}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" FontSize="{TemplateBinding FontSize}" Padding="{TemplateBinding Padding}" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--************ BUTTON TEMPLATE ************-->
+
+    <!-- Custom Styles -->
+    <Style x:Key="PhoneButton" TargetType="Button" BasedOn="{StaticResource PhoneButtonBase}" />
+    <!-- Resource dictionary entries should be defined here. -->
+
+</ResourceDictionary>

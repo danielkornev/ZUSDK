@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7C690C1-0543-41C2-8968-DFFD94F242B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZU</RootNamespace>
+    <AssemblyName>ZU.Core.Developer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePropertyChanged.cs" />
+    <Compile Include="Collections\Generic\IPriorityQuadTree.cs" />
+    <Compile Include="ComponentModel\IInstantiateProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\IConfiguration.cs" />
+    <Compile Include="Configuration\Settings\AppMode.cs" />
+    <Compile Include="Configuration\Settings\IAppAccount.cs" />
+    <Compile Include="Configuration\Settings\IAppSettings.cs" />
+    <Compile Include="Configuration\Settings\IConfigurationSettings.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Core\IUserAction.cs" />
+    <Compile Include="Core\Apps\AppBase.cs" />
+    <Compile Include="Core\Apps\AppEntityKindDefinition.cs" />
+    <Compile Include="Core\Apps\AppPaneBase.cs" />
+    <Compile Include="Core\Apps\IAppBase.cs" />
+    <Compile Include="Core\Apps\IAppButtonInfo.cs" />
+    <Compile Include="Core\Apps\IAppManager.cs" />
+    <Compile Include="Core\Apps\IFileStorageApp.cs" />
+    <Compile Include="Core\Apps\ILocalFolderApp.cs" />
+    <Compile Include="Core\Apps\ISharedFolderApp.cs" />
+    <Compile Include="Core\Apps\OnEntityOpen.cs" />
+    <Compile Include="Core\IAppSourceBoundList.cs" />
+    <Compile Include="Core\IEntityList.cs" />
+    <Compile Include="Core\ITimelined.cs" />
+    <Compile Include="Core\EntityEventArgs.cs" />
+    <Compile Include="Core\EntityList.cs" />
+    <Compile Include="Core\IEntity.cs" />
+    <Compile Include="Core\ISystemInformationModel.ProjectSpaces.cs" />
+    <Compile Include="Core\ISystemInformationModel.SyncInfrastructure.cs" />
+    <Compile Include="Core\ISystemInformationModel.TaskScheduler.cs" />
+    <Compile Include="Core\ModelKind.cs" />
+    <Compile Include="Core\Sync\ILocalEntityStore.cs" />
+    <Compile Include="Core\IModel.cs" />
+    <Compile Include="Core\Importers\IImporter.cs" />
+    <Compile Include="Core\ISystemInformationModel.cs" />
+    <Compile Include="Core\CurrentModelContext.cs" />
+    <Compile Include="Core\ModelEvents.cs" />
+    <Compile Include="Core\ModelKinds.cs" />
+    <Compile Include="Core\Property.cs" />
+    <Compile Include="Core\Tasks\IOneTimeTrigger.cs" />
+    <Compile Include="Core\Tasks\IRepeatableTrigger.cs" />
+    <Compile Include="Core\Tasks\IScheduledTask.cs" />
+    <Compile Include="Core\Tasks\ITaskSchedulerFactory.cs" />
+    <Compile Include="Core\Tasks\ITrigger.cs" />
+    <Compile Include="Core\Timelined.cs" />
+    <Compile Include="Core\Update\AppUpdateStatus.cs" />
+    <Compile Include="Core\Update\UpdateCheckStates.cs" />
+    <Compile Include="Core\VisualCluster.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Log.Entry.cs" />
+    <Compile Include="Log.Levels.cs" />
+    <Compile Include="Log.TraceProvider.cs" />
+    <Compile Include="Lucene\Net\LukeNet\HighFreqTerms.cs" />
+    <Compile Include="Lucene\Net\LukeNet\TermInfo.cs" />
+    <Compile Include="Lucene\Net\LukeNet\TermInfoQueue.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexUtilities.cs" />
+    <Compile Include="Semantic\Core\ContainerKinds.cs" />
+    <Compile Include="Semantic\Core\EntityFragmentState.cs" />
+    <Compile Include="Semantic\Core\GenericFileOperationStatus.cs" />
+    <Compile Include="Semantic\Core\Indexing\IIndexer.cs" />
+    <Compile Include="Semantic\Core\SemanticActionKinds.cs" />
+    <Compile Include="Semantic\EntityRef.cs" />
+    <Compile Include="Semantic\Keyphrases\IKeyphrase.cs" />
+    <Compile Include="Semantic\Keyphrases\IParagraph.cs" />
+    <Compile Include="Semantic\Keyphrases\ISentence.cs" />
+    <Compile Include="Semantic\Keyphrases\ITitle.cs" />
+    <Compile Include="Semantic\Keyphrases\IWord.cs" />
+    <Compile Include="Semantic\Processors\IInformationProcessor.cs" />
+    <Compile Include="IJob.cs" />
+    <Compile Include="Semantic\Processors\ISemanticPipelineProcessor.cs" />
+    <Compile Include="Semantic\Processors\ITopicEntity.cs" />
+    <Compile Include="Semantic\Processors\OnPublishedDelegate.cs" />
+    <Compile Include="Semantic\RelationDirection.cs" />
+    <Compile Include="Semantic\RelationKind.cs" />
+    <Compile Include="Semantic\Spatial\Collections\ISpatialRangeObservableCollection.cs" />
+    <Compile Include="Semantic\Spatial\Indexing\IVisualClustersIndexer.cs" />
+    <Compile Include="Semantic\Spatial\ISpatialItemsSource.cs" />
+    <Compile Include="Semantic\Structured\ReviewStatus.cs" />
+    <Compile Include="SpatioTemporalConstants.cs" />
+    <Compile Include="Storage\IStorageContext.cs" />
+    <Compile Include="Storage\IStorageProvider.cs" />
+    <Compile Include="Sync\ISyncAgent.cs" />
+    <Compile Include="Sync\SyncAgentKind.cs" />
+    <Compile Include="Collections\ObjectModel\IRangeObservableCollection.cs" />
+    <Compile Include="WPF\Data\AppSourceBoundFileSystemDataContainer.cs" />
+    <Compile Include="WPF\Data\AppSpaceToProjectSpaceDataContainer.cs" />
+    <Compile Include="WPF\Data\DataAction.cs" />
+    <Compile Include="WPF\Data\DataContainer.cs" />
+    <Compile Include="WPF\Data\DataFormats.cs" />
+    <Compile Include="WPF\Data\Schemas\IEntityView.cs" />
+    <Compile Include="WPF\Data\SharedFolderAppItemDataContainer.cs" />
+    <Compile Include="WPF\Data\UnifiedListSearchToZoomableSpaceDragDropContainer.cs" />
+    <Compile Include="WPF\EntityThumbnailCacheFactory.cs" />
+    <Compile Include="WPF\IEntityThumbnailCache.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EnglishST.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAL.Flatbed\SAL.Flatbed.csproj">
+      <Project>{ae0684d6-bbe5-4f24-94ce-9b46813136eb}</Project>
+      <Name>SAL.Flatbed</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
