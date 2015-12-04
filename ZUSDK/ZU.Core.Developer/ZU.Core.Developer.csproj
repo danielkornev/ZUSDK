@@ -157,9 +157,6 @@
     <Compile Include="WPF\IEntityThumbnailCache.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="EnglishST.txt" />
   </ItemGroup>
   <ItemGroup>
