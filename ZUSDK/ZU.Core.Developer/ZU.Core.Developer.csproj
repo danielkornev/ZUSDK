@@ -106,7 +106,6 @@
     <Compile Include="Core\Tasks\IScheduledTask.cs" />
     <Compile Include="Core\Tasks\ITaskSchedulerFactory.cs" />
     <Compile Include="Core\Tasks\ITrigger.cs" />
-    <Compile Include="Core\Timelined.cs" />
     <Compile Include="Core\Update\AppUpdateStatus.cs" />
     <Compile Include="Core\Update\UpdateCheckStates.cs" />
     <Compile Include="Core\VisualCluster.cs" />
@@ -115,9 +114,6 @@
     <Compile Include="Log.Entry.cs" />
     <Compile Include="Log.Levels.cs" />
     <Compile Include="Log.TraceProvider.cs" />
-    <Compile Include="Lucene\Net\LukeNet\HighFreqTerms.cs" />
-    <Compile Include="Lucene\Net\LukeNet\TermInfo.cs" />
-    <Compile Include="Lucene\Net\LukeNet\TermInfoQueue.cs" />
     <Compile Include="Platform.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegexUtilities.cs" />
