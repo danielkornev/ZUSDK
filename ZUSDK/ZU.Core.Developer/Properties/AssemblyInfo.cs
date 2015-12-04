@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Zet Universe, Inc.")]
 [assembly: AssemblyProduct("Zet Universe")]
 [assembly: AssemblyCopyright("Copyright © Zet Universe, Inc. 2013-2015")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Zet Universe, Inc.")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -33,7 +33,7 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.0.*")]
-[assembly: AssemblyFileVersion("2.0.*")]
+//[assembly: AssemblyFileVersion("2.0.*")]
 
 [assembly: InternalsVisibleTo("ZU.WPF")]
 [assembly: InternalsVisibleTo("ZetUniverse")]
