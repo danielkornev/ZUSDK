@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using ZU.Configuration.Settings;
+using ZU.Plugins;
 
 namespace ZU.Core.Apps
 {
 	public partial class AppPaneBase : ContentControl, IDisposable
 	{
-		IApp app;
+		IZetApp app;
 
 		public AppPaneBase(IAppAccount appAccount)
 		{
@@ -22,7 +23,7 @@ namespace ZU.Core.Apps
 			InitializeContent();
 		}
 
-		public IApp App
+		public IZetApp App
 		{
 			get
 			{
