@@ -115,6 +115,8 @@
     <Compile Include="Log.Levels.cs" />
     <Compile Include="Log.TraceProvider.cs" />
     <Compile Include="Platform.cs" />
+    <Compile Include="Plugins\IZetApp.cs" />
+    <Compile Include="Plugins\IZetHost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegexUtilities.cs" />
     <Compile Include="Semantic\Core\ContainerKinds.cs" />
