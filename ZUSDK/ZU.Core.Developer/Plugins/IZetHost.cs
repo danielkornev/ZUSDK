@@ -12,7 +12,7 @@ namespace ZU.Plugins
 {
 	public interface IZetHost : IHost
 	{
-		ISystemInformationModel Sim { get; }
+		ISystemInformationModel SIM { get; }
 
 		IAppManager AppManager { get; }
 

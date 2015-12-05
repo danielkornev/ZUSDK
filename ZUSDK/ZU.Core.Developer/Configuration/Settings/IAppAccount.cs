@@ -1,11 +1,13 @@
 ﻿using System;
+using ZU.Plugins;
+
 namespace ZU.Configuration.Settings
 {
 	public interface IAppAccount
 	{
 		string AccountId { get; set; }
 		string AccountTitle { get; set; }
-		ZU.Core.Apps.IApp App { get; set; }
+		IZetApp App { get; set; }
 		string CloudAppUserRecordId { get; set; }
 		string Email { get; set; }
 		string Secret { get; set; }

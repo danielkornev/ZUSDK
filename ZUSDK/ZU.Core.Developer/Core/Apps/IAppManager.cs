@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using ZU.Configuration.Settings;
+using ZU.Plugins;
 using ZU.Semantic;
 
 namespace ZU.Core.Apps
@@ -16,7 +17,7 @@ namespace ZU.Core.Apps
 		IAppAccount CreateAppAccount(
 			string accountId, 
 			string accountTitle,
-			IApp app,
+			IZetApp app,
 			string email,
 			string secret,
 			string token,
@@ -26,6 +27,8 @@ namespace ZU.Core.Apps
 			EntityRef uidChanger,
 			DateTime TLBirth,
 			DateTime TLDeath);
+
+		IAppSettings GetAppSettings(IZetApp app);
 
 		IAppButtonInfo CreateAppButtonInfo(string IconGeometryPath, string Tooltip);
 	} // interface
