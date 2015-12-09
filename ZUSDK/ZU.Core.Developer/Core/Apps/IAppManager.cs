@@ -28,7 +28,9 @@ namespace ZU.Core.Apps
 			DateTime TLBirth,
 			DateTime TLDeath);
 
-		IAppSettings GetAppSettings(IZetApp app);
+		Task<IAppSettings> GetAppSettings(IZetApp app);
+
+		Task<bool> TrySaveAppSettings(IAppSettings settings);
 
 		IAppButtonInfo CreateAppButtonInfo(string IconGeometryPath, string Tooltip);
 	} // interface

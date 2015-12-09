@@ -49,6 +49,10 @@
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="SAL.Flatbed, Version=1.2.7.0, Culture=neutral, PublicKeyToken=81cd27c630db6689, processorArchitecture=MSIL">
+      <HintPath>..\packages\SAL.Flatbed.1.2.7.0\lib\net20\SAL.Flatbed.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows" />
@@ -162,10 +166,7 @@
     <EmbeddedResource Include="EnglishST.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SAL.Flatbed\SAL.Flatbed.csproj">
-      <Project>{ae0684d6-bbe5-4f24-94ce-9b46813136eb}</Project>
-      <Name>SAL.Flatbed</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
