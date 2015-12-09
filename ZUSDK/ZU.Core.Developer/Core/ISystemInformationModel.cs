@@ -85,7 +85,7 @@ namespace ZU.Core
 		
 		ISemanticPipelineProcessor SemanticPipelineProcessor { get; }
 		
-		Task<bool> TrySaveAppSettings(IAppSettings settings);
+		//Task<bool> TrySaveAppSettings(IAppSettings settings);
 
 
 
