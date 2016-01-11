@@ -15,7 +15,5 @@ namespace ZU.Plugins
 		ISystemInformationModel SIM { get; }
 
 		IAppManager AppManager { get; }
-
-		void AddAppAccount(IAppAccount account, Boolean isAdded);
 	} // interface
 } // namespace

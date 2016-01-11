@@ -130,7 +130,7 @@ namespace ZU.Core
 		int GetChildrenEntitiesCount(IEntity entity);
 
 		bool IsEntityContainer(IEntity entity, out ContainerKinds containerKind);
-
+		
 		string GetAccountName(string accountId);
 
 		bool IsEntityLinkingToExternalItem(IEntity entity, out string uri);

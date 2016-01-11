@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZU.Core.Apps
+namespace ZU.Plugins
 {
 	public interface ISharedFolderApp : ILocalFolderApp
 	{

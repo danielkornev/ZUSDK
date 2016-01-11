@@ -54,9 +54,9 @@ namespace ZU.Plugins
 		/// Keeping this for now
 		/// </summary>
 		void ShowSettingsDialog();
-		
-		//void SaveSettings();
 
+		//void SaveSettings();
+		IAppSettings GetCurrentAppSettings();
 
 		/// <summary>
 		/// Unloads this plugin

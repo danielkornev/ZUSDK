@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using ZU.Configuration.Settings;
+using ZU;
+using ZU.Core;
 
-namespace ZU.Core.Apps
+namespace ZU.Plugins
 {
-	public interface IFileStorageApp : IApp
+	public interface IFileStorageApp : IZetApp
 	{
 		void ImportShellItem(string localShellItemNamePath, IAppAccount account, IModel modelContext, Rect position);
 	} // interface

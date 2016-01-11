@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using ZU.Configuration.Settings;
 using ZU.WPF.Data;
+using ZU.Core;
 
-namespace ZU.Core.Apps
+namespace ZU.Plugins
 {
 	public interface ILocalFolderApp : IFileStorageApp
 	{

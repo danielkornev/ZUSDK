@@ -32,6 +32,8 @@ namespace ZU.Core.Apps
 
 		Task<bool> TrySaveAppSettings(IAppSettings settings);
 
+		void RegisterApp(IZetApp app);
+
 		IAppButtonInfo CreateAppButtonInfo(string IconGeometryPath, string Tooltip);
 	} // interface
 } // namespace

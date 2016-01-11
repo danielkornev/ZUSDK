@@ -83,9 +83,9 @@
     <Compile Include="Core\Apps\IAppBase.cs" />
     <Compile Include="Core\Apps\IAppButtonInfo.cs" />
     <Compile Include="Core\Apps\IAppManager.cs" />
-    <Compile Include="Core\Apps\IFileStorageApp.cs" />
-    <Compile Include="Core\Apps\ILocalFolderApp.cs" />
-    <Compile Include="Core\Apps\ISharedFolderApp.cs" />
+    <Compile Include="Plugins\IFileStorageApp.cs" />
+    <Compile Include="Plugins\ILocalFolderApp.cs" />
+    <Compile Include="Plugins\ISharedFolderApp.cs" />
     <Compile Include="Core\Apps\OnEntityOpen.cs" />
     <Compile Include="Core\IAppSourceBoundList.cs" />
     <Compile Include="Core\IEntityList.cs" />
@@ -121,6 +121,7 @@
     <Compile Include="Platform.cs" />
     <Compile Include="Plugins\IZetApp.cs" />
     <Compile Include="Plugins\IZetHost.cs" />
+    <Compile Include="Plugins\IZetProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegexUtilities.cs" />
     <Compile Include="Semantic\Core\ContainerKinds.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="Semantic\Spatial\Indexing\IVisualClustersIndexer.cs" />
     <Compile Include="Semantic\Spatial\ISpatialItemsSource.cs" />
     <Compile Include="Semantic\Structured\ReviewStatus.cs" />
+    <Compile Include="Semantic\Text\FullTextAttribute.cs" />
     <Compile Include="SpatioTemporalConstants.cs" />
     <Compile Include="Storage\IStorageContext.cs" />
     <Compile Include="Storage\IStorageProvider.cs" />
