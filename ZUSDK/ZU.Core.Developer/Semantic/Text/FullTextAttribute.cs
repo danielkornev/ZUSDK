@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ZU.Semantic.Text
 {
 	[AttributeUsage(AttributeTargets.Class |
-	AttributeTargets.Method,
+	AttributeTargets.Method | AttributeTargets.Field,
 	AllowMultiple = false)]
 	public class FullTextAttribute : System.Attribute
 	{
