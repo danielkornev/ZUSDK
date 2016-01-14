@@ -13,7 +13,8 @@ namespace ZU.Core.Apps
 		public Guid AppId { get; set; }
 		public string DisplayNameSingular { get; set; }
 		public string DisplayNamePlural { get; set; }
-		
+		public string FullTextAliases { get; set; }
+
 		public DataTemplate Template { get; set; }
 		public System.Windows.Media.ImageSource DefaultThumbnail { get; set; }
 

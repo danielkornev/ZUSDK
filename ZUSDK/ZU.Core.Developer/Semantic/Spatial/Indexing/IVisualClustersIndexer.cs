@@ -15,10 +15,10 @@ namespace ZU.Semantic.Spatial.Indexing
 		System.Collections.ObjectModel.ReadOnlyObservableCollection<ZU.Core.VisualCluster> KnownVisualClusters { get; }
 		bool LogResults { get; set; }
 		ZU.Core.IModel Model { get; }
-		bool TryBuildIndex();
+		new bool TryBuildIndex();
 		//bool TryBuildIndexOLD();
 		bool TryGetVisualCluster(ZU.Core.IEntity entity, out ZU.Core.VisualCluster oldCluster);
-		bool TryUpdateIndex(ZU.Core.IEntity entity);
+		new bool TryUpdateIndex(ZU.Core.IEntity entity);
 		EntityRef UID { get; }
 		event EventHandler VisualClusterChanged;
 		System.Collections.ObjectModel.ObservableCollection<ZU.Core.VisualCluster> VisualClusters { get; set; }

@@ -182,6 +182,15 @@ namespace ZU
 				return "Unknown Kind";
 			}
 
+			public static string GetKindFullTextAliases(string kind)
+			{
+				var kindsDict = Constants.Kinds.BuiltInKindsDictionary;
+
+				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].Item2;
+
+				return "Unknown Kind";
+			}
+
 			/// <summary>
 			/// Contains a trio of:
 			/// Kind String (Kind Display Name | Kind Full-Text Aliases)

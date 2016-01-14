@@ -7,7 +7,7 @@ namespace ZU.Collections.Generic
 	{
 		void Clear();
 		System.Windows.Rect Extent { get; set; }
-		System.Collections.Generic.IEnumerator<T> GetEnumerator();
+		new System.Collections.Generic.IEnumerator<T> GetEnumerator();
 		System.Collections.Generic.IEnumerable<T> GetItemsInside(System.Windows.Rect bounds);
 		System.Collections.Generic.IEnumerable<T> GetItemsIntersecting(System.Windows.Rect bounds);
 		bool HasItemsInside(System.Windows.Rect bounds);
