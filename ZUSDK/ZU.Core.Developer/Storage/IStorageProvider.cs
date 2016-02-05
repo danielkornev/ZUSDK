@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using ZU.Core;
 using ZU.Semantic.Core;
@@ -10,16 +11,11 @@ namespace ZU.Storage
 		void SaveEntity(ZU.Core.IEntity entity, SemanticActionKinds semanticAction, bool force);
 
 
-		#region Watcher
-		void InitWatcher();
-		void DoneWatcher();
-		void OnWatcherChanged(object sender, FileSystemEventArgs ea);
-		void OnWatcherRenamed(object sender, RenamedEventArgs ea);
-		#endregion
+	
 
 		#region Folder-Based Storage Providers
 		bool IsFolderBased { get; }
-		string FolderPath { get; }
+		string StorePath { get; }
 		#endregion
 
 		ModelKinds ModelKind { get; }
@@ -30,8 +26,8 @@ namespace ZU.Storage
 
 		void Purge(IEntity entity, string dataFile);
 
-		System.Collections.Generic.List<IUserAction> GetActivityHistory(string entityId);
+		IEntity LoadEntityByKey(string storageKey);
 
-		IEntity GetEntityStorageRecordAt(IUserAction activityWithPreviousCluster);
+		void LoadEntitiesByKeys(List<string> entitiesStorageKeys);
 	} // interface
 } // namespace

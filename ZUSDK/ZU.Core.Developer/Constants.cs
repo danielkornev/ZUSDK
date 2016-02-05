@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Windows;
 using ZU.Core;
+using ZU.Semantic;
+using ZU.Semantic.Core;
 using ZU.Semantic.Text;
 
 namespace ZU
@@ -13,164 +17,205 @@ namespace ZU
 	{
 		public static partial class Kinds
 		{
+			[Description("Agent")]
+			[KindMetadata("Agent", "Agent", Constants.Kinds.Kind, false, true)]
+			public const string Agent = "ZetUniverse.Kinds.Agent";
+
 			[Description("Application")]
-			[FullText("Application", "Application")]
+			[KindMetadata("Application", "Application", Constants.Kinds.ZetUniverse, true)]
 			public const string Application = "ZetUniverse.Kinds.System.Application";
 
 			[Description("Appointment")]
-			[FullText("Appointment Calendar Event", "Appointment")]
+			[KindMetadata("Appointment Calendar Event", "Appointment", Constants.Kinds.Calendar, false)]
 			public const string Appointment = "ZetUniverse.Kinds.Calendar.Appointment";
 
 			/// <summary>
 			/// App Space is an organizing concept designed for keeping app-specific entities separated from other apps.
 			/// </summary>
 			[Description("App Space")]
-			[FullText("App Space", "App Space")]
+			[KindMetadata("App Space", "App Space", Constants.Kinds.ProjectSpace, true, false)]
 			public const string AppSpace = "ZetUniverse.Kinds.AppSpace";
 
 			[Description("Article")]
-			[FullText("Article Media", "Article")]
+			[KindMetadata("Article Media", "Article", Constants.Kinds.Document)]
 			public const string Article = "ZetUniverse.Kinds.Documents.Article";
 
 			[Description("Author")]
-			[FullText("Author Writer Creator People", "Author")]
+			[KindMetadata("Author Writer Creator People", "Author", Constants.Kinds.Person)]
 			public const string Author = "ZetUniverse.Kinds.People.Author";
 
 			[Description("Book")]
-			[FullText("Book Media", "Book")]
+			[KindMetadata("Book Media", "Book", Constants.Kinds.Document)]
 			public const string Book = "ZetUniverse.Kinds.Documents.Book";
 
 			[Description("Call")]
-			[FullText("Call Communication", "Call")]
+			[KindMetadata("Call Communication", "Call", Constants.Kinds.Communication)]
 			public const string Call = "ZetUniverse.Kinds.Communications.Call";
 
+			[Description("Calendar Entry")]
+			[KindMetadata("Calendar Entry", "Calendar Entry", Constants.Kinds.Kind, false, true)]
+			public const string Calendar = "ZetUniverse.Kinds.Calendar";
+
+			[Description("Communication")]
+			[KindMetadata("Communication", "Communication", Constants.Kinds.Kind, false, true)]
+			public const string Communication = "ZetUniverse.Kinds.Communication";
+
+			/// <summary>
+			/// Strange, but Document is a Media, actually.
+			/// </summary>
 			[Description("Document")]
-			[FullText("Document Media", "Document")]
+			[KindMetadata("Document", "Document", Constants.Kinds.Media)]
 			public const string Document = "ZetUniverse.Kinds.Documents.Document";
 
 			[Description("Email")]
-			[FullText("Email Communication E-mail", "Email")]
+			[KindMetadata("Email Communication E-mail", "Email", Constants.Kinds.Communication)]
 			public const string Email = "ZetUniverse.Kinds.Communications.Email";
 
+
+			[Description("Folder")]
+			[KindMetadata("File Folder Directory", "File Folder", Constants.Kinds.Kind, false, true)]
+			public const string Folder = "ZetUniverse.Kinds.Folder";
+
 			[Description("Generic File")]
-			[FullText("Generic File GenericFile", "Generic File")]
+			[KindMetadata("Generic File GenericFile", "Generic File", Constants.Kinds.Kind)]
 			public const string GenericFile = "ZetUniverse.Kinds.File";
 
 			[Description("Instant Message")]
-			[FullText("Instant Message IM InstantMessage Communication", "Communication")]
+			[KindMetadata("Instant Message IM InstantMessage Communication", "Instant Message", Constants.Kinds.Communication)]
 			public const string InstantMessage = "ZetUniverse.Kinds.Communications.InstantMessage";
+
+			[Description("Kind")]
+			[KindMetadata("Kind", "Kind", Constants.Kinds.Thing, false, true)]
+			public const string Kind = "ZetUniverse.Kinds.Kind";
+
 
 			/// <summary>
 			/// Link is the basis of the relationship management and semantic structuring within Zet Universe.
 			/// </summary>
 			[Description("Link")]
-			[FullText("Link Relationship", "Link")]
+			[KindMetadata("Link Relationship Relation", "Link", Constants.Kinds.Property)]
 			public const string Link = "ZetUniverse.Kinds.Link";
 			
 			/// <summary>
 			/// List is a fundamental organizing and grouping concept in Zet Universe. List represents a 1D group of things where order of things is not explicitely defined.
 			/// </summary>
 			[Description("List")]
-			[FullText("List", "List")]
+			[KindMetadata("List", "List", Constants.Kinds.Kind)]
 			public const string List = "ZetUniverse.Kinds.List";
 			
 			/// <summary>
 			/// 
 			/// </summary>
 			[Description("Meeting")]
-			[FullText("Meeting Calendar Event", "Meeting")]
+			[KindMetadata("Meeting Calendar Event", "Meeting", Constants.Kinds.Calendar)]
 			public const string Meeting = "ZetUniverse.Kinds.Calendar.Meeting";
-			
+
+			[Description("Media")]
+			[KindMetadata("Media", "Media", Constants.Kinds.Kind, false, true)]
+			public const string Media = "ZetUniverse.Kinds.Media";
+
 			/// <summary>
 			/// This is the class of motion pictures created by recording using cameras or by creating images using animation or other special techniques.
 			/// </summary>
 			[Description("Movie")]
-			[FullText("Movie Film Video Media", "Movie")]
+			[KindMetadata("Movie Film Video Media", "Movie", Constants.Kinds.Video)]
 			public const string Movie = "ZetUniverse.Kinds.Media.Video.Movie";
 			
 			/// <summary>
 			/// The class of artifacts that are closely related to music. Musical artifacts include compositions themselves and related artifacts such as cover art on albums, written scores, lyrics, and other things.
 			/// </summary>
 			[Description("Music")]
-			[FullText("Music Media", "Music")]
+			[KindMetadata("Music Media", "Music", Constants.Kinds.Media)]
 			public const string Music = "ZetUniverse.Kinds.Media.Music";
 			
 			/// <summary>
 			/// This is the class of musical playlists that may be created by Zet Universe users. A Playlist is composed of a number of musical works. A Playlist is a kind of List.
 			/// </summary>
 			[Description("Music Playlist")]
-			[FullText("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist")]
+			[KindMetadata("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist", Constants.Kinds.Music)]
 			public const string MusicalPlaylist = "ZetUniverse.Kinds.Media.Music.MusicalPlaylist";
 
 			[Description("Organization")]
-			[FullText("Organization Org Persona", "Organization")]
+			[KindMetadata("Organization Org Persona", "Organization", Constants.Kinds.Agent)]
 			public const string Organization = "ZetUniverse.Kinds.Organization";
 
 			[Description("PDF Document")]
-			[FullText("PDF Document PDFDocument PDF Media", "PDF Document")]
+			[KindMetadata("PDF Document PDFDocument PDF Media", "PDF Document", Constants.Kinds.Document)]
 			public const string PdfDocument = "ZetUniverse.Kinds.Documents.PdfDocument";
 
 			[Description("Person")]
-			[FullText("Person Persona People", "Person")]
+			[KindMetadata("Person Persona People", "Person", Constants.Kinds.Agent, true, false)]
 			public const string Person = "ZetUniverse.Kinds.People.Person";
 			
 			/// <summary>
 			/// Generic list of people organized into a group. 
 			/// </summary>
 			[Description("People Group")]
-			[FullText("People Group Group", "People Group")]
+			[KindMetadata("People Group Group", "People Group", Constants.Kinds.Agent)]
 			public const string PeopleGroup = "ZetUniverse.Kinds.People.Group";
 
 			[Description("Picture")]
-			[FullText("Picture Image Photo Media", "Picture")]
+			[KindMetadata("Picture Image Photo Media", "Picture", Constants.Kinds.Media)]
 			public const string Picture = "ZetUniverse.Kinds.Media.Picture";
 
 			[Description("PowerPoint Presentation")]
-			[FullText("PowerPoint Presentation Slidedeck Slides Document Media", "PowerPoint Presentation")]
+			[KindMetadata("PowerPoint Presentation Slidedeck Slides Document Media", "PowerPoint Presentation", Constants.Kinds.Document)]
 			public const string PptxDocument = "ZetUniverse.Kinds.Documents.PptxDocument";
-			
+
+			[Description("Property")]
+			[KindMetadata("Property", "Property", "rdfs:Resource", true, true)]
+			public const string Property = "owl:Property";
+
 			/// <summary>
 			/// (Project) Space is a fundamental organizing and grouping concept in Zet Universe. It contains individual entities grouped into visual clusters, or into lists. Every single entity always belongs to one or more visual clusters.
 			/// </summary>
 			[Description("Project")]
-			[FullText("Project Space", "Project")]
+			[KindMetadata("Project Space", "Project", Constants.Kinds.Kind, true, true)]
 			public const string ProjectSpace = "ZetUniverse.Kinds.Space";
 			
 			/// <summary>
 			/// Recorded TVs are a special kind of entities that represent TVs recorded using Windows Media Center. Recorded TV is a kind of Video.
 			/// </summary>
 			[Description("Recorded TV")]
-			[FullText("Recorded TV RecordedTV Video Media", "Recorded TV")]
+			[KindMetadata("Recorded TV RecordedTV Video Media", "Recorded TV", Constants.Kinds.Video)]
 			public const string RecordedTV = "ZetUniverse.Kinds.Media.Video.RecordedTV";
 			//[Description("Sticky Note")]
 			//public const string StickyNote = "ZetUniverse.Kinds.Notes.StickyNote";
 
-			[Description("User")]
-			[FullText("User", "User")]
-			public const string User = "ZetUniverse.Kinds.UserIdentificator";/// <summary>
+			[Description("Thing")]
+			[KindMetadata("Thing", "Thing", "rdfs:Resource", true, true)]
+			public const string Thing = "owl:Thing";
 			
-				/// Visual Cluster is a fundamental organizing and grouping concept in Zet Universe. Visual Cluster represents a 2D group of things where relative location of things is explicitely defined by user or automatic layout algorithm.
+			[Description("User")]
+			[KindMetadata("User", "User", Constants.Kinds.Agent, true, false)]
+			public const string User = "ZetUniverse.Kinds.UserIdentificator";
+			
+			/// <summary>
+			/// Visual Cluster is a fundamental organizing and grouping concept in Zet Universe. Visual Cluster represents a 2D group of things where relative location of things is explicitely defined by user or automatic layout algorithm.
 			/// </summary>
 			[Description("Visual Cluster")]
-			[FullText("Visual Cluster Topic", "Visual Cluster")]
+			[KindMetadata("Visual Cluster Topic", "Visual Cluster", Constants.Kinds.Kind)]
 			public const string VisualCluster = "ZetUniverse.Kinds.Topic";
 
 			/// <summary>
 			/// Movies, television programs, YouTube videos, and any other recorded "moving picture" is classified as a video.
 			/// </summary>
 			[Description("Video")]
-			[FullText("Video Media", "Video")]
+			[KindMetadata("Video Media", "Video", Constants.Kinds.Media)]
 			public const string Video = "ZetUniverse.Kinds.Media.Video";
 
+			/// <summary>
+			/// Web Page is a Media
+			/// </summary>
 			[Description("Web Page")]
-			[FullText("Web Page WebPage Web", "Web Page")]
+			[KindMetadata("Web Page WebPage Web", "Web Page", Constants.Kinds.Media)]
 			public const string WebPage = "ZetUniverse.Kinds.WebPage";
 			
 			/// <summary>
 			/// Zet Universe is the name of the information organization, tracking, analysis, and retrieval system.
 			/// </summary>
 			[Description("Zet Universe")]
-			[FullText("Zet Universe System", "Zet Universe")]
+			[KindMetadata("Zet Universe System", "Zet Universe", Constants.Kinds.Kind, true, false)]
 			public const string ZetUniverse = "ZetUniverse.Kinds.System";
 
 			public static string GetKindDescription(string kind)
@@ -193,15 +238,15 @@ namespace ZU
 
 			/// <summary>
 			/// Contains a trio of:
-			/// Kind String (Kind Display Name | Kind Full-Text Aliases)
+			/// Kind String (Kind Display Name | Kind Full-Text Aliases | Parent Kind | IsHidden | IsAbstract)
 			/// Example:
-			/// ZetUniverse.Kinds.Media.Video (Video | Media Video)
+			/// ZetUniverse.Kinds.Media.Video (Video | Media Video | ZetUniverse.Kinds.Media | False | False )
 			/// </summary>
-			public static Dictionary<string, Tuple<string, string>> BuiltInKindsDictionary
+			public static Dictionary<string, Tuple<string, string, string, bool, bool>> BuiltInKindsDictionary
 			{
 				get
 				{
-					var dict = new Dictionary<string, Tuple<string, string>>();
+					var dict = new Dictionary<string, Tuple<string, string, string, bool, bool>>();
 
 					var allKinds = typeof(Constants.Kinds).GetFields().ToList();
 
@@ -211,7 +256,7 @@ namespace ZU
 
 						//var attrs1 = kind.GetCustomAttributes(typeof(DescriptionAttribute), false).Cast<DescriptionAttribute>().ToList();
 
-						var attrs = kind.GetCustomAttributes(typeof(FullTextAttribute), false).Cast<FullTextAttribute>().ToList();
+						var attrs = kind.GetCustomAttributes(typeof(KindMetadataAttribute), false).Cast<KindMetadataAttribute>().ToList();
 
 						if (attrs.Count == 0)
 						{
@@ -221,7 +266,9 @@ namespace ZU
 
 						var first = attrs.FirstOrDefault();
 
-						dict.Add(kind.GetRawConstantValue().ToString(), new Tuple<string, string>(first.KindDescription, first.KindAliases));
+						dict.Add(kind.GetRawConstantValue().ToString(), 
+							new Tuple<string, string, string, bool, bool>
+							(first.KindDescription, first.KindAliases, first.KindParent, first.IsHidden, first.IsAbstract));
 
 
 						//if (first != null)
@@ -730,6 +777,259 @@ namespace ZU
 				/// "/ActivityHistory/SemanticActionEntries/"
 				/// </summary>
 				public const string SemanticActionEntries = "/ActivityHistory/SemanticActionEntries/";
+			}
+		}
+
+		public static class StorageHelper
+		{
+			/// <summary>
+			///example: e.00f682a9-eb6e-40ad-9de9-ef1cd25726fb.001118,000454,000100,000100.20150104014537881.jsn
+			/// identifying blocks: e.{00f682a9-eb6e-40ad-9de9-ef1cd25726fb}.{001118},{000454},{000100},{000100}.{20150104014537881}.jsn
+			/// and so, our wildcard is below:
+			/// Wildcard to load/watch entity with its location, height and width, specified in the file name (e.{sa}.{id}.{Sxxxxxx},{Syyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssff}.{iiiiii}.jsn)
+			/// </summary>
+			public const string StrFilterLocationE = "e.???.????????-????-????-????-????????????.???????,???????,??????,??????.????????????????????.jsn";
+
+
+			/// <summary>
+			/// yyyyMMddHHmmssffffff
+			/// ????????????????????
+			/// Wildcard to load/watch app source-bound List entity with its location, height and width, specified in the file name (e.list.{sa}.{id}.{Sxxxxxx},{Syyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssff}.{iiiiii}.jsn)
+			/// </summary>
+			public const string strFilterLocationALE = "e.alist.???.????????-????-????-????-????????????.???????,???????,??????,??????.????????????????????.jsn";
+
+			/// <summary>
+			/// Wildcard to load/watch List entity with its location, height and width, specified in the file name (e.list.{sa}.{id}.{Sxxxxxx},{Syyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssff}.{iiiiii}.jsn)
+			/// </summary>
+			public const string strFilterLocationLE = "e.list.???.????????-????-????-????-????????????.???????,???????,??????,??????.????????????????????.jsn";
+
+			
+			/// <summary>
+			/// Wildcard to load/watch entity (e.{id}.{yyyyMMddHHmmssff}.jsn)
+			/// </summary>
+			public const string strFilterE = "e.????????-????-????-????-????????????.????????????????????.jsn";
+
+			/// <summary>
+			/// Wildcard to load/watch List entity (e.list.{id}.{yyyyMMddHHmmssff}.jsn)
+			/// </summary>
+			public const string strFilterLE = "e.list.????????-????-????-????-????????????.????????????????????.jsn";
+
+			/// <summary>
+			/// Date Format
+			/// </summary>
+			public const string strEDateFormat = "yyyyMMddHHmmssffffff";
+			/// <summary>
+			/// File name parts: Date Part
+			/// </summary>
+			public const string strEDatePart = "." + strEDateFormat;
+			/// <summary>
+			/// File name parts: Id Part
+			/// </summary>
+			public const string strEIdPart = ".????????-????-????-????-????????????";
+
+			public static Rect GetBoundsFromStorageRecordKey(string recordKey)
+			{
+				Rect result = new Rect();
+
+				string str = string.Empty;
+
+				// obtains .{xxxxxx},{yyyyyy},{wwwwww},{hhhhhh} which becomes an extension for the trimmed file name
+				str = Path.GetExtension
+					(
+						// removes: ".yyyyMMddHHmmssffffff"
+						Path.GetFileNameWithoutExtension
+						(
+							// removes: ".jsn"
+							Path.GetFileNameWithoutExtension(recordKey)
+						)
+					);
+
+				// at this point, we have this: .{Sxxxxxx},{Syyyyyy},{wwwwww},{hhhhhh}
+
+				// so: ".+002871,+000530,000100,000100"
+				string strX = str.Substring(1, 7);
+				if (strX.StartsWith("+"))
+					strX = strX.Substring(1, 6);
+
+				string strY = str.Substring(9, 7);
+				if (strY.StartsWith("+"))
+					strY = strY.Substring(1, 6);
+
+				string strWidth = str.Substring(17, 6);
+				string strHeight = str.Substring(24, 6);
+
+				// defining
+				double x = 0;
+				double y = 0;
+				double width = 0;
+				double height = 0;
+
+				bool failed = true;
+
+				if (Double.TryParse(strX, out x) && Double.TryParse(strY, out y) && Double.TryParse(strWidth, out width) && Double.TryParse(strHeight, out height))
+					failed = false;
+
+				if (failed)
+					return Rect.Empty;
+
+				// forming new Rectangle
+				result = new Rect(x, y, width, height);
+
+				return result;
+			}
+
+
+			public static string GetIdFromStorageRecordKey(string recordKey)
+			{
+				string result = string.Empty;
+
+				//// old: e.list.{id}.{yyyyMMddHHmmssff}.jsn
+				//// new: e.list.{id}.{xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssffffff}.jsn 
+
+				// obtains .{id} which becomes an extension for the trimmed file name
+				result = Path.GetExtension
+					(
+						// removes: {xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}
+						Path.GetFileNameWithoutExtension
+						(
+							// removes: ".yyyyMMddHHmmssffffff"
+							Path.GetFileNameWithoutExtension
+							(
+								// removes: ".jsn"
+								Path.GetFileNameWithoutExtension(recordKey)
+							)
+						)
+					);
+
+				if (result.Length == strEIdPart.Length)
+				{
+					return result.Substring(1);
+				}
+				return null;
+			}//GetEntityIdFromFileName()
+
+			//List<SemanticActionKinds> DetectedSemanticActionsList = new List<SemanticActionKinds>();
+
+			public static Semantic.Core.SemanticActionKinds GetSemanticActionFromStorageRecordKey(string recordKey)
+			{
+				string result = string.Empty;
+
+				//// old: e.list.{id}.{yyyyMMddHHmmssff}.jsn
+				//// new: e.list.{sa}.{id}.{xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssff}.jsn 
+
+				// obtains .{id} which becomes an extension for the trimmed file name
+				result = Path.GetExtension
+					(
+						// removes: {id}
+						Path.GetFileNameWithoutExtension(
+							// removes: {xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}
+							Path.GetFileNameWithoutExtension
+							(
+								// removes: ".yyyyMMddHHmmssffffff"
+								Path.GetFileNameWithoutExtension
+								(
+									// removes: ".jsn"
+									Path.GetFileNameWithoutExtension(recordKey)
+								)
+							)
+						)
+					);
+
+
+				if (result.Length == 4)
+				{
+					// let's remove the dot
+					result = result.Substring(1, 3);
+
+					return (SemanticActionKinds)Enum.Parse(typeof(SemanticActionKinds), result);
+				}
+				return SemanticActionKinds.None;
+			}//GetEntitySemanticActionFromFileName()
+
+
+			// this should work as it did before, no changes
+			public static DateTime GetChangeDateFromStorageRecordKey(string recordKey)
+			{
+				var result = DateTime.MinValue;
+				var fnDate = Path.GetExtension
+					(
+						Path.GetFileNameWithoutExtension(recordKey)
+					);
+				if ((!string.IsNullOrEmpty(fnDate)) && (fnDate.Length == strEDatePart.Length))
+				{
+					fnDate = fnDate.Substring(1, strEDateFormat.Length);
+
+					//result = new DateTime
+					//	(
+					//	// yyyyMMdd
+					//		fnDate.Substring(1, 4).As<int>(1),
+					//		fnDate.Substring(5, 2).As<int>(1),
+					//		fnDate.Substring(7, 2).As<int>(1),
+					//	// HHmmssff
+					//		fnDate.Substring(9, 2).As<int>(0),
+					//		fnDate.Substring(11, 2).As<int>(0),
+					//		fnDate.Substring(13, 2).As<int>(0),
+					//		fnDate.Substring(15, 2).As<int>(0) * 10,
+					//	// Utc
+					//		DateTimeKind.Utc
+					//	);
+
+					result = DateTime.ParseExact(fnDate, strEDateFormat, null);
+				}
+				return result;
+			}//GetEntityChangeDateFromFileName()
+
+			public static string GetEntityStorageRecordKey(IEntity entity, EntityRef UID)
+			{
+				string sFn = string.Empty;
+				int left = MyRound(entity.ZPos.Left);
+				int top = MyRound(entity.ZPos.Top);
+				int width = MyRound(entity.ZPos.Width);
+				int height = MyRound(entity.ZPos.Height);
+
+				string xxxxxx = left.ToString("D6");
+				if (left >= 0)
+					xxxxxx = "+" + xxxxxx;
+
+				string yyyyyy = top.ToString("D6");
+				if (top >= 0)
+					yyyyyy = "+" + yyyyyy;
+
+				string wwwwww = width.ToString("D6");
+				string hhhhhh = height.ToString("D6");
+
+				int saInt = (int)entity.SemanticAction;
+				string sa = saInt.ToString("D3");
+
+
+				if (entity.IsAppSourceBoundList)
+				{
+					// old: {Model.UID}\e.list.{id}.{yyyyMMddHHmmssff}.jsn
+					// new: {Model.UID}\e.list.{id}.{xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssffffff}.
+
+					sFn = string.Format("{2}\\e.alist.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, UID.IdToShortString(), xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
+				}
+				else if (entity.IsList)
+				{
+					// old: {Model.UID}\e.list.{id}.{yyyyMMddHHmmssff}.jsn
+					// new: {Model.UID}\e.list.{id}.{xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssffffff}.
+
+					sFn = string.Format("{2}\\e.list.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, UID.IdToShortString(), xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
+				}
+
+				else
+				{
+					// old: {Model.UID}\e.{id}.{yyyyMMddHHmmssff}.jsn
+					// new: {Model.UID}\e.{id}.{xxxxxx},{yyyyyy},{wwwwwww},{hhhhhh}.{yyyyMMddHHmmssffffff}.
+					sFn = string.Format("{2}\\e.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, UID.IdToShortString(), xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
+				}
+				
+				return sFn;
+			}//GetEntityFileName()
+
+			public static int MyRound(double d)
+			{
+				return (int)(d + 0.5);
 			}
 		}
 	} // class

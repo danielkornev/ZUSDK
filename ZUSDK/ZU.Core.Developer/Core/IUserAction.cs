@@ -4,7 +4,7 @@ namespace ZU.Core
 	public interface IUserAction
 	{
 		System.Collections.Generic.Dictionary<string, string> Args { get; set; }
-		string EntityUri { get; set; }
+		string StorageRecordKey { get; set; }
 		DateTime LastModifiedTime { get; set; }
 		ZU.Semantic.Core.SemanticActionKinds SemanticAction { get; set; }
 		string ToShortString();

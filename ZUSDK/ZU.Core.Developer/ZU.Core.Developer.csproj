@@ -130,6 +130,7 @@
     <Compile Include="Semantic\Core\Indexing\IIndexer.cs" />
     <Compile Include="Semantic\Core\SemanticActionKinds.cs" />
     <Compile Include="Semantic\EntityRef.cs" />
+    <Compile Include="Semantic\EntityRefExtensions.cs" />
     <Compile Include="Semantic\Keyphrases\IKeyphrase.cs" />
     <Compile Include="Semantic\Keyphrases\IParagraph.cs" />
     <Compile Include="Semantic\Keyphrases\ISentence.cs" />
@@ -146,10 +147,12 @@
     <Compile Include="Semantic\Spatial\Indexing\IVisualClustersIndexer.cs" />
     <Compile Include="Semantic\Spatial\ISpatialItemsSource.cs" />
     <Compile Include="Semantic\Structured\ReviewStatus.cs" />
-    <Compile Include="Semantic\Text\FullTextAttribute.cs" />
+    <Compile Include="Semantic\Text\KindMetadataAttribute.cs" />
+    <Compile Include="ShortGuid.cs" />
     <Compile Include="SpatioTemporalConstants.cs" />
     <Compile Include="Storage\IStorageContext.cs" />
     <Compile Include="Storage\IStorageProvider.cs" />
+    <Compile Include="Storage\StorageRecordKinds.cs" />
     <Compile Include="Sync\ISyncAgent.cs" />
     <Compile Include="Sync\SyncAgentKind.cs" />
     <Compile Include="Collections\ObjectModel\IRangeObservableCollection.cs" />
@@ -169,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Semantic\Ontology\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

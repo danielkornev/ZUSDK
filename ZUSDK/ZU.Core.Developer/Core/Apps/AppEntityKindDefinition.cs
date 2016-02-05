@@ -10,6 +10,7 @@ namespace ZU.Core.Apps
 	public partial class AppEntityKindDefinition
 	{
 		public string Kind { get; set; }
+		public string ParentKind { get; set; }
 		public Guid AppId { get; set; }
 		public string DisplayNameSingular { get; set; }
 		public string DisplayNamePlural { get; set; }
