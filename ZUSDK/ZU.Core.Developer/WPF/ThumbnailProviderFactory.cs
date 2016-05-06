@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ZU.WPF
 {
-	public static class EntityThumbnailCacheFactory
+	public static class ThumbnailProviderFactory
 	{
-		public static IEntityThumbnailCache Instance
+		public static IThumbnailProvider Instance
 		{ get; internal set; }
 
-		internal static void Initialize(IEntityThumbnailCache cache)
+		internal static void Initialize(IThumbnailProvider cache)
 		{
 			Instance = cache;
 		}

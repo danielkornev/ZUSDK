@@ -12,6 +12,6 @@ namespace ZU.Plugins
 {
 	public interface IFileStorageApp : IZetApp
 	{
-		void ImportShellItem(string localShellItemNamePath, IAppAccount account, IModel modelContext, Rect position);
+		Task ImportShellItem(string localShellItemNamePath, IAppAccount account, IModel modelContext, Rect position);
 	} // interface
 } // namespace

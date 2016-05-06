@@ -80,6 +80,10 @@ namespace ZU
 			[KindMetadata("Generic File GenericFile", "Generic File", Constants.Kinds.Kind)]
 			public const string GenericFile = "ZetUniverse.Kinds.File";
 
+			[Description("Graph View")]
+			[KindMetadata("GraphView Graph View", "Graph View", Constants.Kinds.View)]
+			public const string GraphView = "ZetUniverse.Kinds.Views.GraphView";
+
 			[Description("Instant Message")]
 			[KindMetadata("Instant Message IM InstantMessage Communication", "Instant Message", Constants.Kinds.Communication)]
 			public const string InstantMessage = "ZetUniverse.Kinds.Communications.InstantMessage";
@@ -102,7 +106,11 @@ namespace ZU
 			[Description("List")]
 			[KindMetadata("List", "List", Constants.Kinds.Kind)]
 			public const string List = "ZetUniverse.Kinds.List";
-			
+
+			[Description("Location")]
+			[KindMetadata("Location", "Location", Constants.Kinds.Kind, true, false)]
+			public const string Location = "ZetUniverse.Kinds.Locations.Location";
+
 			/// <summary>
 			/// 
 			/// </summary>
@@ -136,7 +144,7 @@ namespace ZU
 			public const string MusicalPlaylist = "ZetUniverse.Kinds.Media.Music.MusicalPlaylist";
 
 			[Description("Organization")]
-			[KindMetadata("Organization Org Persona", "Organization", Constants.Kinds.Agent)]
+			[KindMetadata("Organization Org", "Organization", Constants.Kinds.Agent)]
 			public const string Organization = "ZetUniverse.Kinds.Organization";
 
 			[Description("PDF Document")]
@@ -146,7 +154,7 @@ namespace ZU
 			[Description("Person")]
 			[KindMetadata("Person Persona People", "Person", Constants.Kinds.Agent, true, false)]
 			public const string Person = "ZetUniverse.Kinds.People.Person";
-			
+
 			/// <summary>
 			/// Generic list of people organized into a group. 
 			/// </summary>
@@ -157,6 +165,10 @@ namespace ZU
 			[Description("Picture")]
 			[KindMetadata("Picture Image Photo Media", "Picture", Constants.Kinds.Media)]
 			public const string Picture = "ZetUniverse.Kinds.Media.Picture";
+
+			[Description("Place")]
+			[KindMetadata("Place Geo Location", "Place", Constants.Kinds.Location, true, false)]
+			public const string Place = "ZetUniverse.Kinds.Locations.Place";
 
 			[Description("PowerPoint Presentation")]
 			[KindMetadata("PowerPoint Presentation Slidedeck Slides Document Media", "PowerPoint Presentation", Constants.Kinds.Document)]
@@ -189,7 +201,12 @@ namespace ZU
 			[Description("User")]
 			[KindMetadata("User", "User", Constants.Kinds.Agent, true, false)]
 			public const string User = "ZetUniverse.Kinds.UserIdentificator";
-			
+
+			[Description("View")]
+			[KindMetadata("View", "View", Constants.Kinds.Kind)]
+			public const string View = "ZetUniverse.Kinds.Views.View";
+
+
 			/// <summary>
 			/// Visual Cluster is a fundamental organizing and grouping concept in Zet Universe. Visual Cluster represents a 2D group of things where relative location of things is explicitely defined by user or automatic layout algorithm.
 			/// </summary>
@@ -297,29 +314,30 @@ namespace ZU
 					if (!string.IsNullOrEmpty(entity.Kind))
 						switch (entity.Kind)
 						{
-							case Constants.Kinds.Appointment:
-							case Constants.Kinds.Article:
-							case Constants.Kinds.Author:
-							case Constants.Kinds.Book:
-							case Constants.Kinds.Call:
-							case Constants.Kinds.Document:
-							case Constants.Kinds.Email:
-							case Constants.Kinds.GenericFile:
-							case Constants.Kinds.InstantMessage:
-							case Constants.Kinds.Link:
-							case Constants.Kinds.List:
-							case Constants.Kinds.Meeting:
-							case Constants.Kinds.Movie:
-							case Constants.Kinds.Music:
-							case Constants.Kinds.MusicalPlaylist:
-							case Constants.Kinds.Organization:
-							case Constants.Kinds.Person:
-							case Constants.Kinds.Picture:
-							case Constants.Kinds.RecordedTV:
-							case Constants.Kinds.ProjectSpace:
-							case Constants.Kinds.Video:
-							case Constants.Kinds.WebPage:
-								return Constants.KindSelection.Entity;
+							//case Constants.Kinds.Appointment:
+							//case Constants.Kinds.Article:
+							//case Constants.Kinds.Author:
+							//case Constants.Kinds.Book:
+							//case Constants.Kinds.Call:
+							//case Constants.Kinds.Document:
+							//case Constants.Kinds.Email:
+							//case Constants.Kinds.GenericFile:
+							//case Constants.Kinds.InstantMessage:
+							//case Constants.Kinds.Link:
+							//case Constants.Kinds.List:
+							//case Constants.Kinds.
+							//case Constants.Kinds.Meeting:
+							//case Constants.Kinds.Movie:
+							//case Constants.Kinds.Music:
+							//case Constants.Kinds.MusicalPlaylist:
+							//case Constants.Kinds.Organization:
+							//case Constants.Kinds.Person:
+							//case Constants.Kinds.Picture:
+							//case Constants.Kinds.RecordedTV:
+							//case Constants.Kinds.ProjectSpace:
+							//case Constants.Kinds.Video:
+							//case Constants.Kinds.WebPage:
+							//	return Constants.KindSelection.Entity;
 
 							case Constants.Kinds.VisualCluster:
 								return Constants.KindSelection.VisualCluster;
@@ -341,7 +359,6 @@ namespace ZU
 						{
 							// only Users and other Visual Clusters can't be a part of a cluster
 							case Constants.Kinds.User:
-							case Constants.Kinds.Person:
 							case Constants.Kinds.VisualCluster:
 							case Constants.Kinds.AppSpace:
 								return false;
@@ -365,7 +382,7 @@ namespace ZU
 					{
 						// only Users and other Visual Clusters can't be a part of a cluster
 						case Constants.Kinds.User:
-						case Constants.Kinds.Person:
+						//case Constants.Kinds.Person:
 						case Constants.Kinds.VisualCluster:
 						case Constants.Kinds.AppSpace:
 							return false;
@@ -557,12 +574,109 @@ namespace ZU
 
 		public static class Relationships
 		{
+			[RelationshipMetadata("authored by", "authored", false)]
 			public const string IsAuthoredBy = "IsAuthoredBy";
+			[RelationshipMetadata("also known as", "also known as", false)]
 			public const string SameEntity = "SameEntity";
+			[RelationshipMetadata("part of the list", "has", true)]
 			public const string PartOfList = "IsPartOfList";
+			[RelationshipMetadata("part of the visual cluster", "has", true)]
+			public const string PartOfVisualCluster = "IsPartOfVisualCluster";
+			[RelationshipMetadata("changed by", "changed", true)]
 			public const string IsChangedBy = "IsChangedBy";
+			[RelationshipMetadata("mentioned in", "mentions", false)]
+			public const string IsMentionedIn = "IsMentionedIn";
 
 			public const string CurrentZetUniverseUser = "IsCurrentZetUniverseUser";
+
+			//public static string GetFriendlyName(EntityRef metaId, bool includeConfidenceWhenNotOne = true, bool showFrom = false)
+			//{
+			//	string result = "related";
+			//	string confidence = string.Format("{0:0.##}", metaId.Confidence);
+
+			//	if (!showFrom)
+			//		if (BuiltInRelationshipsDictionary.ContainsKey(metaId.Relation))
+			//			result = BuiltInRelationshipsDictionary[metaId.Relation];
+				
+			//	if (showFrom)
+			//		if (BuiltInFromRelationshipsDictionary.ContainsKey(metaId.Relation))
+			//			result = BuiltInFromRelationshipsDictionary[metaId.Relation];
+
+			//	if (metaId.Confidence < 1 && includeConfidenceWhenNotOne)
+			//		result = result + " (confidence: " + confidence + ")";
+
+			//	return result;
+			//}
+
+			/// <summary>
+			/// Relationship / Description (for now). Doesn't include system relations (they are used for internal purposes only).
+			/// </summary>
+			public static Dictionary<string, string> BuiltInRelationshipsDictionary
+			{
+				get
+				{
+					var dict = new Dictionary<string, string>();
+
+					var allRels = typeof(Constants.Relationships).GetFields().ToList();
+
+					foreach (var rel in allRels)
+					{
+						var desc = string.Empty;
+
+						var attrs = rel.GetCustomAttributes(typeof(RelationshipMetadataAttribute), false).Cast<RelationshipMetadataAttribute>().ToList();
+
+						if (attrs.Count == 0)
+						{
+							Log.Info("Skipping kind \"{0}\": missing metadata", rel.Name);
+							continue;
+						}
+
+						
+
+						var first = attrs.FirstOrDefault();
+
+						if (first.IsSystem)
+							continue;
+
+						dict.Add(rel.GetRawConstantValue().ToString(),
+							first.Description);
+					}
+
+					return dict;
+				}
+			}
+
+			public static Dictionary<string, string> BuiltInFromRelationshipsDictionary
+			{
+				get
+				{
+					var dict = new Dictionary<string, string>();
+
+					var allRels = typeof(Constants.Relationships).GetFields().ToList();
+
+					foreach (var rel in allRels)
+					{
+						var desc = string.Empty;
+
+						//var attrs1 = kind.GetCustomAttributes(typeof(DescriptionAttribute), false).Cast<DescriptionAttribute>().ToList();
+
+						var attrs = rel.GetCustomAttributes(typeof(RelationshipMetadataAttribute), false).Cast<RelationshipMetadataAttribute>().ToList();
+
+						if (attrs.Count == 0)
+						{
+							Log.Info("Skipping kind \"{0}\": missing metadata", rel.Name);
+							continue;
+						}
+
+						var first = attrs.FirstOrDefault();
+
+						dict.Add(rel.GetRawConstantValue().ToString(),
+							first.DescriptionFrom);
+					}
+
+					return dict;
+				}
+			}
 		}
 
 		public static class Meta
@@ -585,6 +699,16 @@ namespace ZU
 				public const int SettingsObjectIsNull = 102;
 				public const int MainWindowIsNull = 103;
 				public const int UnhandledException = 104;
+
+				// Migration
+				public const int MigrationSucceeded = 200;
+
+				public const int FailedToExtractData = 201;
+				public const int FailedToPrepareStorageRecord = 202;
+				public const int FailedToMigrateData = 210;
+				public const int ProvidedForMigrationDataIsNull = 211;
+
+				public const int MigrationFailed = 220;
 			}
 
 
@@ -606,6 +730,9 @@ namespace ZU
 
 				public const string ZetUniverseUserSettingsFile = "user.settings";
 				public const string ZetUniverseProcessorsFolder = "Processors";
+
+				public const string AppSpacesFolder = "AppSpaces";
+				public const string SpacesFolder = "Spaces";
 				/// <summary>
 				/// ..\Binaries\Plugins
 				/// </summary>
@@ -619,6 +746,22 @@ namespace ZU
 
 				public const string ZetUniverseOnlineInsidersCommunityUrl = @"https://www.facebook.com/groups/ZetUniverseAlphaTesters/";
 				public const string ZetUniverseOnlineUserVoiceCommunityUrl = @"http://zetuniverse.uservoice.com/";
+
+				public static class StorageProviders
+				{
+					/// <summary>
+					/// Legacy stable 
+					/// </summary>
+					public const string FolderStorageProvider = "FolderStorageProvider";
+					/// <summary>
+					/// Legacy highly unstable
+					/// </summary>
+					public const string CompoundFileStorageProvider = "CompoundFileStorageProvider";
+					/// <summary>
+					/// Current promising
+					/// </summary>
+					public const string NextStorageProvider = "NextStorageProvider";
+				}
 			}
 		}
 
@@ -763,6 +906,8 @@ namespace ZU
 				/// /Incoming/Keyphrases/
 				/// </summary>
 				public const string Keyphrases = "/Incoming/Keyphrases/";
+
+				public const string ExtractedRelationships = "/Incoming/ExtractedRelationships/";
 
 				public static class Kinds
 				{
@@ -979,7 +1124,26 @@ namespace ZU
 				return result;
 			}//GetEntityChangeDateFromFileName()
 
+			/// <summary>
+			/// Returns in the format [UID as ShortGUID]\[StorageRecordKey]
+			/// </summary>
+			/// <param name="entity"></param>
+			/// <param name="UID"></param>
+			/// <returns></returns>
 			public static string GetEntityStorageRecordKey(IEntity entity, EntityRef UID)
+			{
+
+				string sFn = String.Format("{1}\\{0}", GetEntityStorageRecordKeyWithoutUID(entity), UID.IdToShortGuid());
+				
+				return sFn;
+			}//GetEntityFileName()
+
+			/// <summary>
+			/// Returns in the format [StorageRecordKey]
+			/// </summary>
+			/// <param name="entity"></param>
+			/// <returns></returns>
+			public static string GetEntityStorageRecordKeyWithoutUID(IEntity entity)
 			{
 				string sFn = string.Empty;
 				int left = MyRound(entity.ZPos.Left);
@@ -1007,25 +1171,25 @@ namespace ZU
 					// old: {Model.UID}\e.list.{id}.{yyyyMMddHHmmssff}.jsn
 					// new: {Model.UID}\e.list.{id}.{xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssffffff}.
 
-					sFn = string.Format("{2}\\e.alist.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, UID.IdToShortString(), xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
+					sFn = string.Format("e.alist.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, string.Empty, xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
 				}
 				else if (entity.IsList)
 				{
 					// old: {Model.UID}\e.list.{id}.{yyyyMMddHHmmssff}.jsn
 					// new: {Model.UID}\e.list.{id}.{xxxxxx},{yyyyyy},{wwwwww},{hhhhhh}.{yyyyMMddHHmmssffffff}.
 
-					sFn = string.Format("{2}\\e.list.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, UID.IdToShortString(), xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
+					sFn = string.Format("e.list.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, string.Empty, xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
 				}
 
 				else
 				{
 					// old: {Model.UID}\e.{id}.{yyyyMMddHHmmssff}.jsn
 					// new: {Model.UID}\e.{id}.{xxxxxx},{yyyyyy},{wwwwwww},{hhhhhh}.{yyyyMMddHHmmssffffff}.
-					sFn = string.Format("{2}\\e.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, UID.IdToShortString(), xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
+					sFn = string.Format("e.{7}.{0}.{3},{4},{5},{6}.{1:" + Constants.StorageHelper.strEDateFormat + "}.jsn", entity.Id, entity.TLChange, string.Empty, xxxxxx, yyyyyy, wwwwww, hhhhhh, sa);
 				}
-				
+
 				return sFn;
-			}//GetEntityFileName()
+			}
 
 			public static int MyRound(double d)
 			{

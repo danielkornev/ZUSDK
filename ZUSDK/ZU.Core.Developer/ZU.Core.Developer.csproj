@@ -65,6 +65,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppRelationshipDefinition.cs" />
     <Compile Include="BasePropertyChanged.cs" />
     <Compile Include="Collections\Generic\IPriorityQuadTree.cs" />
     <Compile Include="ComponentModel\IInstantiateProperty.cs">
@@ -74,6 +75,7 @@
     <Compile Include="Configuration\Settings\AppMode.cs" />
     <Compile Include="Configuration\Settings\IAppAccount.cs" />
     <Compile Include="Configuration\Settings\IAppSettings.cs" />
+    <Compile Include="Configuration\Settings\IConfigurationManager.cs" />
     <Compile Include="Configuration\Settings\IConfigurationSettings.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Core\IUserAction.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Core\Apps\IAppButtonInfo.cs" />
     <Compile Include="Core\Apps\IAppManager.cs" />
     <Compile Include="Plugins\IFileStorageApp.cs" />
+    <Compile Include="Plugins\IFullTextSearchExtractionProcessor.cs" />
     <Compile Include="Plugins\ILocalFolderApp.cs" />
     <Compile Include="Plugins\ISharedFolderApp.cs" />
     <Compile Include="Core\Apps\OnEntityOpen.cs" />
@@ -124,6 +127,7 @@
     <Compile Include="Plugins\IZetProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegexUtilities.cs" />
+    <Compile Include="RelationshipMetadataAttribute.cs" />
     <Compile Include="Semantic\Core\ContainerKinds.cs" />
     <Compile Include="Semantic\Core\EntityFragmentState.cs" />
     <Compile Include="Semantic\Core\GenericFileOperationStatus.cs" />
@@ -150,12 +154,15 @@
     <Compile Include="Semantic\Text\KindMetadataAttribute.cs" />
     <Compile Include="ShortGuid.cs" />
     <Compile Include="SpatioTemporalConstants.cs" />
+    <Compile Include="Storage\IMigrationProvider.cs" />
     <Compile Include="Storage\IStorageContext.cs" />
     <Compile Include="Storage\IStorageProvider.cs" />
+    <Compile Include="Storage\MigrationPhase.cs" />
     <Compile Include="Storage\StorageRecordKinds.cs" />
     <Compile Include="Sync\ISyncAgent.cs" />
     <Compile Include="Sync\SyncAgentKind.cs" />
     <Compile Include="Collections\ObjectModel\IRangeObservableCollection.cs" />
+    <Compile Include="Telemetry\OperationKind.cs" />
     <Compile Include="WPF\Data\AppSourceBoundFileSystemDataContainer.cs" />
     <Compile Include="WPF\Data\AppSpaceToProjectSpaceDataContainer.cs" />
     <Compile Include="WPF\Data\DataAction.cs" />
@@ -164,8 +171,10 @@
     <Compile Include="WPF\Data\Schemas\IEntityView.cs" />
     <Compile Include="WPF\Data\SharedFolderAppItemDataContainer.cs" />
     <Compile Include="WPF\Data\UnifiedListSearchToZoomableSpaceDragDropContainer.cs" />
-    <Compile Include="WPF\EntityThumbnailCacheFactory.cs" />
-    <Compile Include="WPF\IEntityThumbnailCache.cs" />
+    <Compile Include="WPF\IFrame.cs" />
+    <Compile Include="WPF\ThumbnailProviderFactory.cs" />
+    <Compile Include="WPF\IThumbnailProvider.cs" />
+    <Compile Include="WPF\IThumbnailProvider.WIP.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="EnglishST.txt" />
@@ -177,6 +186,10 @@
     <Folder Include="Semantic\Ontology\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -11,7 +11,7 @@ namespace ZU.Plugins
 {
 	public interface ILocalFolderApp : IFileStorageApp
 	{
-		bool TryWatchShellItem(string shellItemPath, string entityId, string modelId, bool blockNewShellItemsScan);
+		Task<bool> TryWatchShellItem(string shellItemPath, string entityId, string modelId, bool blockNewShellItemsScan);
 		//bool TryWatchFolder(string folderPath, string modelId);
 		void OnShellItemChanged(string shellItemPath, List<Tuple<string, string, string, bool>> watchedItems);
 		void OnShellItemCreated(string shellItemPath, List<Tuple<string, IEntity>> listsToUpdate);

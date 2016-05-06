@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using ZU.Semantic;
+
 namespace ZU.Core
 {
 	public interface IEntity : INotifyPropertyChanged, ITimelined
@@ -10,8 +13,23 @@ namespace ZU.Core
 		string Kind { get; set; }
 		
 		string Title { get; set; }
+
+		/// <summary>
+		/// This is a way too useful property to avoid having it as the default property
+		/// </summary>
+		string Description { get; set; }
+
+		/// <summary>
+		/// Default URI
+		/// </summary>
 		string Uri { get; set; }
-		ZU.Semantic.EntityRef MetaId { get; set; }
+
+		/// <summary>
+		/// List of related URIs
+		/// </summary>
+		List<string> Uris { get; set; }
+
+		ZU.Semantic.EntityRef MetaId { get; }
 		string SystemWideUniqueId { get; }
 
 		IModel ModelContext { get; set; }
@@ -29,6 +47,11 @@ namespace ZU.Core
 		/// A public property used for setting a time change
 		/// </summary>
 		DateTime LastModified { get; set; }
+
+		/// <summary>
+		/// Used for a Linked Entity (doesn't represent the storage record, but represents the concept's created date)
+		/// </summary>
+		DateTime Created { get; set; }
 		
 		#endregion
 
@@ -43,8 +66,16 @@ namespace ZU.Core
 		IEntity AddTo(IModel model);
 		IEntity DeepClone();
 
+		/// <summary>
+		/// Marks given item as deleted
+		/// </summary>
 		void Delete();
-		void Delete(bool markAsDeleted);
+
+		/// <summary>
+		/// Marks given item as unpinned. 
+		/// Special Case: If it is a visual cluster, it's marked as deleted, as well.
+		/// </summary>
+		void Unpin();
 		/// <summary>
 		/// Refreshes metadata
 		/// </summary>
@@ -148,8 +179,7 @@ namespace ZU.Core
 		IEntity InitProps();
 		void InitPropsChanged();
 		void InstantiateProperty(string propertyName, System.Globalization.CultureInfo culture, System.Threading.SynchronizationContext callbackExecutionContext);
-
-		void OnPropsChanged(object es, System.ComponentModel.PropertyChangedEventArgs ea);
+		
 		System.Collections.ObjectModel.ObservableCollection<Property> Properties { get; set; }
 		dynamic Props { get; set; }
 		System.Collections.Generic.IDictionary<string, object> PropsDict { get; set; }
@@ -186,14 +216,16 @@ namespace ZU.Core
 		#endregion
 
 		#region Calendar Items-specific Properties (TBD)
-		DateTime EventData { get; set; }
+		DateTime CalendarEntryDate { get; set; }
 		int EventDay { get; }
 		string EventMonth { get; }
-		bool ShouldSerializeEventData();
+
+		int EventYear { get; }
+		//bool ShouldSerializeEventData();
 		#endregion
 
 		#region Related
-		bool AddRelatedEntity(IEntity entity, string relation, bool checkOrderInThisEntity = false, bool checkOrderInThatEntity = false, bool force = false);
+		bool AddRelatedEntity(IEntity entity, string relation, string agentId, bool force = false, bool isExtracted = false, double confidence = 1.0);
 		ZU.Collections.ObjectModel.IRangeObservableCollection<ZU.Semantic.EntityRef> Related { get; set; }
 		bool RelatedMessagesAvailable { get; }
 		int RelatedMessagesCount { get; set; }

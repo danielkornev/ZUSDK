@@ -14,7 +14,7 @@ namespace ZU.Semantic.Core
 		None = 0,
 		#endregion
 
-		#region Visual Clusters: 50-69
+		#region Visual Clusters and Zoomable Space: 50-69
 		[Description("Removed this item from visual cluster")]
 		EntityRemovedFromVisualCluster = 50,
 		[Description("Added this item to visual cluster")]
@@ -27,6 +27,8 @@ namespace ZU.Semantic.Core
 		VisualClusterMoved = 54,
 		[Description("Deleted a visual cluster")]
 		VisualClusterDeleted = 55,
+		[Description("Unpinned from a project space")]
+		UnpinnedFromVisualSpace = 56,
 
 		#endregion
 
@@ -45,6 +47,11 @@ namespace ZU.Semantic.Core
 		EntityDynamicPropertyChanged = 75,
 		[Description("System assigned to an application account")]
 		EntityAssignedToAppAccount = 76,
+		[Description("Thumbnail extracted and saved")]
+		EntityThumbnailSaved = 77,
+		[Description("Description updated")]
+		EntityDescriptionUpdated = 78,
+
 		#endregion
 
 		#region Project Operations: 90-149
@@ -123,6 +130,12 @@ namespace ZU.Semantic.Core
 		EntityLinkedToMetaEntity = 220,
 		[Description("Linked to another entity")]
 		EntityLinkedToAnotherEntity = 221,
+		[Description("Entities extracted and linked")]
+		EntitiesExtractedAndLinked = 222,
+		[Description("System fixed meta id and re-bound entity to its holding project")]
+		EntityReboundToCurrentModelContext = 223,
+		[Description("Link to another entity removed")]
+		LinkToAnotherEntityRemoved = 224,
 		#endregion
 
 		#region Keyphrases Extraction: 230-239
@@ -177,8 +190,10 @@ namespace ZU.Semantic.Core
 		[Description("Flagged as not important")]
 		UserMarkedEntityAsNotImportant = 315,
 		[Description("Resized")]
-		EntityTemplateResized,
-		
+		EntityTemplateResized = 316,
+		[Description("Changed privacy status")]
+		EntityIsPrivatePropertyChanged =317
+
 		#endregion
 
 

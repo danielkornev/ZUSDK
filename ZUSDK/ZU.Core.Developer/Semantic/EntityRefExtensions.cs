@@ -19,5 +19,22 @@ namespace ZU.Semantic
 			var id = Guid.Parse(er.EntityId);
 			return new ShortGuid(id);
 		}
+
+		public static bool IsLive(this EntityRef er)
+		{
+			switch (er.State)
+			{
+				case Core.EntityFragmentState.Deleted_Extracted:
+					return false;
+				case Core.EntityFragmentState.Deleted_Entered:
+					return false;
+				case Core.EntityFragmentState.Entered:
+					return true;
+				case Core.EntityFragmentState.Extracted:
+					return true;
+				default:
+					return false;
+			}
+		}
 	} // class
 } // namespace

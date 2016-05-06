@@ -41,6 +41,24 @@ namespace ZU.Semantic
 		}
 
 		/// <summary>
+		/// (Optional) Used to define a given Relationship
+		/// </summary>
+		public string RelationshipEntityId
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// (Optional) Used to define a given Relationship
+		/// </summary>
+		public string RelationshipModelId
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
 		/// Relation: e.g., "Is Author Of", or "Is Sent By", etc.
 		/// As we want the system to be extendable, we should not specify kinds of things using hard coding, but by using strings (via the Constants)
 		/// </summary>
@@ -73,6 +91,15 @@ namespace ZU.Semantic
 		/// (e.g., "Referenced Entity" "Is Author Of" "another entity", or "another entity" "Is Sent By" "Referenced Entity")
 		/// </summary>
 		public RelationDirection Direction
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// Specifies the user OR app (we can figure out user by using State - Extracted/Entered; thus UidChanger will either use App/Account as Id, or User's Id)
+		/// </summary>
+		public string AgentIdChanger
 		{
 			get;
 			set;

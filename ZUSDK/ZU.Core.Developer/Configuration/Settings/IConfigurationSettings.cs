@@ -9,6 +9,7 @@ namespace ZU.Configuration.Settings
 		DateTime DateCreated { get; set; }
 		bool EnableEmptyProjectsCreation { get; set; }
 		bool IsRegistered { get; }
+		long LargeFileSizeThreshold { get; set; }
 		DateTime LastTimeUpdateChecked { get; set; }
 		string LastUpdateCheckErrorMessage { get; set; }
 		ZU.Core.Update.UpdateCheckStates LastUpdateCheckResult { get; set; }
@@ -22,6 +23,7 @@ namespace ZU.Configuration.Settings
 		int MaximumDownloadTimeInterval { get; set; }
 		string MetaspaceFolder { get; set; }
 		bool NotificationAppRunsInBackgroundShown { get; set; }
+		bool OutputRedisLogToTerminal { get; set; }
 		bool PopupDontShutdownAppShown { get; set; }
 		bool PopupTrackYourProjectFilesShown { get; set; }
 		bool PopupTrackYourProjectsShown { get; set; }
@@ -39,12 +41,14 @@ namespace ZU.Configuration.Settings
 		bool ShowRulesAlerts { get; set; }
 		bool ShowViewsPane { get; set; }
 		bool SkipDiskThumbnailCache { get; set; }
+		bool SkipLargeFilesForIndexing { get; set; }
 		double SpiralVisualizationWidth { get; set; }
+		string StorageProvider { get; set; }
 		bool SupportSavingFiles { get; set; }
 		ZU.Semantic.EntityRef UID { get; set; }
 		string UserId { get; set; }
 		string UserTitle { get; set; }
 		bool UseSemanticProcessing { get; set; }
 		string ZetInstallRoot { get; set; }
-	}
-}
+	} // class
+} // namespace

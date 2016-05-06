@@ -12,6 +12,7 @@ namespace ZU.Storage
 		void InitIndex();
 
 		bool Load();
+		void Close();
 		ZU.Core.IModel Model { get; set; } // but set shall be private
 		void Purge(ZU.Core.IEntity entity, string dataFile);
 		void SaveEntity(ZU.Core.IEntity entity, SemanticActionKinds semanticAction, bool force);

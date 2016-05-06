@@ -12,8 +12,10 @@ namespace ZU.Core.Apps
 {
 	public interface IAppManager
 	{
-		bool Subscribe(OnEntityOpen onEntityOpenDelegate, AppEntityKindDefinition appKind);
-	
+		bool RegisterKind(OnEntityOpen onEntityOpenDelegate, AppEntityKindDefinition appKind);
+
+		bool RegisterRelationship(AppRelationshipDefinition relationship);
+
 		IAppAccount CreateAppAccount(
 			string accountId, 
 			string accountTitle,
@@ -23,6 +25,7 @@ namespace ZU.Core.Apps
 			string token,
 			string userId,
 			string userTitle,
+			string userPassword,
 			EntityRef uidOwner,
 			EntityRef uidChanger,
 			DateTime TLBirth,

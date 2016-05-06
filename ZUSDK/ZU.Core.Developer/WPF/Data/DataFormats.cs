@@ -12,5 +12,6 @@ namespace ZU.WPF.Data
 		public static string SharedFolderAppItemDataContainer = "ZetUniverse.DataFormats.SharedFolderAppItemDataContainer";
 		public static string AppSpaceItemToProjectSpaceDataContainer = "ZetUniverse.DataFormats.AppSpaceItemToProjectSpaceDataContainer";
 		public static string UnifiedListSearchToZoomableSpaceDragDropContainer = "ZetUniverse.DataFormats.UnifiedListSearchToZoomableSpaceDragDropContainer";
+		public static string Entity = "ZetUniverse.DataFormats.Entity";
 	} // class
 } // namespace

@@ -71,6 +71,8 @@ namespace ZU.Core
 		
 		void Dispose();
 
+		bool IsFileExtensionNonIndexable(string fileFullPath);
+
 
 		IEntity GetEntityOfSpace(string spaceEntityId);
 		System.Collections.Generic.List<IEntity> GetReferencedEntities(IEntity entity);

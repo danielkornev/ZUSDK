@@ -43,7 +43,7 @@ namespace ZU.Core
 		string GetFullModelPath(string path);
 		string GetSyncRootFolder();
 		System.Collections.Generic.List<IEntity> HighlihgtedEntites { get; set; }
-		string Id { get; set; }
+		string Id { get; }
 		void Init();
 		void InitProvider();
 		bool IsFolderShared(string fullPath);
