@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="485024b5-1f82-4616-a9d8-b8b55fc20ad1" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>Zet Universe platform (cloud + client) enables <legacyBold>Data Integration, Organization, Search, and Analysis</legacyBold> of enterprise content. The following essential functions are required:</para>
+
+			<list class="bullet">
+				<listItem>
+					<para>
+						<legacyBold>[both] Store</legacyBold> user-defined metadata (projects) and data (from external data sources)
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[both] Aggregate</legacyBold> data from external data sources into user-defined projects
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[both] Analyze</legacyBold> (derive and extract) meaningful <legacyBold>kinds</legacyBold> and <legacyBold>properties</legacyBold> from data
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[both] Index</legacyBold> kinds and properties
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[both] Annotate</legacyBold> kinds with (semantic) markup
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[client] Search</legacyBold> kinds using terms, phrases, time intervals, locations, and exemplars
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[both] Enable collaborative work</legacyBold> on user-defined projects
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[cloud] Map</legacyBold> user-defined knowledge graphs together
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[cloud] Build and grow</legacyBold> unified enterprise knowledge graph
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[both] Manage</legacyBold> system state, configuration, performance, and other administrative tasks
+					</para>
+				</listItem>
+
+				<listItem>
+					<para>
+						<legacyBold>[both] Act</legacyBold> on kinds in semantically appropriate ways
+					</para>
+				</listItem>
+
+			</list>
+			
+			<!--<para>Zet Universe is the platform for knowledge acquisition, organization, and reuse. Although knowledge systems have seen numerous advancements over the last few decades, traditional knowledge systems still lack the rich and powerful features for unifying, analyzing, organizing, and visualizing data in the specialized information systems like Palantir, Quid, and RecordedFuture provide in the modern times. Unlike these platforms, though, Zet Universe democratizes these critical pieces of knowledge management systems making them available for the general public.</para>-->
+
+			<para>This section presents a high-level overview of Zet Universe and explains these benefits in more details.</para>
+		</introduction>
+
+		<section>
+			<title>In This Section</title>
+			<content>
+				<list class="bullet">
+					<listItem>
+						<para><link xlink:href="bf16b1ea-d376-468a-a5c2-e261bdd5f345">Zet Universe as a Knowledge Management System</link> - Zet Universe offers users flexible ways to organize data into knowledge. This enables users to organize and explore data more efficiently and productively.</para>
+					</listItem>
+
+					<listItem>
+						<para>
+							<link xlink:href="0fe31055-eea4-4dfe-bdcc-d11743749678">Zet Universe System Architecture</link> - Zet Universe has a modular and extensible architecture built on simple plugins ready for data integration, semantic processing, and rich visual interaction and exploration. This topic provides a high-level overview of these technologies.
+						</para>
+					</listItem>
+
+				</list>
+
+				<!--<para>See the <legacyBold>Conceptual Content</legacyBold> topics in the Sandcastle Help File Builder's
+help file for more information.  See the <legacyBold> Sandcastle MAML Guide</legacyBold> for details on Microsoft
+Assistance Markup Language (MAML) which is used to create these topics.</para>-->
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="21d8718e-1300-4395-9b34-3b24ca1870e0" />
+		</relatedTopics>
+	</developerConceptualDocument>
+</topic>

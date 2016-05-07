@@ -13,8 +13,14 @@ using ZU.Semantic.Text;
 
 namespace ZU
 {
+	/// <summary>
+	/// This class is used to keep all constant values used through the entire platform, including but not limited to kinds and properties normalized names, system components names, URIs, and so on.
+	/// </summary>
 	public static partial class Constants
 	{
+		/// <summary>
+		/// List of the built-in Kinds representing everyday things like people, documents, e-mails, media, and so on.
+		/// </summary>
 		public static partial class Kinds
 		{
 			[Description("Agent")]
