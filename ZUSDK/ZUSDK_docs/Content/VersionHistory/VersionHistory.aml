@@ -2,7 +2,7 @@
 <topic id="21d8718e-1300-4395-9b34-3b24ca1870e0" revisionNumber="1">
 	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<introduction>
-			<para>The topics in this section describe the various changes made to the [TODO: Project Title] over the
+			<para>The topics in this section describe the various changes made to the Zet Universe Software Development Kit over the
 life of the project.</para>
 		</introduction>
 
@@ -14,10 +14,6 @@ life of the project.</para>
 				<list class="bullet">
 					<listItem>
 						<para><link xlink:href="22d8acf8-13da-42e9-afd3-29265d034a21" /></para>
-					</listItem>
-
-					<listItem>
-						<para>[TODO: Add links to each specific version page]</para>
 					</listItem>
 
 				</list>

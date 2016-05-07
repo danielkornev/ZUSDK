@@ -13,14 +13,14 @@
   <Topic id="efc532e9-2c70-41f8-a420-97e2b2cd852e" visible="True" />
   <Topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" visible="True" title="How Do I..." />
   <Topic id="259c4f8b-fca0-46e0-a4fa-eab0f3fa39a0" visible="True" title="Zet Universe Samples" />
-  <Topic id="1f0604b0-ed04-4c38-8243-25d392b736af" visible="True" isSelected="true" apiParentMode="InsertAfter" title="Zet Universe Glossary" />
+  <Topic id="1f0604b0-ed04-4c38-8243-25d392b736af" visible="True" apiParentMode="InsertAfter" title="Zet Universe Glossary" />
   <Topic id="21d8718e-1300-4395-9b34-3b24ca1870e0" visible="True" isExpanded="true" title="Version History">
     <HelpKeywords>
       <HelpKeyword index="K" term="version, history" />
     </HelpKeywords>
-    <Topic id="22d8acf8-13da-42e9-afd3-29265d034a21" visible="True" title="Version 1.0.0.0">
+    <Topic id="22d8acf8-13da-42e9-afd3-29265d034a21" visible="True" isSelected="true" title="Version 2.0.5971.29607">
       <HelpKeywords>
-        <HelpKeyword index="K" term="version, 1.0.0.0" />
+        <HelpKeyword index="K" term="version, 2.0.5971.29607" />
       </HelpKeywords>
     </Topic>
   </Topic>

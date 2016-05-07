@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zet Universe, Inc.")]
 [assembly: AssemblyProduct("Zet Universe")]
-[assembly: AssemblyCopyright("Copyright © Zet Universe, Inc. 2013-2015")]
+[assembly: AssemblyCopyright("Copyright © Zet Universe, Inc. 2013-2016")]
 [assembly: AssemblyTrademark("Zet Universe, Inc.")]
 [assembly: AssemblyCulture("")]
 
