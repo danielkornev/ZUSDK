@@ -2,7 +2,7 @@
 <topic id="22d8acf8-13da-42e9-afd3-29265d034a21" revisionNumber="1">
 	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<introduction>
-			<para>Version [TODO: Version] was released on [TODO: Date].
+			<para>Version 2.0.5971.29607 was released on May 7, 2016.
 			</para>
 		</introduction>
 
@@ -12,7 +12,7 @@
 
 				<list class="bullet">
 					<listItem>
-						<para>[TODO: Add change items here]</para>
+						<para>Initial release (with the supporting documentation)</para>
 					</listItem>
 
 				</list>

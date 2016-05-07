@@ -18,29 +18,193 @@
            Glossary divisions will appear in the order defined in the topic.
            Glossary entries will be sorted by the first term for the entry.
            Terms are sorted by their value. -->
-      <glossaryDiv address="Group1">
-        <title>Group #1</title>
+		<glossaryDiv address="Terms">
+			<title>Terms</title>
 
-        <glossaryEntry>
-          <terms>
-            <!-- One or more terms associated with the definition.  Add a termId
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
                attribute if you need to link to it from a relatedEntry element.
                Otherwise, it can be omitted.  Terms appear as a comma-separated
                list above the definition. -->
-            <term termId="xyz">1st term</term>
-            <term>Other term (if any)</term>
-          </terms>
+					<term termId="Agent">Agent</term>
+					<term>Human</term>
+					<term>AI (bot)</term>
+				</terms>
 
-          <definition>
-            <para>The definition of the term(s)</para>
-          </definition>
+				<definition>
+					<para>
+						<legacyBold>Agents</legacyBold> represent real people, as well as artificial intelligence systems that operate within the Zet Universe platform. Artificial intelligence systems are generally represented as the installed apps/accounts.
+					</para>
+				</definition>
 
-          <!-- One or more optional related entries.  Creates a "See Also"
+				<!-- One or more optional related entries.  Creates a "See Also"
                line after the definition with links to each related term. -->
-          <!-- <relatedEntry termId="xyz" /> -->
-        </glossaryEntry>
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
 
-      </glossaryDiv>
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
+               attribute if you need to link to it from a relatedEntry element.
+               Otherwise, it can be omitted.  Terms appear as a comma-separated
+               list above the definition. -->
+					<term termId="App">App</term>
+					<term>Application</term>
+				</terms>
+
+				<definition>
+					<para>
+						Content is provided to the system via external data providers (<legacyBold>apps</legacyBold>) and is represented by a <legacyBold>Kind</legacyBold>. <legacyBold>Apps</legacyBold> connect Zet Universe to the external data sources (local and network file systems, web, microservices, etc.), enable initial data transformation and load, as well as allow (optional) source change tracking, and (optional) metadata synchronization. <legacyBold>App</legacyBold> may register own <legacyBold>Processors</legacyBold> (see below), <legacyBold>Kinds</legacyBold>’ and <legacyBold>Relationships</legacyBold>’ definitions. Support is provided (minimally) for file-based documents (local and Dropbox-based), images, audio, video, people (Dropbox users), web (HTML).
+					</para>
+
+					<para>
+						Additional <legacyBold>kinds</legacyBold>, <legacyBold>apps</legacyBold> and <legacyBold>processors</legacyBold> can be added to the system.
+					</para>
+				</definition>
+
+				<!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
+
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
+               attribute if you need to link to it from a relatedEntry element.
+               Otherwise, it can be omitted.  Terms appear as a comma-separated
+               list above the definition. -->
+					<term termId="Entity">Entity</term>
+				</terms>
+
+				<definition>
+					<para>
+						Entity is the "atom" of information within Zet Universe. It incapsulates information about any kind of the everyday things like people, documents, e-mail, and so on. A special property, <legacyBold>Kind</legacyBold>, is used to characterize the semantic meaning of the particular Entity.
+					</para>
+
+					<!--<legacyBold>Kinds</legacyBold> have an <legacyBold>identity</legacyBold> (GUID), generally have an underlying data source in a form of an URI, or an external data source-specific unique identifier (e.g., a Dropbox user id), and are associated with a collection of <legacyBold>Properties</legacyBold> (see below) that describe them in various ways, and <legacyBold>Relationships</legacyBold> (see below) between instances of <legacyBold>Kinds</legacyBold>. <legacyBold>Kinds</legacyBold> represent the digital artifacts (e.g., documents, web pages, images, spreadsheets, email, people).-->
+
+					<para>
+						Entities are <legacyBold>extracted</legacyBold> and/or derived from the provided data sources or <legacyBold>emergent</legacyBold> from collections of entities and properties.
+					</para>
+				</definition>
+
+				<!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
+
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
+               attribute if you need to link to it from a relatedEntry element.
+               Otherwise, it can be omitted.  Terms appear as a comma-separated
+               list above the definition. -->
+					<term termId="Kind">Kind</term>
+				</terms>
+
+				<definition>
+					<para>
+						<legacyBold>Knowledge</legacyBold> within the Zet Universe is <legacyBold>represented</legacyBold> as <legacyBold>entities</legacyBold> on storage level and <legacyBold>kinds</legacyBold> on ontology level.
+					</para>
+
+					<para>
+						<legacyBold>Kinds</legacyBold> are flexible representations of both every day and enterprise-specific things: <legacyBold>people</legacyBold>, <legacyBold>organizations</legacyBold>, <legacyBold>places</legacyBold>, <legacyBold>events</legacyBold>, <legacyBold>media</legacyBold>, etc.
+					</para>
+				</definition>
+
+				<!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
+
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
+               attribute if you need to link to it from a relatedEntry element.
+               Otherwise, it can be omitted.  Terms appear as a comma-separated
+               list above the definition. -->
+					<term termId="Property">Property</term>
+				</terms>
+
+				<definition>
+					<para>
+						Derived, extracted, or user-supplied <legacyBold>data about kinds</legacyBold> and/or their underlying data sources are provided in two forms: common properties (available for all <legacyBold>Kinds</legacyBold>), and dynamic properties.
+					</para>
+				</definition>
+
+				<!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
+
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
+               attribute if you need to link to it from a relatedEntry element.
+               Otherwise, it can be omitted.  Terms appear as a comma-separated
+               list above the definition. -->
+					<term termId="Relationship">Relationship</term>
+				</terms>
+
+				<definition>
+					<para>
+						Relationships represent connections between instances of <legacyBold>Kinds</legacyBold>, and, like Properties, they are derived, extracted, or user-supplied. Relationships are stored with the instances of Kinds as references to other instances.
+					</para>
+				</definition>
+
+				<!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
+
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
+               attribute if you need to link to it from a relatedEntry element.
+               Otherwise, it can be omitted.  Terms appear as a comma-separated
+               list above the definition. -->
+					<term termId="Processor">Processor</term>
+					<term>Semantic Information Processor</term>
+					<term>Semantic Processor</term>
+				</terms>
+
+				<definition>
+					<para>
+						Content within <legacyBold>Kinds</legacyBold> is processed via the means of the so-called <legacyBold>Semantic Pipeline</legacyBold> (see below), which provides a topic subscription service, and both the platform and plugins can subscribe to this service, specify a topic (or topics) they are interested in, process incoming instances of <legacyBold>Kinds</legacyBold>, and (optionally) publish updated instances of <legacyBold>Kinds</legacyBold> back to the <legacyBold>Semantic Pipeline</legacyBold>. There are two kinds of subscribers – lightweight (that can process data in an almost synchronous way) and heavy (that usually spend significant time to analyze and process data). Both kinds of subscribers are usually defined in the form of <legacyBold>Processors</legacyBold>, that are packaged either as part of <legacyBold>Apps</legacyBold>, or independently.
+					</para>
+				</definition>
+
+				<!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
+
+			<glossaryEntry>
+				<terms>
+					<!-- One or more terms associated with the definition.  Add a termId
+               attribute if you need to link to it from a relatedEntry element.
+               Otherwise, it can be omitted.  Terms appear as a comma-separated
+               list above the definition. -->
+					<term termId="Model">Model</term>
+					<term>App Space</term>
+					<term>Metaspace</term>
+					<term>Project</term>
+					<term>Project Space</term>
+				</terms>
+
+				<definition>
+					<para>
+						<legacyBold>Models</legacyBold> are <legacyBold>Agent</legacyBold>- or <legacyBold>App</legacyBold>-generated containers designed to be a place for data integration, organization, and analysis. For the end users, <legacyBold>Models</legacyBold> can be seen as the workspaces for their projects, while <legacyBold>Apps</legacyBold> use <legacyBold>Models</legacyBold> to obtain and synchronize external data, to make it available for the end users. <legacyBold>Models</legacyBold> contain collections of instances of <legacyBold>Kinds</legacyBold>.
+					</para>
+				</definition>
+
+				<!-- One or more optional related entries.  Creates a "See Also"
+               line after the definition with links to each related term. -->
+				<!-- <relatedEntry termId="xyz" /> -->
+			</glossaryEntry>
+
+		</glossaryDiv>
 
     </glossary>
   </developerGlossaryDocument>

@@ -1,6 +1,9 @@
 ﻿using System;
 namespace ZU.Core
 {
+	/// <summary>
+	/// This interface supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 	public interface ITimelined
 	{
 		void Merge(ITimelined newVer);

@@ -17,39 +17,42 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>The Zet Universe SDK includes samples that demonstrate Zet Universe features.</para>
+
+		<para>The topics in this section provide explanations and instructions for running each sample.</para>
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
+	  <section>
+		  <title>In This Section</title>
+		  <content>
+			  <list class="bullet">
+				  <listItem>
+					  <para>
+						  <link xlink:href="3d8fea32-9e63-4a77-9d8b-427f1c8466c5">Processor Motivating Example</link> - The Zet Universe stores and indexes the user’s local content, subscriptions, visited web pages and content shared by their friends (via the corresponding plugins). As a result, a developer who specializes in new ways of indexing data or classifying data would want to write a plug-in that will be reliably loaded and invoked when content is added into the Semantic Processing Pipeline. For example, an entity extraction plug-in can be registered for /Content/FullText/ and automatically extract and link Kinds from the full-text previously extracted from the corresponding kinds that can be later used in search.
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  <link xlink:href="8146132c-e2ce-4fb7-8132-9384e184c6c8">App Motivating Example</link> - Default installation of Zet Universe is capable of storing and indexing manually provided user's local content stored in the local folders and (optionally) in the synchronized Dropbox folder. To enable Zet Universe to work with custom external data sources, a developer would want to write a plug-in that will be reliably loaded and will enable user to import data from the custom data source, such as Excel spreadsheet, or a Gmail tasks.
+					  </para>
+				  </listItem>
+
+			  </list>
+
+			  <!--<para>See the <legacyBold>Conceptual Content</legacyBold> topics in the Sandcastle Help File Builder's
+help file for more information.  See the <legacyBold> Sandcastle MAML Guide</legacyBold> for details on Microsoft
+Assistance Markup Language (MAML) which is used to create these topics.</para>-->
+		  </content>
+	  </section>
 
     <relatedTopics>
-      <!-- One or more of the following:
+		<link xlink:href="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b">Zet Universe APIs</link>
+
+		<!-- One or more of the following:
            - A local link
            - An external link
            - A code entity reference

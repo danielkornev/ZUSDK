@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 namespace ZU.Collections.Generic
 {
+	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
+	/// <typeparam name="T"></typeparam>
 	public interface IPriorityQuadTree<T> : IEnumerable<T>
 	{
 		void Clear();

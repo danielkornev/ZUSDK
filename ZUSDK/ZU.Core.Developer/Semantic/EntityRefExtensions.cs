@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ZU.Semantic
-{
+{   
+	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 	public static class EntityRefExtensions
 	{
 		public static string IdToShortString(this EntityRef er)

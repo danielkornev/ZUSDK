@@ -9,6 +9,9 @@ using ZU.Core;
 namespace ZU.WPF.Data
 {
 	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
+	/// <summary>
 	/// Used for drag-n-drop from typical lists.
 	/// </summary>
 	[Serializable]

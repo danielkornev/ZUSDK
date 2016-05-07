@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ZU.WPF
 {
+	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 	public static class ThumbnailProviderFactory
 	{
 		public static IThumbnailProvider Instance

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" revisionNumber="1">
-	<developerConceptualDocument
-	  xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+<topic id="f5459c77-4896-4b2a-893f-d5c78a32b527" revisionNumber="1">
+  <developerHowToDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!--
@@ -11,24 +11,39 @@
     -->
 
     <introduction>
-      <para>This section provides code-intensive examples of common Zet Universe programming tasks. </para>
+      <para>
+		  Content is passed to and from Zet Universe as Entities. From a developer’s perspective, Entities are metadata elements, characterized by the <legacyBold>Kind</legacyBold> and an optional URI as a link to an external resource. From a user’s perspective, Entities (characterized by their Kinds) are everyday things that have semantically appropriate behavior, appearance, and actions.
+	  </para>
     </introduction>
 
-		<section>
-			<title>In This Section</title>
-			<content>
-				<para>
-					<link xlink:href="ee152bc4-c010-48dc-8c03-d84b730e4d30">How Do I Get Started With Zet Universe</link>
-				</para>
-				<list class="bullet">
-					<listItem>
-						<para>
-							<link xlink:href="f5459c77-4896-4b2a-893f-d5c78a32b527">How To Set Up and Build a Plugin that Uses Zet Universe</link>
-						</para>
-					</listItem>
-				</list>
-			</content>
-		</section>
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <procedure>
+      <title>Procedure title</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>First step</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Second step</para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+
+    <!-- <codeExample>Optional code example</codeExample> -->
+
+    <!-- <buildInstructions>Optional instructions for building a
+         code example.</buildInstructions> -->
+
+    <!-- <robustProgramming>Optional discussion of error handling and other
+         issues related to writing solid code.</robustProgramming> -->
+
+    <!-- <security>Optional discussion of security issues.</security> -->
 
     <relatedTopics>
       <!-- One or more of the following:
@@ -63,5 +78,5 @@
       <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
       -->
     </relatedTopics>
-  </developerConceptualDocument>
+  </developerHowToDocument>
 </topic>

@@ -35,6 +35,8 @@
     <CleanIntermediates>True</CleanIntermediates>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\ZU.Core.Developer\ZU.Core.Developer.csproj" xmlns="" />
+      <DocumentationSource sourceFile="..\ZU.Core.Developer\bin\debug\ZU.Core.Developer.XML" />
+      <DocumentationSource sourceFile="..\ZU.Core.Developer\bin\debug\ZU.Core.Developer.dll" />
     </DocumentationSources>
     <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <HelpFileVersion>1.0.0.0</HelpFileVersion>
@@ -59,7 +61,7 @@
     <MSHelpViewerSdkLinkType>Msdn</MSHelpViewerSdkLinkType>
     <CatalogVersion>100</CatalogVersion>
     <CatalogProductId>VS</CatalogProductId>
-    <RootNamespaceTitle>Zet Universe Root Namespace</RootNamespaceTitle>
+    <RootNamespaceTitle>Zet Universe Class Library</RootNamespaceTitle>
     <CopyrightText>Copyright &amp;#169%3b Zet Universe, Inc. 2013-2016</CopyrightText>
     <CopyrightHref>http://www.zetuniverse.com/</CopyrightHref>
     <WorkingPath>..\..\..\zusdk_wiki\ZUSDK.gh_pages\temp\</WorkingPath>
@@ -91,6 +93,10 @@
 </component>
       </ComponentConfig>
     </ComponentConfigurations>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="False" xmlns="" />
+    </NamespaceSummaries>
+    <HeaderText>&amp;lt%3ba href=&amp;quot%3bhttp://www.zetuniverse.com&amp;quot%3b&amp;gt%3bZet Universe&amp;lt%3b/a&amp;gt%3b</HeaderText>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
@@ -117,15 +123,19 @@
     <Folder Include="media" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\App Motivating Example.aml" />
+    <None Include="Content\How Do I Get Started With Zet Universe.aml" />
     <None Include="Content\How Do I....aml" />
+    <None Include="Content\How To Set Up and Build a Plugin that Uses Zet Universe.aml" />
+    <None Include="Content\Processor Motivating Example.aml" />
     <None Include="Content\VersionHistory\v2.0.5971.29607.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />
-    <None Include="Content\Zet Universe as a Knowledge Management System.aml" />
+    <None Include="Content\Zet Universe Technical Requirements Document.aml" />
     <None Include="Content\Zet Universe Glossary.aml" />
     <None Include="Content\Zet Universe Kinds System.aml" />
     <None Include="Content\Zet Universe Ontology Extensibility.aml" />
-    <None Include="Content\Zet Universe Programmability.aml" />
+    <None Include="Content\Zet Universe APIs.aml" />
     <None Include="Content\Zet Universe Samples.aml" />
     <None Include="Content\Zet Universe Semantic Pipeline.aml" />
     <None Include="Content\Zet Universe System Architecture.aml" />

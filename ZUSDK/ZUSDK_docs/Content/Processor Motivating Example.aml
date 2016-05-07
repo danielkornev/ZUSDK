@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" revisionNumber="1">
-	<developerConceptualDocument
-	  xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+<topic id="3d8fea32-9e63-4a77-9d8b-427f1c8466c5" revisionNumber="1">
+  <developerSampleDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <!--
@@ -11,26 +11,34 @@
     -->
 
     <introduction>
-      <para>This section provides code-intensive examples of common Zet Universe programming tasks. </para>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+
+      <para>Required introduction</para>
     </introduction>
 
-		<section>
-			<title>In This Section</title>
-			<content>
-				<para>
-					<link xlink:href="ee152bc4-c010-48dc-8c03-d84b730e4d30">How Do I Get Started With Zet Universe</link>
-				</para>
-				<list class="bullet">
-					<listItem>
-						<para>
-							<link xlink:href="f5459c77-4896-4b2a-893f-d5c78a32b527">How To Set Up and Build a Plugin that Uses Zet Universe</link>
-						</para>
-					</listItem>
-				</list>
-			</content>
-		</section>
+    <!-- <procedure>Optional procedures.  See How To document for procedure layout example.</procedure> -->
+    <!-- <requirements>Optional requirements section</requirements> -->
+    <!-- <demonstrates>Optional info about what is demonstrated</demonstrates> -->
+    <!-- <codeExample>Optional code example</codeExample> -->
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Optional section title</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>Add one or more sections with content</para>
+      </content>
+    </section>
 
     <relatedTopics>
+		<link xlink:href="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b">Zet Universe APIs</link>
       <!-- One or more of the following:
            - A local link
            - An external link
@@ -63,5 +71,5 @@
       <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
       -->
     </relatedTopics>
-  </developerConceptualDocument>
+  </developerSampleDocument>
 </topic>

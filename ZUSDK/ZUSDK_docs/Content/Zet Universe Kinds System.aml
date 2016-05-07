@@ -17,20 +17,103 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>Zet Universe has an active semantic storage platform based on a semantic model that is the organizational framework for Zet Universe data types. The various types and relationships of the data model make it possible to store metadata information about such objects as Documents, People, Pictures, Videos, and so on, and to interact with these items programmatically in a unified way. You can define relationships among items and use Relationship objects to find and act upon them, adding people, deleting pictures, and so on.</para>
     </introduction>
+
+	  <section address="OntologyOfEverydayThings">
+		  <title>Ontology of the Everyday Things</title>
+		  <content>
+			  <para>
+				  We live surrounded with things. These things can be physical ones coming from our environment, or they can be products of our imagination, or, finally, be digital objects created as elements of virtual world built by computer applications, websites and games. Things we deal with, starting from documents and other files in our folders, to users in Facebook and emails in our inbox, seem to be natural to us. We constantly make different interactions with these things, switching from physical world to a virtual one back-n-force, referencing to them in our endless collaboration with friends and work colleagues. The patterns of interacting with digital objects were brought from the physical world by Internet and computer pioneers, and now these patterns are highly interconnected as we constantly transfer our experiences between our real and digital lives.
+			  </para>
+
+			  <para>Instead of computer strict understanding of classes and instances, things in Zet Universe are more familiar to the user; things are content.</para>
+
+			  <para>In Zet Universe, we use the terms Entities and Kinds to speak of everyday things that have been augmented with rich metadata. Entities represent actual instances of data stored within the Zet Universe semantic storage platform, while Kinds represent semantic meaning of these Entities, and form a coherent vocabulary called the Ontology of the Everyday Things.</para>
+
+			  <para>The term <legacyBold>Ontology</legacyBold> originally came from Greek language:</para>
+
+			  <para>
+				  <legacyItalic>Ontos + Logia</legacyItalic> </para>
+
+			  <para>(Gk) <legacyItalic>“being” + “the study of”</legacyItalic>
+		  </para>
+
+			  <para>
+				  An ontology is a categorization of the world. One of the earliest Ontological concepts came from Plato: Platonic realism. It is the idea that everything that exists in reality has a corresponding conceptual truth that the extant thing is aspiring to be:
+			  </para>
+
+			  <list class="bullet">
+				  <listItem>
+					  <para>
+						  There is a universal notion of ‘apple-ness’ that a real apple aspires to be
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  This is one implementation of the idea that things in reality can have conceptual counterparts that are used to categorize them
+					  </para>
+				  </listItem>
+			  </list>
+
+			  <para>
+				  This framework is mimicked in most Ontologies across the world.
+			  </para>
+
+			  <para>
+				  Some of the inspiring examples of well-known ontologies include the Periodic Table of the Elements, Linnaean taxonomy or Latin naming system for animals.
+			  </para>
+
+			  <para>
+				  The latter one is a useful example of an Ontology because we can see how Ontologies are frequently ordered hierarchically.
+			  </para>
+		  </content>
+	  </section>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
+	  <section address="EntitiesAndKinds">
+		  <title>Entities and Kinds</title>
+		  <content>
+			  <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-    </section>
+			  <para>
+				  <legacyBold>Knowledge</legacyBold> within the Zet Universe is <legacyBold>represented</legacyBold> as <legacyBold>entities</legacyBold> on storage level and <legacyBold>kinds</legacyBold> on ontology level.
+			  </para>			 
+		  </content>
+
+		  <sections>
+			  <section address="Entities">
+				  <title>Entities</title>
+				  <content>
+					  <para>
+						  Entity is the "atom" of information within Zet Universe. It incapsulates information about any kind of the everyday things like people, documents, e-mail, and so on. 
+					  </para>
+
+					  <para>
+						  A special property, <legacyBold>Kind</legacyBold>, is used to characterize the semantic meaning of the particular Entity. Entities are <legacyBold>extracted</legacyBold> and/or derived from the provided data sources or <legacyBold>emergent</legacyBold> from collections of entities and properties.
+					  </para>
+				  </content>
+			  </section>
+
+			  <section address="Kinds">
+				  <title>Kinds</title>
+				  <content>
+					  <para>
+						  While Entity is a practical implementation of the Zet Universe foundational data type, Kind could be seen as both a classification term used to describe a particular Entity, and as an element of the ontology which is a mechanism used to build a categorization of the everyday things, as well as the specific domains (think Customers in CRM).
+					  </para>
+
+					  <para>
+						  <legacyBold>Kinds</legacyBold> are flexible representations of both every day and enterprise-specific things: <legacyBold>people</legacyBold>, <legacyBold>organizations</legacyBold>, <legacyBold>places</legacyBold>, <legacyBold>events</legacyBold>, <legacyBold>media</legacyBold>, etc.
+					  </para>
+				  </content>
+			  </section>
+		  </sections>
+	  </section>
+
+
 
     <relatedTopics>
       <!-- One or more of the following:

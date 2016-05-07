@@ -6,6 +6,9 @@ using System.Text.RegularExpressions;
 
 namespace ZU
 {
+	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 	public static class RegexUtilities
 	{
 		static Regex ValidEmailRegex = CreateValidEmailRegex();

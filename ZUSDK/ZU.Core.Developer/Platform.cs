@@ -4,6 +4,9 @@ using System.ComponentModel;
 
 namespace ZU
 {
+	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 	// Platform independence
 	public static class Platform
 	{

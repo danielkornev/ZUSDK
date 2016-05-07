@@ -8,6 +8,9 @@ using ZU.Semantic;
 
 namespace ZU.WPF.Data
 {
+	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 	public class UnifiedListSearchToZoomableSpaceDragDropContainer
 	{
 		/// <summary>

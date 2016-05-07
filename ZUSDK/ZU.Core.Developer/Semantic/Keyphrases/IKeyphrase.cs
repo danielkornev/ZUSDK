@@ -1,6 +1,7 @@
 ﻿using System;
 namespace ZU.Semantic.Keyphrases
 {
+
 	public interface IKeyphrase
 	{
 		double CalculatedRank { get; }

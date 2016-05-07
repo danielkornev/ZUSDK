@@ -877,6 +877,9 @@ namespace ZU
 				/// /Classifications/VisualClusters/
 				/// </summary>
 				public const string VisualClusters = "/Classifications/VisualClusters/";
+				/// <summary>
+				/// /Classifications/WebPages/
+				/// </summary>
 				public static string WebPages = "/Classifications/WebPages/";
 			}
 

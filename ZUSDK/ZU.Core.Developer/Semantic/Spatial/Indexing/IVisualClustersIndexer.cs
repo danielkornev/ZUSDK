@@ -4,6 +4,9 @@ using ZU.Core;
 using ZU.Semantic.Core.Indexing;
 namespace ZU.Semantic.Spatial.Indexing
 {
+	/// <summary>
+	/// This interface supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 	public interface IVisualClustersIndexer : IIndexer
 	{
 		void CleanupAfterEntityWasDeleted(ZU.Core.IEntity deletedEntity);

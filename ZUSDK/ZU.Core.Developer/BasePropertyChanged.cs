@@ -11,6 +11,9 @@ namespace ZU
 	//	+	Thread safe PropertyChanged calls
 	//	+	Call CommandManager.InvalidateRequerySuggested for properties with names starts with "Is"|"Can"
 	//	+	SetProperty<T> helper
+	/// <summary>
+	/// This class supports Zet Universe and is not intended to be used directly from your code.
+	/// </summary>
 
 	public abstract class BasePropertyChanged : INotifyPropertyChanged
 	{

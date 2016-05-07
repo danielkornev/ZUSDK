@@ -8,8 +8,11 @@ using ZU.Core;
 namespace ZU.WPF.Data
 {
 	/// <summary>
-	/// Used for drag-n-drop from app source-bound lists
+	/// This interface supports Zet Universe and is not intended to be used directly from your code.
 	/// </summary>
+	/// <remarks>
+	/// Used for drag-n-drop from app source-bound lists
+	/// </remarks>
 	[Serializable]
 	public class AppSourceBoundFileSystemDataContainer
 	{

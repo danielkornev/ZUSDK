@@ -4,21 +4,28 @@
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
     </HelpKeywords>
-    <Topic id="bf16b1ea-d376-468a-a5c2-e261bdd5f345" visible="True" title="Zet Universe as a Knowledge Management System" />
-    <Topic id="0fe31055-eea4-4dfe-bdcc-d11743749678" visible="True" />
+    <Topic id="bf16b1ea-d376-468a-a5c2-e261bdd5f345" visible="True" title="Zet Universe Technical Requirements Document" />
+    <Topic id="0fe31055-eea4-4dfe-bdcc-d11743749678" visible="True" title="Zet Universe System Architecture" />
   </Topic>
-  <Topic id="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b" visible="True" title="Zet Universe Programmability" />
+  <Topic id="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b" visible="True" title="Zet Universe APIs" />
   <Topic id="a129330d-61fe-4d24-af3d-fe0f4a789cd1" visible="True" title="Zet Universe Kinds System" tocTitle="Zet Universe Kinds System" />
   <Topic id="bdeef41a-ab73-4399-b007-1edac3eedaf1" visible="True" title="Zet Universe Ontology Extensibility" />
   <Topic id="efc532e9-2c70-41f8-a420-97e2b2cd852e" visible="True" />
-  <Topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" visible="True" title="How Do I..." />
-  <Topic id="259c4f8b-fca0-46e0-a4fa-eab0f3fa39a0" visible="True" title="Zet Universe Samples" />
+  <Topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" visible="True" isExpanded="true" title="How Do I...">
+    <Topic id="ee152bc4-c010-48dc-8c03-d84b730e4d30" visible="True" isExpanded="true" title="How Do I Get Started With Zet Universe">
+      <Topic id="f5459c77-4896-4b2a-893f-d5c78a32b527" visible="True" isSelected="true" title="How To Set Up and Build a Plugin that Uses Zet Universe" />
+    </Topic>
+  </Topic>
+  <Topic id="259c4f8b-fca0-46e0-a4fa-eab0f3fa39a0" visible="True" isExpanded="true" title="Zet Universe Samples">
+    <Topic id="3d8fea32-9e63-4a77-9d8b-427f1c8466c5" visible="True" title="Processor Motivating Example" />
+    <Topic id="8146132c-e2ce-4fb7-8132-9384e184c6c8" visible="True" title="App Motivating Example" />
+  </Topic>
   <Topic id="1f0604b0-ed04-4c38-8243-25d392b736af" visible="True" apiParentMode="InsertAfter" title="Zet Universe Glossary" />
   <Topic id="21d8718e-1300-4395-9b34-3b24ca1870e0" visible="True" isExpanded="true" title="Version History">
     <HelpKeywords>
       <HelpKeyword index="K" term="version, history" />
     </HelpKeywords>
-    <Topic id="22d8acf8-13da-42e9-afd3-29265d034a21" visible="True" isSelected="true" title="Version 2.0.5971.29607">
+    <Topic id="22d8acf8-13da-42e9-afd3-29265d034a21" visible="True" title="Version 2.0.5971.29607">
       <HelpKeywords>
         <HelpKeyword index="K" term="version, 2.0.5971.29607" />
       </HelpKeywords>

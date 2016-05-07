@@ -2,7 +2,7 @@
 <topic id="485024b5-1f82-4616-a9d8-b8b55fc20ad1" revisionNumber="1">
 	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<introduction>
-			<para>Zet Universe platform (cloud + client) enables <legacyBold>Data Integration, Organization, Search, and Analysis</legacyBold> of enterprise content. The following essential functions are required:</para>
+			<para>Zet Universe platform (cloud + client) enables <legacyBold>Data Integration, Organization, Search, and Analysis</legacyBold> of the end user and enterprise content. The following essential functions are required:</para>
 
 			<list class="bullet">
 				<listItem>
@@ -83,7 +83,7 @@
 			<content>
 				<list class="bullet">
 					<listItem>
-						<para><link xlink:href="bf16b1ea-d376-468a-a5c2-e261bdd5f345">Zet Universe as a Knowledge Management System</link> - Zet Universe offers users flexible ways to organize data into knowledge. This enables users to organize and explore data more efficiently and productively.</para>
+						<para><link xlink:href="bf16b1ea-d376-468a-a5c2-e261bdd5f345">Zet Universe Technical Requirements Document</link> - Zet Universe offers users flexible ways to organize data into knowledge. This enables users to organize and explore data more efficiently and productively. This topic provides a high-level overview of technical requirements used to define and build Zet Universe.</para>
 					</listItem>
 
 					<listItem>

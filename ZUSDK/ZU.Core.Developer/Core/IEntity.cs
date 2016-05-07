@@ -81,9 +81,17 @@ namespace ZU.Core
 		/// </summary>
 		/// <returns></returns>
 		bool Refresh();
+		/// <summary>
+		/// Saves changes for the current IEntity.
+		/// </summary>
+		/// <param name="semanticAction"></param>
 		void SaveChanges(ZU.Semantic.Core.SemanticActionKinds semanticAction);
 
-		void Merge(ITimelined newVer);
+		/// <summary>
+		/// Merges current IEntity with it's another version.
+		/// </summary>
+		/// <param name="newVer"></param>
+		new void Merge(ITimelined newVer);
 		/// <summary>
 		/// Represents semantic action for the current version of the entity (semantic action applied to this entity at this time)
 		/// </summary>

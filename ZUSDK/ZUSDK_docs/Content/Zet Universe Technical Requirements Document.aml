@@ -38,7 +38,7 @@
        <autoOutline />
 
 		<para>
-			Zet Universe platform (cloud + client) enables <legacyBold>Data Integration, Organization, Search, and Analysis</legacyBold> of enterprise content. The following essential functions are required:
+			Zet Universe platform (cloud + client) enables <legacyBold>Data Integration, Organization, Search, and Analysis</legacyBold> of the end user and enterprise content. The following essential functions are required:
 		</para>
 
 		<list class="bullet">
@@ -119,7 +119,7 @@
       <content>
         <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
-        <para>The Zet Universe is built from a small foundation of concepts: <legacyBold>Agents</legacyBold>, <legacyBold>Models</legacyBold>, <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, <legacyBold>Relationships</legacyBold>, <legacyBold>Apps</legacyBold>, and <legacyBold>Processors</legacyBold>.</para>
+        <para>The Zet Universe is built from a small foundation of concepts: <legacyBold>Agents</legacyBold>, <legacyBold>Models</legacyBold>, <legacyBold>Entities and Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, <legacyBold>Relationships</legacyBold>, <legacyBold>Apps</legacyBold>, and <legacyBold>Processors</legacyBold>.</para>
       </content>
 
 		<sections>
@@ -146,16 +146,20 @@
 			</section>
 
 			<section address="Kinds">
-				<title>1.3. Kinds</title>
+				<title>1.3. Entities and Kinds</title>
 				<content>
 					<!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
 					<para>
-						<legacyBold>Knowledge</legacyBold> within the Zet Universe is <legacyBold>represented</legacyBold> as <legacyBold>kinds</legacyBold>. <legacyBold>Kinds</legacyBold> have an <legacyBold>identity</legacyBold> (GUID), generally have an underlying data source in a form of an URI, or an external data source-specific unique identifier (e.g., a Dropbox user id), and are associated with a collection of <legacyBold>Properties</legacyBold> (see below) that describe them in various ways, and <legacyBold>Relationships</legacyBold> (see below) between instances of <legacyBold>Kinds</legacyBold>. <legacyBold>Kinds</legacyBold> represent the digital artifacts (e.g., documents, web pages, images, spreadsheets, email, people).
+						<legacyBold>Knowledge</legacyBold> within the Zet Universe is <legacyBold>represented</legacyBold> as <legacyBold>entities</legacyBold> on storage level and <legacyBold>kinds</legacyBold> on ontology level. 
 					</para>
 
 					<para>
-						<legacyBold>Kinds are</legacyBold> flexible representations of both every day and enterprise-specific things: <legacyBold>people</legacyBold>, <legacyBold>organizations</legacyBold>, <legacyBold>places</legacyBold>, <legacyBold>events</legacyBold>, <legacyBold>media</legacyBold>, etc. Kinds are <legacyBold>extracted</legacyBold> and/or derived from the provided data sources or <legacyBold>emergent</legacyBold> from collections of kinds and properties.
+						Entity is the "atom" of information within Zet Universe. It incapsulates information about any kind of the everyday things like people, documents, e-mail, and so on. A special property, <legacyBold>Kind</legacyBold>, is used to characterize the semantic meaning of the particular Entity. Entities are <legacyBold>extracted</legacyBold> and/or derived from the provided data sources or <legacyBold>emergent</legacyBold> from collections of entities and properties.
+					</para>
+
+					<para>
+						While Entity is a practical implementation of the Zet Universe foundational data type, Kind could be seen as both a classification term used to describe a particular Entity, and as an element of the ontology which is a mechanism used to build a categorization of the everyday things, as well as the specific domains (think Customers in CRM). 	<legacyBold>Kinds</legacyBold> are flexible representations of both every day and enterprise-specific things: <legacyBold>people</legacyBold>, <legacyBold>organizations</legacyBold>, <legacyBold>places</legacyBold>, <legacyBold>events</legacyBold>, <legacyBold>media</legacyBold>, etc. 
 					</para>
 				</content>
 			</section>
@@ -170,30 +174,6 @@
 						Derived, extracted, or user-supplied <legacyBold>data about kinds</legacyBold> and/or their underlying data sources are provided in two forms: common properties (available for all <legacyBold>Kinds</legacyBold>), and dynamic properties.
 					</para>
 				</content>
-
-				<sections>
-					<section address="CommonProperties">
-						<title>1.4.1. Common Properties</title>
-						<content>
-							<!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-							<para>
-								Common properties:
-							</para>
-						</content>
-					</section>
-
-					<section address="DynamicProperties">
-						<title>1.4.2. Dynamic Properties</title>
-						<content>
-							<!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-							<para>
-								Dynamic properties are represented uniformly as a tuple:
-							</para>
-						</content>
-					</section>
-				</sections>
 			</section>
 
 			<section address="Relationships">
@@ -202,7 +182,7 @@
 					<!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
 					<para>
-						Relationships represent connections between instances of <legacyBold>Kinds</legacyBold>, and, like Properties, they are derived, extracted, or user-supplied. Relationships are stored with the instances of Kinds as references to other instances, and as such are represented uniformly as a tuple:
+						Relationships represent connections between instances of <legacyBold>Kinds</legacyBold>, and, like Properties, they are derived, extracted, or user-supplied. Relationships are stored with the instances of Kinds as references to other instances.
 					</para>
 				</content>
 			</section>
@@ -213,7 +193,11 @@
 					<!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
 					<para>
-						The Zet Universe is built from a small foundation of concepts: <legacyBold>Agents</legacyBold>, <legacyBold>Models</legacyBold>, <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, <legacyBold>Relationships</legacyBold>, <legacyBold>Apps</legacyBold>, and <legacyBold>Processors</legacyBold>.
+						Content is provided to the system via external data providers (<legacyBold>apps</legacyBold>) and is represented by a <legacyBold>Kind</legacyBold>. <legacyBold>Apps</legacyBold> connect Zet Universe to the external data sources (local and network file systems, web, microservices, etc.), enable initial data transformation and load, as well as allow (optional) source change tracking, and (optional) metadata synchronization. <legacyBold>App</legacyBold> may register own <legacyBold>Processors</legacyBold> (see below), <legacyBold>Kinds</legacyBold>’ and <legacyBold>Relationships</legacyBold>’ definitions. Support is provided (minimally) for file-based documents (local and Dropbox-based), images, audio, video, people (Dropbox users), web (HTML).
+					</para>
+
+					<para>
+						Additional <legacyBold>kinds</legacyBold>, <legacyBold>apps</legacyBold> and <legacyBold>processors</legacyBold> can be added to the system.
 					</para>
 				</content>
 			</section>
@@ -224,7 +208,7 @@
 					<!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
 					<para>
-						The Zet Universe is built from a small foundation of concepts: <legacyBold>Agents</legacyBold>, <legacyBold>Models</legacyBold>, <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, <legacyBold>Relationships</legacyBold>, <legacyBold>Apps</legacyBold>, and <legacyBold>Processors</legacyBold>.
+						Content within <legacyBold>Kinds</legacyBold> is processed via the means of the so-called <legacyBold>Semantic Pipeline</legacyBold> (see below), which provides a topic subscription service, and both the platform and plugins can subscribe to this service, specify a topic (or topics) they are interested in, process incoming instances of <legacyBold>Kinds</legacyBold>, and (optionally) publish updated instances of <legacyBold>Kinds</legacyBold> back to the <legacyBold>Semantic Pipeline</legacyBold>. There are two kinds of subscribers – lightweight (that can process data in an almost synchronous way) and heavy (that usually spend significant time to analyze and process data). Both kinds of subscribers are usually defined in the form of <legacyBold>Processors</legacyBold>, that are packaged either as part of <legacyBold>Apps</legacyBold>, or independently.
 					</para>
 				</content>
 			</section>
@@ -241,7 +225,7 @@
 			  <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
 			  <para>
-				  The Zet Universe is built from a small foundation of concepts: <legacyBold>Agents</legacyBold>, <legacyBold>Models</legacyBold>, <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, <legacyBold>Relationships</legacyBold>, <legacyBold>Apps</legacyBold>, and <legacyBold>Processors</legacyBold>.
+				  The Zet Universe platform is <legacyBold>deployed</legacyBold> as a combination of cloud and client systems working in a tandem. Cloud and client systems work together via a combination of REST application interfaces (for non-critical data synchronization) and Web Sockets (for near real-time collaboration).
 			  </para>
 		  </content>
 
@@ -252,8 +236,23 @@
 					  <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
 					  <para>
-						  The Zet Universe is built from a small foundation of concepts: <legacyBold>Agents</legacyBold>, <legacyBold>Models</legacyBold>, <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, <legacyBold>Relationships</legacyBold>, <legacyBold>Apps</legacyBold>, and <legacyBold>Processors</legacyBold>.
+						  Current (Windows-based) and future (Web, mobile, AR/VR) client applications are the end user interface to the Zet Universe Platform. Two kinds of clients, lightweight and full, will be available as a part of the platform:
 					  </para>
+
+					  <list class="bullet">
+						  <listItem>
+							  <para>
+								  <legacyBold>Full clients</legacyBold> include both the user interface and everything necessary for offline data integration, indexing, and analysis
+							  </para>
+						  </listItem>
+
+						  <listItem>
+							  <para>
+								  <legacyBold>Lightweight clients</legacyBold> provide only the user interface and can be (optionally) enhanced by the additional plugins.
+							  </para>
+						  </listItem>
+					  </list>
+
 				  </content>
 			  </section>
 
@@ -263,8 +262,52 @@
 					  <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
 					  <para>
-						  The Zet Universe is built from a small foundation of concepts: <legacyBold>Agents</legacyBold>, <legacyBold>Models</legacyBold>, <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, <legacyBold>Relationships</legacyBold>, <legacyBold>Apps</legacyBold>, and <legacyBold>Processors</legacyBold>.
+						  Cloud component of the Zet Universe platform is a (scalable) unit <legacyBold>deployable</legacyBold> in both private and public clouds. Its primary goals are to provide:
 					  </para>
+
+					  <list class="bullet">
+						  <listItem>
+							  <para>
+								  <legacyBold>Metadata storage</legacyBold> for storing knowledge represented in the form of <legacyBold>Kinds</legacyBold>.
+							  </para>
+						  </listItem>
+
+						  <listItem>
+							  <para>
+								  <legacyBold>BLOB storage</legacyBold> for storing supplemental (thumbnails, etc.) to <legacyBold>Kinds</legacyBold> and (optionally) external content (files, emails, etc.).
+							  </para>
+						  </listItem>
+
+						  <listItem>
+							  <para>
+								  <legacyBold>Near real-time subscription service</legacyBold> to enable seamless collaboration options for <legacyBold>Agents</legacyBold> working with the shared projects <legacyBold>Models</legacyBold>.
+							  </para>
+						  </listItem>
+
+						  <listItem>
+							  <para>
+								  <legacyBold>Simple authorization and authentication subsystem (OAuth 2.0-based).</legacyBold>
+							  </para>
+						  </listItem>
+
+						  <listItem>
+							  <para>
+								  <legacyBold>Semantic pipeline</legacyBold> and <legacyBold>Processors</legacyBold> infrastructure for data analysis (deriving and extracting <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, and <legacyBold>Relationships</legacyBold>).
+							  </para>
+						  </listItem>
+
+						  <listItem>
+							  <para>
+								  <legacyBold>Apps infrastructure</legacyBold> for external data extraction, load, and transformation (ETL).
+							  </para>
+						  </listItem>
+
+						  <listItem>
+							  <para>
+								  <legacyBold>Ontology management infrastructure</legacyBold> for graphs generation, editing, growth, and mapping based on the individual <legacyBold>Agents</legacyBold>' contribution via their own projects (<legacyBold>Models</legacyBold>) in the "Friend-to-Friend" way.
+							  </para>
+						  </listItem>
+					  </list>
 				  </content>
 			  </section>
 		  </sections>
@@ -274,11 +317,12 @@
 
     <conclusion>
       <content>
-        <para>Conclusion content</para>
+        <para>Zet Universe is an innovation platform (cloud + client) that enables Data Integration, Organization, Search, and Analysis of enterprise content.</para>
       </content>
     </conclusion>
 
     <relatedTopics>
+		<link xlink:href="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b">Zet Universe APIs</link>
       <!-- One or more of the following:
            - A local link
            - An external link

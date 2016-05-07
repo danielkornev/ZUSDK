@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SAL", "SAL", "{7BED7342-365E-4233-A2F5-F15B42845B38}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Developer", "Developer", "{AF139932-022A-46B7-9972-86C007E48606}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZU.Core.Developer", "ZU.Core.Developer\ZU.Core.Developer.csproj", "{F7C690C1-0543-41C2-8968-DFFD94F242B1}"
