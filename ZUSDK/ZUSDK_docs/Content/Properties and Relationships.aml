@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="bdeef41a-ab73-4399-b007-1edac3eedaf1" revisionNumber="1">
+<topic id="c1541470-3973-41ba-bbdd-c1e5f8f2080c" revisionNumber="1">
   <developerConceptualDocument
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -17,14 +17,16 @@
            zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
 
-      <para>Required introduction</para>
+      <para>
+		  <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, and <legacyBold>Relationships</legacyBold> are the building blocks used to form the Zet Universe Ontology. In this topic, the remaining two building blocks, <legacyBold>Properties</legacyBold> and <legacyBold>Relationships</legacyBold>, are discussed.
+	  </para> 
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Properties">
+      <title>Properties</title>
       <content>
         <!-- Uncomment this to create a sub-section outline
         <autoOutline /> -->
@@ -47,6 +49,15 @@
           </section>
       </sections> -->
     </section>
+
+	  <section address="Relationships">
+		  <title>Relationships</title>
+		  <content>
+			  <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+			  <para>Add one or more sections with content</para>
+		  </content>
+	  </section>
 
     <relatedTopics>
       <!-- One or more of the following:

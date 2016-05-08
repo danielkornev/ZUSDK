@@ -7,13 +7,19 @@
     <Topic id="bf16b1ea-d376-468a-a5c2-e261bdd5f345" visible="True" title="Zet Universe Technical Requirements Document" />
     <Topic id="0fe31055-eea4-4dfe-bdcc-d11743749678" visible="True" title="Zet Universe System Architecture" />
   </Topic>
+  <Topic id="a129330d-61fe-4d24-af3d-fe0f4a789cd1" visible="True" isExpanded="true" title="Zet Universe Ontology and Kinds" tocTitle="Zet Universe Ontology and Kinds">
+    <Topic id="c701191d-03b6-4610-9ae8-24419801bdd0" visible="True" title="Ontology: Origins and Hierarchy" />
+    <Topic id="5b1b08cc-1676-47c0-84f7-f4b3402147d2" visible="True" title="Building Blocks" />
+    <Topic id="0eefe9fa-3381-4dcd-a12f-05f495d5252e" visible="True" title="Entities and Kinds" />
+    <Topic id="c1541470-3973-41ba-bbdd-c1e5f8f2080c" visible="True" title="Properties and Relationships" />
+    <Topic id="8717508e-cad5-442f-a566-48fa356c7efa" visible="True" isSelected="true" title="Built-in Kinds" />
+    <Topic id="9da6fad5-c77e-491a-86b0-65d17283ad70" visible="True" title="Extending Ontology" />
+  </Topic>
+  <Topic id="efc532e9-2c70-41f8-a420-97e2b2cd852e" visible="True" title="Zet Universe Semantic Pipeline" />
   <Topic id="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b" visible="True" title="Zet Universe APIs" />
-  <Topic id="a129330d-61fe-4d24-af3d-fe0f4a789cd1" visible="True" title="Zet Universe Kinds System" tocTitle="Zet Universe Kinds System" />
-  <Topic id="bdeef41a-ab73-4399-b007-1edac3eedaf1" visible="True" title="Zet Universe Ontology Extensibility" />
-  <Topic id="efc532e9-2c70-41f8-a420-97e2b2cd852e" visible="True" />
   <Topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" visible="True" isExpanded="true" title="How Do I...">
     <Topic id="ee152bc4-c010-48dc-8c03-d84b730e4d30" visible="True" isExpanded="true" title="How Do I Get Started With Zet Universe">
-      <Topic id="f5459c77-4896-4b2a-893f-d5c78a32b527" visible="True" isSelected="true" title="How To Set Up and Build a Plugin that Uses Zet Universe" />
+      <Topic id="f5459c77-4896-4b2a-893f-d5c78a32b527" visible="True" title="How To Set Up and Build a Plugin that Uses Zet Universe" />
     </Topic>
   </Topic>
   <Topic id="259c4f8b-fca0-46e0-a4fa-eab0f3fa39a0" visible="True" isExpanded="true" title="Zet Universe Samples">

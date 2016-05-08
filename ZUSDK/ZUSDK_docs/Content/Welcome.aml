@@ -2,7 +2,7 @@
 <topic id="485024b5-1f82-4616-a9d8-b8b55fc20ad1" revisionNumber="1">
 	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<introduction>
-			<para>Zet Universe platform (cloud + client) enables <legacyBold>Data Integration, Organization, Search, and Analysis</legacyBold> of the end user and enterprise content. The following essential functions are required:</para>
+			<para>Zet Universe platform (cloud + client) enables <legacyBold>Data Integration, Organization, Search, and Analysis</legacyBold> of the end user and enterprise content. Zet Universe Platform implements the following essential functions:</para>
 
 			<list class="bullet">
 				<listItem>

@@ -46,10 +46,6 @@ namespace ZU
 			[KindMetadata("Article Media", "Article", Constants.Kinds.Document)]
 			public const string Article = "ZetUniverse.Kinds.Documents.Article";
 
-			[Description("Author")]
-			[KindMetadata("Author Writer Creator People", "Author", Constants.Kinds.Person)]
-			public const string Author = "ZetUniverse.Kinds.People.Author";
-
 			[Description("Book")]
 			[KindMetadata("Book Media", "Book", Constants.Kinds.Document)]
 			public const string Book = "ZetUniverse.Kinds.Documents.Book";
@@ -100,10 +96,10 @@ namespace ZU
 
 
 			/// <summary>
-			/// Link is the basis of the relationship management and semantic structuring within Zet Universe.
+			/// Link represents a link to a given entity, placed in the same or a different Model.
 			/// </summary>
 			[Description("Link")]
-			[KindMetadata("Link Relationship Relation", "Link", Constants.Kinds.Property)]
+			[KindMetadata("Link Relationship Relation", "Link", Constants.Kinds.Kind)]
 			public const string Link = "ZetUniverse.Kinds.Link";
 			
 			/// <summary>
@@ -146,7 +142,7 @@ namespace ZU
 			/// This is the class of musical playlists that may be created by Zet Universe users. A Playlist is composed of a number of musical works. A Playlist is a kind of List.
 			/// </summary>
 			[Description("Music Playlist")]
-			[KindMetadata("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist", Constants.Kinds.Music)]
+			[KindMetadata("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist", Constants.Kinds.List)]
 			public const string MusicalPlaylist = "ZetUniverse.Kinds.Media.Music.MusicalPlaylist";
 
 			[Description("Organization")]
@@ -862,69 +858,91 @@ namespace ZU
 
 		public static class Topics
 		{
+			/// <summary>
+			/// /Classifications/
+			/// </summary>
 			public static class Classifications
 			{
-				/// <summary>
-				/// /Classification/
-				/// </summary>
-				public const string Name = "/Classifications/";
 				/// <summary>
 				/// /Classifications/Kinds/
 				/// </summary>
 				public const string Kinds = "/Classifications/Kinds/";
 
 				/// <summary>
-				/// /Classifications/VisualClusters/
+				/// /Classifications/Kinds/VisualClusters/
 				/// </summary>
-				public const string VisualClusters = "/Classifications/VisualClusters/";
+				public const string VisualClusters = "/Classifications/Kinds/VisualClusters/";
 				/// <summary>
-				/// /Classifications/WebPages/
+				/// /Classifications/Kinds/WebPages/
 				/// </summary>
-				public static string WebPages = "/Classifications/WebPages/";
+				public const string WebPages = "/Classifications/Kinds/WebPages/";
 			}
 
 			/// <summary>
 			/// /Content/
 			/// </summary>
-			public static class Content
+			public static class Properties
 			{
 				/// <summary>
 				/// /Content/FullText/
 				/// Required for saving text to Full-Text Search Indexing Service
 				/// </summary>
-				public const string FullText = "/Content/FullText/";
-				public const string Title = "/Content/Title/";
-				public const string Thumbnail = "/Content/Thumbnail/";
+				public const string FullText = "/Properties/FullText/";
+				/// <summary>
+				/// /Content/Title/
+				/// </summary>
+				public const string Title = "/Properties/Title/";
+				/// <summary>
+				/// /Content/Thumbnail/
+				/// </summary>
+				public const string Thumbnail = "/Properties/Thumbnail/";
+				/// <summary>
+				/// /Content/Keyphrases/
+				/// </summary>
+				public const string Keyphrases = "/Properties/Keyphrases/";
+
 			}
 
+			/// <summary>
+			/// /Relationships/
+			/// </summary>
+			public const string Relationships = "/Relationships/";
+
+			///// <summary>
+			///// /Relationships/
+			///// </summary>
+			//public static class Relationships
+			//{
+			//	/// <summary>
+			//	/// /Relationships/
+			//	/// </summary>
+				
+			//}
+
+			/// <summary>
+			/// /Incoming/
+			/// </summary>
 			public static class Incoming
 			{
 				/// <summary>
-				/// /Incoming/
+				/// /Incoming/Files/Documents/
 				/// </summary>
-				public const string Name = "/Incoming/";
-				/// <summary>
-				/// /Incoming/Files/
-				/// </summary>
-				public const string Files = "/Incoming/Files/";
-				/// <summary>
-				/// /Incoming/NormalizeText/
-				/// </summary>
-				public const string NormalizedText = "/Incoming/NormalizedText/";
-				/// <summary>
-				/// /Incoming/Keyphrases/
-				/// </summary>
-				public const string Keyphrases = "/Incoming/Keyphrases/";
+				public const string Documents = "/Incoming/Files/Documents/";
 
-				public const string ExtractedRelationships = "/Incoming/ExtractedRelationships/";
+				/// <summary>
+				/// /Incoming/WebPages/
+				/// </summary>
+				public const string WebPages = "/Incoming/Kinds/WebPages/";
 
-				public static class Kinds
-				{
-					public const string GenericFile = "/Incoming/Kinds/GenericFile/";
-					public const string WebPage = "/Incoming/Kinds/WebPage/";
-				}
+				/// <summary>
+				/// /Incoming/Files/Generic/
+				/// </summary>
+				public const string Generic = "/Incoming/Files/Generic/";
 			}
 
+			/// <summary>
+			/// /ActivityHistory/
+			/// </summary>
 			public static class ActivityHistory
 			{
 				/// <summary>

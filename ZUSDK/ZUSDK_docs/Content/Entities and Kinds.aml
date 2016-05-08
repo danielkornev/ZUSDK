@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="0eefe9fa-3381-4dcd-a12f-05f495d5252e" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+
+		<para>
+			<legacyBold>Knowledge</legacyBold> within the Zet Universe is <legacyBold>represented</legacyBold> as <legacyBold>entities</legacyBold> on storage level and <legacyBold>kinds</legacyBold> on ontology level.
+		</para>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+	  <section address="Entities">
+		  <title>Entities</title>
+		  <content>
+			  <para>
+				  Entity is the "atom" of information within Zet Universe. It incapsulates information about any kind of the everyday things like people, documents, e-mail, and so on.
+			  </para>
+
+			  <para>
+				  A special property, <legacyBold>Kind</legacyBold>, is used to characterize the semantic meaning of the particular Entity. Entities are <legacyBold>extracted</legacyBold> and/or derived from the provided data sources or <legacyBold>emergent</legacyBold> from collections of entities and properties.
+			  </para>
+		  </content>
+	  </section>
+
+	  <section address="Kinds">
+		  <title>Kinds</title>
+		  <content>
+			  <para>
+				  While Entity is a practical implementation of the Zet Universe foundational data type, Kind could be seen as both a classification term used to describe a particular Entity, and as an element of the ontology which is a mechanism used to build a categorization of the everyday things, as well as the specific domains (think Customers in CRM).
+			  </para>
+
+			  <para>
+				  <legacyBold>Kinds</legacyBold> are flexible representations of both every day and enterprise-specific things: <legacyBold>people</legacyBold>, <legacyBold>organizations</legacyBold>, <legacyBold>places</legacyBold>, <legacyBold>events</legacyBold>, <legacyBold>media</legacyBold>, etc.
+			  </para>
+		  </content>
+	  </section>
+
+	  <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

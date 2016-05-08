@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="5b1b08cc-1676-47c0-84f7-f4b3402147d2" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+
+		<para>
+			We live surrounded with things. These things can be physical ones coming from our environment, or they can be products of our imagination, or, finally, be digital objects created as elements of virtual world built by computer applications, websites and games. Things we deal with, starting from documents and other files in our folders, to users in Facebook and emails in our inbox, seem to be natural to us. We constantly make different interactions with these things, switching from physical world to a virtual one back-n-force, referencing to them in our endless collaboration with friends and work colleagues. The patterns of interacting with digital objects were brought from the physical world by Internet and computer pioneers, and now these patterns are highly interconnected as we constantly transfer our experiences between our real and digital lives.
+		</para>
+    </introduction>
+
+	  <section address="ZetUniverseOntology">
+		  <title>Zet Universe Ontology</title>
+		  <content>
+			  <para>Instead of computer strict understanding of classes and instances, things in Zet Universe are more familiar to the user; things are content.</para>
+
+			  <para>In Zet Universe, we use the terms Entities and Kinds to speak of everyday things that have been augmented with rich metadata.</para>
+
+			  <para>
+				  <legacyBold>Entities</legacyBold> represent actual instances of data stored within the Zet Universe semantic storage platform, while <legacyBold>Kinds</legacyBold> represent semantic meaning of these Entities, and form a coherent vocabulary called the Zet Universe Ontology.
+			  </para>
+		  </content>
+	  </section>
+
+	  <section address="BuildingBlocks">
+		  <title>
+			  Building Blocks
+		  </title>
+		  <content>
+			  <para>
+				  There are many ways to build an Ontology and we have already discussed a couple above. In general, Ontologies have up to three basic information carriers:
+			  </para>
+
+			  <list class="bullet">
+				  <listItem>
+					  <para>
+						  Objects
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  Properties
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  Relationships
+					  </para>
+				  </listItem>
+			  </list>
+
+			  <para>
+				  Also referred to as ‘Actors’, ‘Attributes’ and ‘Links’ especially in SNA (Social Network Analysis).
+			  </para>
+
+			  <para>
+				  At Zet Universe, Inc., we allow for the use of all three information types. However, we understand Objects as a combination of <legacyBold>Entities</legacyBold> on the storage level and <legacyBold>Kinds</legacyBold> on the ontology level. Kinds can be built-in (say, Document, Person, Video, Audio, Web Page, etc.), or registered by a first-party or a third-party provider (say, Sticky Note, or Dropbox Folder).
+			  </para>
+		  </content>
+	  </section>
+
+
+
+	  <relatedTopics>
+		<link xlink:href="9da6fad5-c77e-491a-86b0-65d17283ad70">Extending Ontology</link>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

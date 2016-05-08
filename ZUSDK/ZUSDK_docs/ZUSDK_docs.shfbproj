@@ -69,28 +69,28 @@
     <ComponentConfigurations>
       <ComponentConfig id="Syntax Component" enabled="True" xmlns="">
         <component id="Syntax Component">
-  <syntax input="/document/reference" output="/document/syntax" renderReferenceLinks="true" />
-  <generators>
+          <syntax input="/document/reference" output="/document/syntax" renderReferenceLinks="true" />
+          <generators>
     {@SyntaxFilters}
 </generators>
-  <containerElement name="codeSnippetGroup" addNoExampleTabs="true" includeOnSingleSnippets="true" groupingEnabled="{@CodeSnippetGrouping}" />
-  <configurations>
-    <generator id="C#" />
-    <generator id="Visual Basic">
-      <includeLineContinuation value="false" />
-    </generator>
-    <generator id="Visual Basic Usage">
-      <includeLineContinuation value="false" />
-    </generator>
-    <generator id="Managed C++" />
-    <generator id="F#" />
-    <generator id="J#" />
-    <generator id="JScript" />
-    <generator id="JavaScript" />
-    <generator id="XAML Usage" />
-    <generator id="ASP.NET" />
-  </configurations>
-</component>
+          <containerElement name="codeSnippetGroup" addNoExampleTabs="true" includeOnSingleSnippets="true" groupingEnabled="{@CodeSnippetGrouping}" />
+          <configurations>
+            <generator id="C#" />
+            <generator id="Visual Basic">
+              <includeLineContinuation value="false" />
+            </generator>
+            <generator id="Visual Basic Usage">
+              <includeLineContinuation value="false" />
+            </generator>
+            <generator id="Managed C++" />
+            <generator id="F#" />
+            <generator id="J#" />
+            <generator id="JScript" />
+            <generator id="JavaScript" />
+            <generator id="XAML Usage" />
+            <generator id="ASP.NET" />
+          </configurations>
+        </component>
       </ComponentConfig>
     </ComponentConfigurations>
     <NamespaceSummaries>
@@ -123,18 +123,24 @@
     <Folder Include="media" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CNAME" />
     <None Include="Content\App Motivating Example.aml" />
+    <None Include="Content\Built-In Kinds.aml" />
+    <None Include="Content\Entities and Kinds.aml" />
+    <None Include="Content\Extending Ontology.aml" />
     <None Include="Content\How Do I Get Started With Zet Universe.aml" />
     <None Include="Content\How Do I....aml" />
     <None Include="Content\How To Set Up and Build a Plugin that Uses Zet Universe.aml" />
+    <None Include="Content\Zet Universe Ontology Building Blocks.aml" />
+    <None Include="Content\Ontology Origins and Hierarchy.aml" />
     <None Include="Content\Processor Motivating Example.aml" />
+    <None Include="Content\Properties and Relationships.aml" />
     <None Include="Content\VersionHistory\v2.0.5971.29607.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />
     <None Include="Content\Zet Universe Technical Requirements Document.aml" />
     <None Include="Content\Zet Universe Glossary.aml" />
-    <None Include="Content\Zet Universe Kinds System.aml" />
-    <None Include="Content\Zet Universe Ontology Extensibility.aml" />
+    <None Include="Content\Zet Universe Ontology and Kinds.aml" />
     <None Include="Content\Zet Universe APIs.aml" />
     <None Include="Content\Zet Universe Samples.aml" />
     <None Include="Content\Zet Universe Semantic Pipeline.aml" />
@@ -147,6 +153,22 @@
     <Content Include="icons\Help.png" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="media\Ontologies-6.PNG">
+      <ImageId>Ontologies-6</ImageId>
+      <AlternateText>Ontologies-6</AlternateText>
+    </Image>
+    <Image Include="media\pizza2.png">
+      <ImageId>pizza2</ImageId>
+      <AlternateText>pizza 2</AlternateText>
+    </Image>
+    <Image Include="media\Topics.PNG">
+      <ImageId>Topics</ImageId>
+      <AlternateText>Topics</AlternateText>
+    </Image>
+    <Image Include="media\ZUSemanticPipeline-Small.PNG">
+      <ImageId>ZUSemanticPipeline-Small</ImageId>
+      <AlternateText>Semantic Pipeline</AlternateText>
+    </Image>
     <Image Include="media\ZUConceptualArchitecture.PNG">
       <ImageId>ZUConceptualArchitecture</ImageId>
       <AlternateText>ZUConceptual Architecture</AlternateText>
@@ -159,8 +181,7 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>xcopy .\CNAME ..\..\..\zusdk_wiki\ZUSDK.gh_pages\zu-docs\</PostBuildEvent>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 </Project>

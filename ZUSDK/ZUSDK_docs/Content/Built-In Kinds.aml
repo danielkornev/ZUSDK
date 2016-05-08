@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="8717508e-cad5-442f-a566-48fa356c7efa" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+
+		<para>
+			Although Zet Universe is agnostic to the data models of its users, it brings the list of the built-in <legacyBold>Kinds</legacyBold> that bring familiar concepts of the everyday things:
+		</para>
+
+	</introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+	  <section address="BuiltInKinds">
+		  <title>
+			  Built-In Kinds
+		  </title>
+		  <content>
+			  
+			  <table>
+				  <tableHeader>
+					  <row>
+						  <entry>
+							  <para>
+								  Kind
+							  </para>
+						  </entry>
+
+						  <entry>
+							  <para>
+								  Parent Kind
+							  </para>
+						  </entry>
+
+						  <entry>
+							  <para>
+								  Semantic Namespace Name
+							  </para>
+						  </entry>
+
+						  <entry>
+							  <para>
+								  Description
+							  </para>
+						  </entry>
+					  </row>
+				  </tableHeader>
+
+				  <row>
+					  <entry>
+						  <para>Agent</para>
+					  </entry>
+
+					  <entry>
+						  <para>Kind</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Agent
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  <legacyBold>Agents</legacyBold> represent real people, as well as artificial intelligence systems that operate within the Zet Universe platform. Artificial intelligence systems are generally represented as the installed apps/accounts.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Application</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Zet Universe
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.System.Application
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  A built-in or a third-party <legacyBold>ZApp plugin</legacyBold> that connects Zet Universe with an external data source, and optionally provides it with the custom definitions of <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, and <legacyBold>Relationships</legacyBold>
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Appointment</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Calendar
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Calendar.Appointment
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>App Space</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Project Space
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.AppSpace
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  App Space is an organizing concept designed for keeping app-specific entities separated from other apps.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Article</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Document
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Documents.Article
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Book</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Document
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Documents.Book
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Call</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Communication
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Communications.Call
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Calendar</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Communication
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Calendar
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Communication</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Communication
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Document</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Media
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Documents.Document
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  <legacyBold>Remark:</legacyBold> originally, documents had their own separate namespace, but later have been moved to the Media namespace. The namespace name have been preserved for the backwards compatibility.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Email</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Communication
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Communications.Email
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Folder</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Folder
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Generic File</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.File
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Graph View</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  View
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Views.GraphView
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Instant Message</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Communication
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Communications.InstantMessage
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Kind</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Thing (OWL)
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  <legacyBold>Kinds</legacyBold> are flexible representations of both every day and enterprise-specific things: <legacyBold>people</legacyBold>, <legacyBold>organizations</legacyBold>, <legacyBold>places</legacyBold>, <legacyBold>events</legacyBold>, <legacyBold>media</legacyBold>, etc.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Link</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Link
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Link represents a link to a given entity, placed in the same or a different Model.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>List</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.List
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  List is a fundamental organizing and grouping concept in Zet Universe. List represents a 1D group of things where order of things is not explicitely defined.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Location</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Location
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Locations.Location
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Meeting</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Calendar
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Calendar.Meeting
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Media</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Media
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Movie</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Video
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Media.Video.Movie
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  This is the class of motion pictures created by recording using cameras or by creating images using animation or other special techniques.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Music</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Media
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Media.Music
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  The class of artifacts that are closely related to music. Musical artifacts include compositions themselves and related artifacts such as cover art on albums, written scores, lyrics, and other things.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Music Playlist</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  List
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Media.Music.MusicalPlaylist
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  This is the class of musical playlists that may be created by Zet Universe users. A Playlist is composed of a number of musical works. A Playlist is a kind of <legacyBold>List</legacyBold>.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Organization</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Agent
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Organization
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>PDF Document</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Document
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Documents.PdfDocument
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Person</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Agent
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.People.Person
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>People Group</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Agent
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.People.Group
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Generic list of people organized into a group.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Picture</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Media
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Media.Picture
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Place</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Location
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Locations.Place
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>PPTX Document</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Document
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Documents.PptxDocument
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Property</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  rdfs:Resource
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  owl:Property
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Project Space</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Space
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  (Project) Space is a fundamental organizing and grouping concept in Zet Universe. It contains individual entities grouped into visual clusters, or into lists. Every single entity always belongs to one or more visual clusters.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Recorded TV</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Video
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Media.Video.RecordedTV
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Recorded TVs are a special kind of entities that represent TVs recorded using Windows Media Center. Recorded TV is a kind of Video.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Thing</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  rdfs:Resource
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  owl:Thing
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>User</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Agent
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.UserIdentificator
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Represents a Zet Universe user (be that a person or an AI bot)
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>View</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Views.View
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Visual Cluster</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Topic
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Visual Cluster is a fundamental organizing and grouping concept in Zet Universe. Visual Cluster represents a 2D group of things where relative location of things is explicitely defined by user or automatic layout algorithm.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Video</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Media
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.Media.Video
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Movies, television programs, YouTube videos, and any other recorded "moving picture" is classified as a video.
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Web Page</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Media
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.WebPage
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Web Page is a Media
+						  </para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>Zet Universe</para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Kind
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  ZetUniverse.Kinds.System
+						  </para>
+					  </entry>
+
+					  <entry>
+						  <para>
+							  Zet Universe is the name of the information organization, tracking, analysis, and retrieval system.
+						  </para>
+					  </entry>
+				  </row>
+
+			  </table>
+
+		  </content>
+	  </section>
+
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

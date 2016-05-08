@@ -12,26 +12,72 @@
 
     <introduction>
       <para>
-		  Content is passed to and from Zet Universe as Entities. From a developer’s perspective, Entities are metadata elements, characterized by the <legacyBold>Kind</legacyBold> and an optional URI as a link to an external resource. From a user’s perspective, Entities (characterized by their Kinds) are everyday things that have semantically appropriate behavior, appearance, and actions.
+		  Content is passed to and from Zet Universe as Entities. From a developer’s perspective, Entities are metadata elements, characterized by the <legacyBold>Kind</legacyBold> and an optional URI as a link to an external resource. From a user’s perspective, Entities (characterized by their Kinds) are everyday things that have semantically appropriate behavior, appearance, and actions. To access <legacyBold>Entities</legacyBold> in Zet Universe, you need to write a plugin.
 	  </para>
     </introduction>
 
     <!-- Optional procedures followed by optional code example but must have
          at least one procedure or code example -->
     <procedure>
-      <title>Procedure title</title>
-      <steps class="ordered">
-        <step>
-          <content>
-            <para>First step</para>
-          </content>
-        </step>
-        <step>
-          <content>
-            <para>Second step</para>
-          </content>
-        </step>
-      </steps>
+      <title>Create new C# Project for your Plugin in Visual Studio</title>
+		<steps class="ordered">
+			<step>
+				<content>
+					<para>
+						Open Visual Studio. From the <legacyBold>File</legacyBold> menu choose <legacyBold>New</legacyBold>, then choose <legacyBold>Project</legacyBold>.
+					</para>
+				</content>
+			</step>
+
+			<step>
+				<content>
+					<para>
+						In the Project types pane, open or expand <legacyBold>Visual C#</legacyBold>, then - <legacyBold>Windows</legacyBold>, then - <legacyBold>Classic Desktop</legacyBold>
+					</para>
+				</content>
+			</step>
+
+			<step>
+				<content>
+					<para>
+						In the <legacyBold>Templates</legacyBold> pane, select <legacyBold>Class Library</legacyBold>.
+					</para>
+				</content>
+			</step>
+
+			<step>
+				<content>
+					<para>
+						In the <legacyBold>Name</legacyBold> box, type a meaningful name for your plugin.
+					</para>
+				</content>
+			</step>
+
+			<step>
+				<content>
+					<para>
+						In the <legacyBold>Location</legacyBold> box, enter the directory in which you want to save the project, or click <legacyBold>Browse</legacyBold> to navigate to the location.
+					</para>
+				</content>
+			</step>
+
+			<step>
+				<content>
+					<para>
+						The project is created and the Visual C# Editor is open showing Class1 of the project.
+					</para>
+				</content>
+			</step>
+
+			<step>
+				<content>
+					<para>
+						To work with Zet Universe <legacyBold>Kinds</legacyBold>, you must add a reference to <legacyBold>ZU.Core.Developer</legacyBold> NuGet package. To do this, select <legacyBold>Add Reference</legacyBold> from the <legacyBold>Project</legacyBold> menu. 
+					</para>
+				</content>
+			</step>
+
+		</steps>
       <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
 
