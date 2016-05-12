@@ -34,77 +34,26 @@
 					  </mediaLink>-->
 
 			  <para>
-				  Both developers and end users can extend the default Ontology. Developers can do that by adding and registering definitions of their custom <legacyBold>Kinds</legacyBold> as part of their plugins, while end users can use the built-in <legacyBold>Ontology Editor</legacyBold> (to be provided in the later releases).
+				  Both developers and end users can extend the default Ontology. Developers can do that by adding and registering definitions of their custom <legacyBold>Kinds</legacyBold>, <legacyBold>Relationships</legacyBold>, and Properties as part of their plugins, while end users can use the built-in <legacyBold>Ontology Editor</legacyBold> (to be provided in the later releases).
 			  </para>
 
-			  <para>
-				  As a developer, you can learn more about extending Ontology in the corresponding topic, <link xlink:href="9da6fad5-c77e-491a-86b0-65d17283ad70">Extending Ontology</link>.
-			  </para>
 		  </content>
 			  
 	  </section>
 
 	  <section>
-		  <title>Custom Kinds, Properties, and Relationships</title>
+		  <title>Ontology Editor</title>
 		  <content>
 			  <para>
-				  You use custom <legacyBold>Kinds</legacyBold>, <legacyBold>Relationships</legacyBold>, and Properties to create your own types or extend existing types in Zet Universe. This section describes how to create a custom <legacyBold>Kind</legacyBold>, <legacyBold>Relationship</legacyBold>, and Property.
-
+				  As a user, you can switch to Ontology Editor in the main window, to navigate through the hierarchy of the built-in and third-party Kinds, see their respective Properties and Relationships.
 			  </para>
+
+			  <mediaLink>
+				  <image xlink:href="Ontologies-6"/>
+			  </mediaLink>
 		  </content>
-
-		  <sections>
-			  <section address="CustomKind">
-				  <title>Registering Custom Kind</title>
-				  <content>
-					  <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-					  <para>Add one or more sections with content</para>
-				  </content>
-				  <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-			  </section>
-
-			  <section address="CustomRelationship">
-				  <title>Registering Custom Relationship</title>
-				  <content>
-					  <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-					  <para>Add one or more sections with content</para>
-				  </content>
-				  <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-			  </section>
-		  </sections>
 	  </section>
+
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
@@ -112,6 +61,11 @@
    
 
     <relatedTopics>
+		<link topicType_id="DAC3A6A0-C863-4E5B-8F65-79EFC6A4BA09" xlink:href="7d16a426-9e57-42a1-90f1-80d8298cf755">How Do I Extend Ontology</link>
+		<link topicType_id="DAC3A6A0-C863-4E5B-8F65-79EFC6A4BA09" xlink:href="825d8b37-4782-4f5c-9302-dddea15b38f2">How Do I Define Custom Kind</link>
+		<link topicType_id="DAC3A6A0-C863-4E5B-8F65-79EFC6A4BA09" xlink:href="">How Do I Define Custom Relationship</link>
+		<!--<link xlink:href="">How Do I Define Custom Property</link>-->
+		
       <!-- One or more of the following:
            - A local link
            - An external link

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" revisionNumber="1">
-	<developerConceptualDocument
+<topic id="7d16a426-9e57-42a1-90f1-80d8298cf755" revisionNumber="1">
+	<developerSDKTechnologyOverviewArchitectureDocument
 	  xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -11,33 +11,40 @@
     -->
 
     <introduction>
-      <para>This section provides code-intensive examples of common Zet Universe programming tasks. </para>
+      <para>
+		  <legacyBold>Kinds</legacyBold>, <legacyBold>Properties</legacyBold>, and <legacyBold>Relationships</legacyBold> are the foundational elements of the Zet Universe Ontology, and as developer you can introduce new Kinds, Properties, and Relationships to form ontologies for the custom domains.
+	  </para>
     </introduction>
 
 		<section>
 			<title>In This Section</title>
 			<content>
-				<para>
-					<link xlink:href="ee152bc4-c010-48dc-8c03-d84b730e4d30">How Do I Get Started With Zet Universe</link>
-				</para>
-				
+
 				<list class="bullet">
 					<listItem>
 						<para>
-							<link xlink:href="f5459c77-4896-4b2a-893f-d5c78a32b527">How To Set Up and Build a Plugin that Uses Zet Universe</link>
+							<link xlink:href="825d8b37-4782-4f5c-9302-dddea15b38f2">How Do I Define Custom Kind</link>
 						</para>
 					</listItem>
 
 					<listItem>
 						<para>
-							<link xlink:href="407c25cf-2499-4fa3-9778-1c094be37fc9">How Do I Implement ZApp Plugin</link>
+							How Do I Define Custom Property (placeholder)
+						</para>
+					</listItem>
+
+					<listItem>
+						<para>
+							<link xlink:href="407c25cf-2499-4fa3-9778-1c094be37fc9">How Do I Define Custom Relationship</link>
 						</para>
 					</listItem>
 				</list>
-				
+
+
+
 			</content>
 		</section>
-
+		
     <relatedTopics>
       <!-- One or more of the following:
            - A local link
@@ -71,5 +78,5 @@
       <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
       -->
     </relatedTopics>
-  </developerConceptualDocument>
+  </developerSDKTechnologyOverviewArchitectureDocument>
 </topic>

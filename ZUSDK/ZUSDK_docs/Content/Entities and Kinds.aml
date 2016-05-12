@@ -52,6 +52,9 @@
 	  </section>
 
 	  <relatedTopics>
+		  <link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="5b1b08cc-1676-47c0-84f7-f4b3402147d2">Building Blocks</link>
+		  <link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="c1541470-3973-41ba-bbdd-c1e5f8f2080c">Properties and Relationships</link>
+		  <link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="9da6fad5-c77e-491a-86b0-65d17283ad70">Extending Ontology</link>
       <!-- One or more of the following:
            - A local link
            - An external link

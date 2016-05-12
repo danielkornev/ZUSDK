@@ -72,14 +72,44 @@
 			<step>
 				<content>
 					<para>
-						To work with Zet Universe <legacyBold>Kinds</legacyBold>, you must add a reference to <legacyBold>ZU.Core.Developer</legacyBold> NuGet package. To do this, select <legacyBold>Add Reference</legacyBold> from the <legacyBold>Project</legacyBold> menu. 
+						To work with Zet Universe <legacyBold>Kinds</legacyBold>, you must add a reference to 
+						<externalLink>
+							<linkText>
+								ZU.Core.Developer
+							</linkText>
+							<linkAlternateText>
+								ZU.Core.Developer NuGet package
+							</linkAlternateText>
+							<linkUri>
+								https://www.nuget.org/packages/ZU.Core.Developer/
+							</linkUri>
+						</externalLink> NuGet package. 
+						To do this, select <legacyBold>Manage NuGet Packages...</legacyBold> from the <legacyBold>Project</legacyBold> menu. 
 					</para>
 				</content>
 			</step>
 
+			<step>
+				<content>
+					<para>
+						Depending on a kind of a plugin you want to build, <legacyBold>ZApp</legacyBold> or <legacyBold>Processor</legacyBold>, implement the necessary interface, <legacyBold>ZU.Plugins.IZetApp</legacyBold> or <legacyBold>ZU.Plugins.IZetProcessor</legacyBold>, respectively.
+					</para>
+				</content>
+
+			</step>
+
+
 		</steps>
       <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
+
+	  <buildInstructions>
+		  <content>
+			  <para>
+				  The MSBuild build environment is integrated into Visual Studio and will automatically create project files with the extension "proj". A C# project file created automatically by Visual Studio has the ".csproj" extension, and a Visual Basic project file created automatically by Visual Studio has the ".vbproj" extension. Use <legacyBold>Build</legacyBold> menu, and <legacyBold>Build Solution</legacyBold> menu item to build your project.
+			  </para>
+		  </content>
+	  </buildInstructions>
 
     <!-- <codeExample>Optional code example</codeExample> -->
 
@@ -92,6 +122,7 @@
     <!-- <security>Optional discussion of security issues.</security> -->
 
     <relatedTopics>
+		<link topicType_id="DAC3A6A0-C863-4E5B-8F65-79EFC6A4BA09" xlink:href="407c25cf-2499-4fa3-9778-1c094be37fc9">How Do I Implement ZApp Plugin</link>
       <!-- One or more of the following:
            - A local link
            - An external link

@@ -28,13 +28,28 @@
 	  <section>
 		  <title>In This Section</title>
 		  <content>
-			  <para>
-				  <link xlink:href="f5459c77-4896-4b2a-893f-d5c78a32b527">How To Set Up and Build a Plugin that Uses Zet Universe</link>
-			  </para>
+
+			  <list class="bullet">
+				  <listItem>
+					  <para>
+						  <link xlink:href="f5459c77-4896-4b2a-893f-d5c78a32b527">How Do I Set Up and Build a Plugin that Uses Zet Universe</link>
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  <link xlink:href="407c25cf-2499-4fa3-9778-1c094be37fc9">How Do I Implement ZApp Plugin</link>
+					  </para>
+				  </listItem>
+			  </list>
+			  
+			  
+			
 		  </content>
 	  </section>
 
     <relatedTopics>
+		<link xlink:href="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b">Zet Universe APIs</link>
       <!-- One or more of the following:
            - A local link
            - An external link

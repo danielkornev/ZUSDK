@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="825d8b37-4782-4f5c-9302-dddea15b38f2" revisionNumber="1">
+  <developerHowToDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+		<para>
+			You use custom <legacyBold>Kinds</legacyBold>, <legacyBold>Relationships</legacyBold>, and Properties to create your own types or extend existing types in Zet Universe. This section describes how to create a custom <legacyBold>Kind</legacyBold>.
+		</para>
+    </introduction>
+
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <procedure>
+      <title>Define and Register Your Custom Kind</title>
+      <steps class="ordered">
+        <step>
+			<content>
+				<para>
+					Declare new <legacyBold>AppEntityKindDefinition</legacyBold>
+				</para>
+			</content>
+        </step>
+        <step>
+          <content>
+            <para>Set it's AppId to your plugin's <legacyBold>Id</legacyBold></para>
+          </content>
+        </step>
+		  <step>
+			  <content>
+				  <para>
+					  Set it's AppTitle to your plugin's <legacyBold>Title</legacyBold>
+				  </para>
+			  </content>
+		  </step>
+		  <step>
+			  <content>
+				  <para>
+					  Define it's Plural and Singular Display Names in lower case
+				  </para>
+			  </content>
+		  </step>
+		  <step>
+			  <content>
+				  <para>
+					  Define Full-Text aliases that will be used to identify your Kind in search (e.g., "Picture Image Photo" for "Picture" kind)
+				  </para>
+			  </content>
+		  </step>
+		  <step>
+			  <content>
+				  <para>
+					  Define the Namespace Name for your new Kind
+				  </para>
+			  </content>
+		  </step>
+		  <step>
+			  <content>
+				  <para>
+					  Set the Parent Kind for your new Kind. If in doubt, use <codeInline>
+						  <codeFeaturedElement>
+							  ZU.Constants.Kinds.Kind
+						  </codeFeaturedElement>
+					  </codeInline>
+					  as the parent Kind.
+				  </para>
+			  </content>
+		  </step>
+		  <step>
+			  <content>
+				  <para>
+					  Decide if the Entities of your new Kind will participate in the Visual Clusters (and in the Topographic Clusters Visualization), or not.
+				  </para>
+			  </content>
+		  </step>
+		  <step>
+			  <content>
+				  <para>
+					  <legacyItalic>Advanced (Optional):</legacyItalic> set custom WPF Data Template for your Kind, if you find it required. Otherwise, the default template (FileBackingEntity) will be used.
+				  </para>
+			  </content>
+		  </step>
+		  <step>
+			  <content>
+				  <para>
+					  Provide Zet Universe with the default Thumbnail used to visually represent your Kind.
+				  </para>
+			  </content>
+		  </step>		  
+		  <step>
+			  <content>
+				  <para>
+					  Register your Kind using <legacyBold>IAppManager.RegisterKind()</legacyBold> API. Note that you will need to provide a callback for opening Entities with your new Kind.
+				  </para>
+			  </content>
+		  </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+
+	  <codeExample>
+		  <code source="Content\Code\RegisterKind.cs" language="c#"/>
+	  </codeExample>
+
+    <!-- <codeExample>Optional code example</codeExample> -->
+
+    <!-- <buildInstructions>Optional instructions for building a
+         code example.</buildInstructions> -->
+
+    <!-- <robustProgramming>Optional discussion of error handling and other
+         issues related to writing solid code.</robustProgramming> -->
+
+    <!-- <security>Optional discussion of security issues.</security> -->
+
+    <relatedTopics>
+		<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="9da6fad5-c77e-491a-86b0-65d17283ad70">Extending Ontology</link>
+		<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="0eefe9fa-3381-4dcd-a12f-05f495d5252e">Entities and Kinds</link>
+		<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="8717508e-cad5-442f-a566-48fa356c7efa">Built-In Kinds</link>
+
+		<link topicType_id="DAC3A6A0-C863-4E5B-8F65-79EFC6A4BA09" xlink:href="ee16f33e-c89b-47c3-8237-b481674f2399">How Do I Define Custom Relationship</link>
+
+		<!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>

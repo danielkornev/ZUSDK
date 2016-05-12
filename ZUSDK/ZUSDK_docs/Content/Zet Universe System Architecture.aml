@@ -104,6 +104,10 @@
 				<para>
 					Semantic Processing Pipeline provides all required services for extracting, analyzing, and enriching the data to transform it into the actionable knowledge.
 				</para>
+
+				<para>
+					See <link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="efc532e9-2c70-41f8-a420-97e2b2cd852e">Zet Universe Semantic Pipeline</link> for details.
+				</para>
 			</content>
 		</section>
 
@@ -160,6 +164,10 @@
         <autoOutline /> -->
 				<para>Zet Universe semantic model provides some of the technical innovations of Zet Universe, including <legacyBold>entities</legacyBold>, dynamic <legacyBold>properties</legacyBold>, <legacyBold>relationships</legacyBold>, <legacyBold>model</legacyBold> containers, and the ability to extend the built-in <legacyBold>ontology</legacyBold>  of the everyday <legacyBold>kinds</legacyBold>  of data. Zet Universe includes kinds for everyday information such as documents, e-mail, appointments, tasks, media (audio and video), annotations, and so on. Zet Universe includes kinds for everyday information such as documents, e-mail, appointments, tasks, media (audio and video), annotations, and so on.
 				</para>
+
+				<para>
+					See <link xlink:href="5b1b08cc-1676-47c0-84f7-f4b3402147d2">Building Blocks</link>, <link xlink:href="0eefe9fa-3381-4dcd-a12f-05f495d5252e">Entities and Kinds</link>, and <link xlink:href="c1541470-3973-41ba-bbdd-c1e5f8f2080c">Properties and Relationships</link> for details.
+				</para>
 			</content>
 		</section>
 
@@ -191,7 +199,11 @@
 		</section>-->
 
 		<relatedTopics>
-			<link xlink:href="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b">Zet Universe APIs</link>
+			<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="efc532e9-2c70-41f8-a420-97e2b2cd852e">Zet Universe Semantic Pipeline</link>
+			<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="5b1b08cc-1676-47c0-84f7-f4b3402147d2">Building Blocks</link>
+			<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="0eefe9fa-3381-4dcd-a12f-05f495d5252e">Entities and Kinds</link>
+			<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="c1541470-3973-41ba-bbdd-c1e5f8f2080c">Properties and Relationships</link>
+			<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="f1ae560b-ba87-4f1d-a8e7-1ec9020c9b2b">Zet Universe APIs</link>
 			<!-- One or more of the following:
            - A local link
            - An external link

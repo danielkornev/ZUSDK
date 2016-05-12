@@ -18,13 +18,18 @@
       <!-- <autoOutline /> -->
 
 		<para>
-			We live surrounded with things. These things can be physical ones coming from our environment, or they can be products of our imagination, or, finally, be digital objects created as elements of virtual world built by computer applications, websites and games. Things we deal with, starting from documents and other files in our folders, to users in Facebook and emails in our inbox, seem to be natural to us. We constantly make different interactions with these things, switching from physical world to a virtual one back-n-force, referencing to them in our endless collaboration with friends and work colleagues. The patterns of interacting with digital objects were brought from the physical world by Internet and computer pioneers, and now these patterns are highly interconnected as we constantly transfer our experiences between our real and digital lives.
+			This topic describes the building blocks used by Zet Universe to define elements of the Ontology.
 		</para>
-    </introduction>
+
+	</introduction>
 
 	  <section address="ZetUniverseOntology">
 		  <title>Zet Universe Ontology</title>
 		  <content>
+			  <para>
+				  We live surrounded with things. These things can be physical ones coming from our environment, or they can be products of our imagination, or, finally, be digital objects created as elements of virtual world built by computer applications, websites and games. Things we deal with, starting from documents and other files in our folders, to users in Facebook and emails in our inbox, seem to be natural to us. We constantly make different interactions with these things, switching from physical world to a virtual one back-n-force, referencing to them in our endless collaboration with friends and work colleagues. The patterns of interacting with digital objects were brought from the physical world by Internet and computer pioneers, and now these patterns are highly interconnected as we constantly transfer our experiences between our real and digital lives.
+			  </para>
+
 			  <para>Instead of computer strict understanding of classes and instances, things in Zet Universe are more familiar to the user; things are content.</para>
 
 			  <para>In Zet Universe, we use the terms Entities and Kinds to speak of everyday things that have been augmented with rich metadata.</para>
@@ -77,7 +82,8 @@
 
 
 	  <relatedTopics>
-		<link xlink:href="9da6fad5-c77e-491a-86b0-65d17283ad70">Extending Ontology</link>
+		  <link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="0eefe9fa-3381-4dcd-a12f-05f495d5252e">Entities and Kinds</link>
+		  <link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="9da6fad5-c77e-491a-86b0-65d17283ad70">Extending Ontology</link>
       <!-- One or more of the following:
            - A local link
            - An external link

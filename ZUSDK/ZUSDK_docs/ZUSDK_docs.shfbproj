@@ -118,6 +118,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Content" />
+    <Folder Include="Content\Code" />
     <Folder Include="Content\VersionHistory" />
     <Folder Include="icons" />
     <Folder Include="media" />
@@ -126,11 +127,25 @@
     <None Include="CNAME" />
     <None Include="Content\App Motivating Example.aml" />
     <None Include="Content\Built-In Kinds.aml" />
+    <CodeSnippets Include="Content\Code\Accounts.cs" />
+    <CodeSnippets Include="Content\Code\GetCurrentAppSettings.cs" />
+    <CodeSnippets Include="Content\Code\IHost.cs" />
+    <CodeSnippets Include="Content\Code\Invoke.cs" />
+    <CodeSnippets Include="Content\Code\OnConnection.cs" />
+    <CodeSnippets Include="Content\Code\OnDisconnection.cs" />
+    <CodeSnippets Include="Content\Code\RegisterKind.cs" />
+    <CodeSnippets Include="Content\Code\RegisterRelationship.cs" />
     <None Include="Content\Entities and Kinds.aml" />
     <None Include="Content\Extending Ontology.aml" />
+    <None Include="Content\How Do I Define Custom Kind.aml" />
+    <None Include="Content\How Do I Define Custom Relationship.aml" />
+    <None Include="Content\How Do I Extend Ontology.aml" />
     <None Include="Content\How Do I Get Started With Zet Universe.aml" />
+    <None Include="Content\How Do I Implement ZApp Plugin.aml" />
     <None Include="Content\How Do I....aml" />
     <None Include="Content\How To Set Up and Build a Plugin that Uses Zet Universe.aml" />
+    <None Include="Content\Semantic Pipeline - Motivating Example.aml" />
+    <None Include="Content\Topic Tree.aml" />
     <None Include="Content\Zet Universe Ontology Building Blocks.aml" />
     <None Include="Content\Ontology Origins and Hierarchy.aml" />
     <None Include="Content\Processor Motivating Example.aml" />

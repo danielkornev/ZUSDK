@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="53b7575e-f885-45fe-b49a-b8d882db10af" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+
+      <para>In this example you can see a typical lifecycle of an Entity that was added to the Semantic Pipeline, and further enhanced by the Zet Universe built-in and third-party plug-ins.</para>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+	  <section address="SemanticPipelineExecution">
+		  <title>Dissecting the Semantic Pipeline Process</title>
+		  <content>
+			  <para>
+				  <legacyItalic>Although the following example highlights entity extraction from text documents, the system as it is envisaged is capable of extracting arbitrary features from any binary stream.</legacyItalic>
+			  </para>
+
+			  <para>Below is a somewhat artificial example of a set of information processors that may run as a new document is added to the system:</para>
+
+			  <list class="ordered">
+				  <listItem>
+					  <para>
+						  The File System Watcher in the plugin Local Folders ZApp writes an entry containing a file reference to the <legacyItalic>"/Incoming/Files/Generic/"</legacyItalic> topic.
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  The File Kind Extraction processor is notified about a new file, and maps the given document to a known Kind by its extension, and publishes this entity to the <legacyItalic>"/Classifications/Kinds/"</legacyItalic>. At the same time, the Full-Text Extraction processor is also notified about a new file, and it extracts full text from the file, and publishes this entity to the <legacyItalic>"/Content/FullText/"</legacyItalic>.
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  The Local Folders ZApp plugin checks file contents of the newly added file and sends its corresponding entity for full-text extraction to the <legacyItalic>"/Incoming/Files/Documents/"</legacyItalic> topic.
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  The Full-Text Extraction processor is notified about a newly added entity with an associated Document file, extracts its full-text and publishes entity to the <legacyItalic>"/Properties/FullText"</legacyItalic> topic.
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  The Keyphrase Extraction processor is notified about a newly extracted full-text posted to the <legacyItalic>"/Properties/FullText"</legacyItalic> topic in the Semantic Pipeline, then it calculates and extracts high-frequency keyphrases in the document, and then publishes the Entity to the <legacyItalic>"/Properties/Keyphrases/"</legacyItalic> topic so that other processors could analyze the updated keyphrases.
+					  </para>
+				  </listItem>
+
+				  <listItem>
+					  <para>
+						  The Entity Extraction processor is notified about a newly extracted full-text posted to the <legacyItalic>"/Properties/FullText"</legacyItalic> topic in the Semantic Pipeline, and extracts mentioned Entities in the document, and then publishes the Entity to the <legacyItalic>"/Relationships/"</legacyItalic> topic so that other processors could analyze the updated relationships.
+					  </para>
+				  </listItem>
+			  </list>
+
+			  <para>
+				  
+			  </para>
+
+			  
+
+		  </content>
+	  </section>
+	  
+	  <section address="SemanticPipelineTableVisualization">
+		  <title>Semantic Pipeline Process Visualized as a Table</title>
+		  <content>
+			  <table>
+				  <tableHeader>
+					  <row>
+						  <entry>
+							  <para>
+								  Incoming Topic
+							  </para>
+						  </entry>
+
+						  <entry>
+							  <para>
+								  Description
+							  </para>
+						  </entry>
+
+						  <entry>
+							  <para>
+								  Plugin
+							  </para>
+						  </entry>
+
+						  <entry>
+							  <para>
+								  Outgoing Topic
+							  </para>
+						  </entry>
+					  </row>
+				  </tableHeader>
+
+				  <row>
+					  <entry>
+						  <para></para>
+					  </entry>
+
+					  <entry>
+						  <para>New file found, but it's kind is unknown</para>
+					  </entry>
+
+					  <entry>
+						  <para>Local Folders ZApp</para>
+					  </entry>
+
+					  <entry>
+						  <para>/Incoming/Files/Generic/</para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>/Incoming/Files/Generic/</para>
+					  </entry>
+
+					  <entry>
+						  <para>File extension should be mapped to a known Kind</para>
+					  </entry>
+
+					  <entry>
+						  <para>File Kind Extractor</para>
+					  </entry>
+
+					  <entry>
+						  <para>/Classification/Kinds/</para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>/Incoming/Files/Generic/</para>
+					  </entry>
+
+					  <entry>
+						  <para>Entity links to a file, it's contents should be checked for full-text</para>
+					  </entry>
+
+					  <entry>
+						  <para>Local Folders ZApp</para>
+					  </entry>
+
+					  <entry>
+						  <para>/Incoming/Files/Documents/</para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>/Incoming/Files/Documents/</para>
+					  </entry>
+
+					  <entry>
+						  <para>Entity links to a document, text should be extracted</para>
+					  </entry>
+
+					  <entry>
+						  <para>Full-Text Extractor</para>
+					  </entry>
+
+					  <entry>
+						  <para>/Properties/FullText/</para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>/Properties/FullText/</para>
+					  </entry>
+
+					  <entry>
+						  <para>Keyphrases should be extracted from the full text</para>
+					  </entry>
+
+					  <entry>
+						  <para>Keyphrase Extractor</para>
+					  </entry>
+
+					  <entry>
+						  <para>/Properties/Keyphrases/</para>
+					  </entry>
+				  </row>
+
+				  <row>
+					  <entry>
+						  <para>/Properties/FullText/</para>
+					  </entry>
+
+					  <entry>
+						  <para>Entities should be extracted from the full text</para>
+					  </entry>
+
+					  <entry>
+						  <para>Entity Extractor</para>
+					  </entry>
+
+					  <entry>
+						  <para>/Relationships/</para>
+					  </entry>
+				  </row>
+
+			  </table>
+		  </content>
+	  </section>
+
+    <relatedTopics>
+		<link topicType_id="1FE70836-AA7D-4515-B54B-E10C4B516E50" xlink:href="2b1e7f2a-e0b2-4c40-a728-9e72a6b05921">Topic Tree</link>
+		
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
