@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SAL.Flatbed, Version=1.2.7.0, Culture=neutral, PublicKeyToken=81cd27c630db6689, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SAL.Flatbed.1.2.7.0\lib\net20\SAL.Flatbed.dll</HintPath>
+      <HintPath>..\..\..\packages\SAL.Flatbed.1.2.7.0\lib\net20\SAL.Flatbed.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -42,8 +42,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZU.Core.Developer, Version=2.0.5973.3528, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\ZU.Core.Developer.2.0.5973.3528\lib\net45\ZU.Core.Developer.dll</HintPath>
+    <Reference Include="ZU.Core.Developer, Version=2.0.5976.27963, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ZU.Core.Developer.2.0.5976.27963\lib\net45\ZU.Core.Developer.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
