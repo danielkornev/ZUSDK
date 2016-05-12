@@ -9,7 +9,7 @@ namespace ZU.Plugins
 {
 	public interface IZetProcessor : SAL.Flatbed.IPlugin
 	{
-		string Name { get; set; }
+		string Name { get; }
 		//void Initialize(ISemanticPipelineProcessor processor);
 		string Status { get; }
 		void Shutdown();
