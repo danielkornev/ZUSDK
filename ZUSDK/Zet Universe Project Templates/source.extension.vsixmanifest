@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
 	<Metadata>
 		<Identity Id="Zet_Universe_Project_Templates.ZetUniverseInc.ed30454f-3323-4097-8739-7fed57fed960" Version="1.0" Language="en-US" Publisher="Zet Universe, Inc." />
-		<DisplayName>Zet_Universe_Project_Templates</DisplayName>
+		<DisplayName>Zet Universe SDK Project Templates</DisplayName>
 		<Description xml:space="preserve">Zet Universe C# Plugin Project Templates for Visual Studio 2015.Zet Universe C# Project Templates </Description>
 		<MoreInfo>http://docs.zetuniverse.com/html/b5b3c1a2-6c3f-4847-9e1d-bb220d6a09db.htm</MoreInfo>
 		<GettingStartedGuide>index.html</GettingStartedGuide>
@@ -10,13 +10,15 @@
 		<Tags>Zet Universe</Tags>
 	</Metadata>
 	<Installation>
-		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0, 15.0)" />
+		<InstallationTarget Version="[12.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+		<InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
 	</Installation>
 	<Dependencies>
 		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
 	</Dependencies>
 	<Assets>
 		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CSharp\Zet Universe\Zet Universe ZProcessor.zip" />
-		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CSharp\Zet Universe\Zet Universe ZProcessor.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CSharp\Zet Universe\ZApp.zip" />
 	</Assets>
 </PackageManifest>
