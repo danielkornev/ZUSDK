@@ -44,11 +44,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PreReleaseLicense.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="ProjectTemplates\CSharp\Zet Universe\Zet Universe ZProcessor.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ProjectTemplates\CSharp\Zet Universe\ZApp.zip">
+    <Content Include="ProjectTemplates\CSharp\Zet Universe\Zet Universe ZApp.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -62,6 +66,10 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="stylesheet.css" />
+    <Content Include="ZetUniverseLogo_BLue_1024.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="ZU_Office_Blue.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>

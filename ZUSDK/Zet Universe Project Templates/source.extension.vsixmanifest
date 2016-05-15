@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
 	<Metadata>
-		<Identity Id="Zet_Universe_Project_Templates.ZetUniverseInc.ed30454f-3323-4097-8739-7fed57fed960" Version="1.0" Language="en-US" Publisher="Zet Universe, Inc." />
+		<Identity Id="Zet_Universe_Project_Templates.ZetUniverseInc.ed30454f-3323-4097-8739-7fed57fed960" Version="1.02" Language="en-US" Publisher="Zet Universe, Inc." />
 		<DisplayName>Zet Universe SDK Project Templates</DisplayName>
-		<Description xml:space="preserve">Zet Universe C# Plugin Project Templates for Visual Studio 2015.Zet Universe C# Project Templates </Description>
+		<Description xml:space="preserve">Zet Universe C# SDK Plugin Project Templates for Visual Studio 2013 and 2015.</Description>
 		<MoreInfo>http://docs.zetuniverse.com/html/b5b3c1a2-6c3f-4847-9e1d-bb220d6a09db.htm</MoreInfo>
+		<License>PreReleaseLicense.txt</License>
 		<GettingStartedGuide>index.html</GettingStartedGuide>
 		<Icon>ZU_Office_Blue.ico</Icon>
+		<PreviewImage>ZetUniverseLogo_BLue_1024.png</PreviewImage>
 		<Tags>Zet Universe</Tags>
 	</Metadata>
 	<Installation>

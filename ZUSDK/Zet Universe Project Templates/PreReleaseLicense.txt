@@ -1,0 +1,56 @@
+﻿PRE-RELEASE SOFTWARE LICENSE TERMS
+
+These license terms are an agreement between Zet Universe, Inc., a corporation registered in Delaware, USA, ("Vendor"), and you ("Licensee"). They apply to the pre-release software named above, which includes the media on which you received it, if any. The terms also apply to any Vendor's subsequent version of the software (including any updates or supplements), updates, supplements, and support services for this software, unless other terms accompany those items. If so, those terms apply.
+By using the software, you accept these terms. If you do not accept them, do not use the software.
+
+Background
+
+A. Vendor is in the process of developing a new software product, Zet Universe (the "Pre-Release Software"), which Vendor hopes to market in the near future.
+B. Vendor would like to field-test a preliminary version of its Pre-Release Software so as to further refine and modify the product before it is generally released.
+C. Licensee has expressed an interest in licensing a copy of the Pre-Release Software in advance of its general release in order to evaluate the Pre-Release Software for its own purposes and to assist Vendor in refining and modifying the Pre-Release Software so that it becomes more useful for its intended market ("Beta Test").
+D. In exchange for early access to the Pre-Release Software, Licensee agrees to serve as a Beta Test site for the Pre-Release Software and to provide Vendor with its comments, criticisms, suggestions, and evaluations with respect to the Pre-Release Software during the Beta Test period.
+
+License grant
+
+Vendor grants to Licensee, during the term of this Agreement, a temporary, non-exclusive license to install and use an executable version of the Pre-Release Software and its related documentation, for evaluation purposes, on up to five (5) computers located in Licensee's household and/or business. Licensee may make copies of the Pre-Release Software for back-up purposes only, provided that Licensee reproduces Vendor's copyright and other proprietary rights notices on all such copies. Licensee may not reverse engineer, decompile or disassemble the Pre-Release Software. This license does not include any rights to disclose, sublicense, or otherwise transfer the Pre-Release Software, related documentation, or other proprietary information of Vendor.
+
+Beta Test
+
+Licensee understands and acknowledges that (i) it is participating in Vendor's Beta Test for the Pre-Release Software, (ii) it is receiving a preliminary version of the Pre-Release Software, (iii) the Pre-Release Software may not operate properly, may not perform all functions for which it is intended or represented, and may not operate error-free, (iv) Vendor may change the Pre-Release Software for the final, commercial version, and (v) Vendor may not release a commercial version.
+Licensee agrees to use the Pre-Release Software primarily for purposes of evaluation, agrees to provide Vendor with its comments, criticisms, and suggestions for changes with respect to the Pre-Release Software (feedback), and agrees to help Vendor identify any and all errors or malfunctions in the operation of the Software. If Licensee provides the feedback about the software, it gives to Vendor, without charge, the right to use, share, and commercialize its feedback in any way and for any purpose.
+
+Ownership
+
+The Pre-Release Software, the related documentation, and all authorized copies thereof shall remain the exclusive property of Vendor and shall not be used in any way other than as allowed by this Agreement. Licensee acknowledges that, as between Vendor and Licensee, the Pre-Release Software and its related documentation and all copyrights, trade secret rights, and other intellectual property rights with respect thereto, are and will at all times be the property of Vendor, even if suggestions made by Licensee are incorporated into subsequent versions of the Pre-Release Software or related documentation.
+
+Confidentiality
+
+Licensee acknowledges that the Pre-Release Software, related documentation, and other related materials provided by Vendor, and the Beta Test results compiled by Licensee, are the confidential information of Vendor ("Confidential Information"). Licensee agrees to use the Confidential Information only for the limited term of this license and solely for the purpose of participating in Vendor's Beta Test, and further agrees to take all steps reasonably necessary to maintain and protect the Confidential Information in the strictest confidence for the benefit of Vendor. Licensee agrees that it will not at any time, without the express written permission of Vendor, disclose the Confidential Information directly or indirectly to any third person, except to employees of Licensee who have expressly agreed in writing to be bound by the terms of this Agreement.
+Confidential Information shall not include information that is (1) already in the public domain; (2) becomes generally known or available by publication, commercial use, or general sale of copies of the Pre-Release Software by Licensee; (3) discovered or created by Licensee independent of any involvement with Vendor or the Pre-Release Software; or (4) otherwise learned by Licensee through legitimate means other than from Vendor or anyone connected with Vendor.
+Licensee's obligations with respect to the Confidential Information shall continue for the shorter of five (5) years from the date of its receipt of the Confidential Information, or until such information is subject to one of the exclusions set forth above.
+
+Third Party Software
+
+The Pre-Release Software uses third party software components. These third party software applications or packages are licensed under their own terms. Vendor is not developing or licensing any of the third party applications or packages to you, but instead, as a convenience, may automatically obtain those applications or packages directly from the third party application or package developers or providers and/or distribute them with the Pre-Release Software installation media. The license terms for the third party software components are located in the "Setup\Licenses" folder of the Pre-Release Software installation directory. If you do not agree to the components' license terms, you may not use them. Vendor makes no warranties, guarantees or conditions as to any third party software applications or packages obtained and/or distributed with the Pre-Release Software.
+
+DISCLAIMER OF ALL WARRANTIES
+
+LICENSEE ACKNOWLEDGES AND UNDERSTANDS THAT IT IS RECEIVING A PRELIMINARY BETA TEST VERSION OF THE PRE-RELEASE SOFTWARE AND RELATED DOCUMENTATION THAT THE PARTIES EXPECT MAY CONTAIN SIGNIFICANT ERRORS, OMISSIONS, AND PROBLEMS. LICENSEE AGREES AND ACKNOWLEDGES THAT VENDOR SHALL HAVE NO RESPONSIBILITIES TO LICENSEE TO CORRECT ANY DEFECTS OR PROBLEMS IN THE PRE-RELEASE SOFTWARE OR THE RELATED DOCUMENTATION, OR TO ASSURE THAT THE PRE-RELEASE SOFTWARE OPERATES PROPERLY. VENDOR DISCLAIMS ANY AND ALL WARRANTIES WITH RESPECT TO THE PRE-RELEASE SOFTWARE AND THE RELATED DOCUMENTATION, WHETHER EXPRESS OR IMPLIED, INCLUDING SPECIFICALLY THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE PRE-RELEASE SOFTWARE AND THE RELATED DOCUMENTATION IS PROVIDED "AS IS", AND LICENSEE UNDERSTANDS THAT IT ASSUMES ALL RISKS OF ITS USE, QUALITY, AND PERFORMANCE.
+
+DISCLAIMER OF LIABILITY
+
+BECAUSE OF THE NATURE OF THIS BETA TEST AGREEMENT, LICENSEE AGREES AND ACKNOWLEDGES THAT VENDOR SHALL HAVE NO LIABILITY WHATSOEVER TO LICENSEE FOR ANY PROBLEMS IN OR CAUSED BY THE PRE-RELEASE SOFTWARE OR THE RELATED DOCUMENTATION, WHETHER DIRECT, INDIRECT, SPECIAL, OR CONSEQUENTIAL (INCLUDING LOSS PROFITS).
+
+Term and Termination
+
+The term of this Agreement shall be for a period of 180 days, or until commercial release of the software, whichever is first. 
+Upon termination of this Agreement, Licensee will (i) erase or otherwise destroy all copies of the Pre-Release Software that are fixed or resident in the memory or hard disks of computers owned or controlled by Licensee and (ii) return to Vendor all other existing copies (including original copies) of part or all of the Pre-Release Software and related documentation.
+
+General Provisions
+
+A. Assignment. This Agreement may not be assigned by Licensee or by operation of law to any other person, persons, firms, or corporations without the express written approval of Vendor.
+B. Governing Law. If Licensee acquired the software in the United States, this Agreement shall be governed by and construed in accordance with the substantive laws of the State of Delaware. If Licensee acquired the software in any other country, the laws of that country apply.
+C. Relationship of the Parties. Each party is acting as an independent contractor and not as an agent, partner, or joint venture with the other party for any purpose. Except as provided in this Agreement, neither party shall have any right, power, or authority to act or to create any obligation, express or implied, on behalf of the other.
+D. Survival of Certain Provisions. The obligation of confidentiality set forth in the Agreement shall survive the termination of the Agreement by either party for any reason.
+E. Headings. The titles and headings of the various sections and paragraphs in this Agreement are intended solely for convenience of reference and are not intended for any other purpose whatsoever or to explain, modify, or place any construction on any of the provisions of this Agreement.
+F. Entire Agreement. Licensee has read this Agreement and agree to be bound by its terms, and further agree that it constitutes the complete and entire agreement of the parties and supersedes all previous communications, oral or written, and all other communications between them relating to the license and to the subject matter hereof. No representations or statements of any kind made by either party that are not expressly stated herein shall be binding on such party.
