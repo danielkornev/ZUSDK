@@ -142,10 +142,15 @@
     <None Include="Content\How Do I Extend Ontology.aml" />
     <None Include="Content\How Do I Get Started With Zet Universe.aml" />
     <None Include="Content\How Do I Implement ZApp Plugin.aml" />
+    <None Include="Content\How Do I Implement ZProcessor Plugin.aml" />
     <None Include="Content\How Do I....aml" />
+    <None Include="Content\How Do Implement Zet Universe Plugins Manually.aml" />
     <None Include="Content\How To Set Up and Build a Plugin that Uses Zet Universe.aml" />
     <None Include="Content\Semantic Pipeline - Motivating Example.aml" />
     <None Include="Content\Topic Tree.aml" />
+    <None Include="Content\Use the Zet Universe ZApp Project.aml" />
+    <None Include="Content\Use the Zet Universe ZProcessor Project.aml" />
+    <None Include="Content\Use Zet Universe Projects in Visual Studio.aml" />
     <None Include="Content\Zet Universe Ontology Building Blocks.aml" />
     <None Include="Content\Ontology Origins and Hierarchy.aml" />
     <None Include="Content\Processor Motivating Example.aml" />

@@ -23,10 +23,17 @@
   <Topic id="de91e60d-3ca3-4a87-8017-7f67081626fd" visible="True" isExpanded="true" title="How Do I...">
     <Topic id="ee152bc4-c010-48dc-8c03-d84b730e4d30" visible="True" isExpanded="true" title="How Do I Get Started With Zet Universe">
       <Topic id="f5459c77-4896-4b2a-893f-d5c78a32b527" visible="True" title="How Do I Set Up and Build a Plugin that Uses Zet Universe" />
-      <Topic id="407c25cf-2499-4fa3-9778-1c094be37fc9" visible="True" title="How Do I Implement ZApp Plugin" />
+      <Topic id="b5b3c1a2-6c3f-4847-9e1d-bb220d6a09db" visible="True" isExpanded="true">
+        <Topic id="b5444cd6-bad4-4e1a-a18e-e46e8aa8f2d5" visible="True" />
+        <Topic id="e5d81a56-0236-4126-b415-5b02afff3018" visible="True" isSelected="true" />
+      </Topic>
+      <Topic id="9386df10-65ac-4fe5-ba30-77c6a737ee6a" visible="True" isExpanded="true">
+        <Topic id="407c25cf-2499-4fa3-9778-1c094be37fc9" visible="True" title="How Do I Implement ZApp Plugin" />
+        <Topic id="7b29f333-013c-4c57-ab60-6a8452057826" visible="True" />
+      </Topic>
     </Topic>
     <Topic id="7d16a426-9e57-42a1-90f1-80d8298cf755" visible="True" isExpanded="true" title="How Do I Extend Ontology">
-      <Topic id="825d8b37-4782-4f5c-9302-dddea15b38f2" visible="True" isSelected="true" />
+      <Topic id="825d8b37-4782-4f5c-9302-dddea15b38f2" visible="True" />
       <Topic id="ee16f33e-c89b-47c3-8237-b481674f2399" visible="True" />
     </Topic>
   </Topic>
