@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using ZU.Semantic;
+using ZU.Semantic.Spatial;
 
 namespace ZU.Core
 {
@@ -18,6 +19,8 @@ namespace ZU.Core
 		/// This is a way too useful property to avoid having it as the default property
 		/// </summary>
 		string Description { get; set; }
+
+		ZoomableSpaceTemplateShapes Shape { get; }
 
 		/// <summary>
 		/// Default URI

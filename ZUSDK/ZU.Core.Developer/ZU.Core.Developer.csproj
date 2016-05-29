@@ -151,6 +151,7 @@
     <Compile Include="Semantic\Spatial\Collections\ISpatialRangeObservableCollection.cs" />
     <Compile Include="Semantic\Spatial\Indexing\IVisualClustersIndexer.cs" />
     <Compile Include="Semantic\Spatial\ISpatialItemsSource.cs" />
+    <Compile Include="Semantic\Spatial\ZoomableSpaceTemplateShapes.cs" />
     <Compile Include="Semantic\Structured\ReviewStatus.cs" />
     <Compile Include="Semantic\Text\KindMetadataAttribute.cs" />
     <Compile Include="ShortGuid.cs" />

@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
+using ZU.Semantic.Spatial;
 
 namespace ZU.Core.Apps
 {
@@ -15,6 +12,8 @@ namespace ZU.Core.Apps
 		public string DisplayNameSingular { get; set; }
 		public string DisplayNamePlural { get; set; }
 		public string FullTextAliases { get; set; }
+
+		public ZoomableSpaceTemplateShapes Shape { get; set; }
 
 		public DataTemplate Template { get; set; }
 		public System.Windows.Media.ImageSource DefaultThumbnail { get; set; }

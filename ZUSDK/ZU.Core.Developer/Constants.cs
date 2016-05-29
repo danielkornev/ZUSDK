@@ -154,7 +154,7 @@ namespace ZU
 			public const string PdfDocument = "ZetUniverse.Kinds.Documents.PdfDocument";
 
 			[Description("Person")]
-			[KindMetadata("Person Persona People", "Person", Constants.Kinds.Agent, true, false)]
+			[KindMetadata("Person Persona People", "Person", Constants.Kinds.Agent, true, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Circle)]
 			public const string Person = "ZetUniverse.Kinds.People.Person";
 
 			/// <summary>
@@ -237,20 +237,30 @@ namespace ZU
 			[KindMetadata("Zet Universe System", "Zet Universe", Constants.Kinds.Kind, true, false)]
 			public const string ZetUniverse = "ZetUniverse.Kinds.System";
 
+			/// <summary>
+			/// Returns given kind's description
+			/// </summary>
+			/// <param name="kind"></param>
+			/// <returns></returns>
 			public static string GetKindDescription(string kind)
 			{
 				var kindsDict = Constants.Kinds.BuiltInKindsDictionary;
 
-				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].Item1;
+				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].KindDescription;
 
 				return "Unknown Kind";
 			}
 
+			/// <summary>
+			/// Return given kind's full-text aliases
+			/// </summary>
+			/// <param name="kind"></param>
+			/// <returns></returns>
 			public static string GetKindFullTextAliases(string kind)
 			{
 				var kindsDict = Constants.Kinds.BuiltInKindsDictionary;
 
-				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].Item2;
+				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].KindAliases;
 
 				return "Unknown Kind";
 			}
@@ -261,11 +271,11 @@ namespace ZU
 			/// Example:
 			/// ZetUniverse.Kinds.Media.Video (Video | Media Video | ZetUniverse.Kinds.Media | False | False )
 			/// </summary>
-			public static Dictionary<string, Tuple<string, string, string, bool, bool>> BuiltInKindsDictionary
+			public static Dictionary<string, KindMetadataAttribute> BuiltInKindsDictionary
 			{
 				get
 				{
-					var dict = new Dictionary<string, Tuple<string, string, string, bool, bool>>();
+					var dict = new Dictionary<string, KindMetadataAttribute>();
 
 					var allKinds = typeof(Constants.Kinds).GetFields().ToList();
 
@@ -285,9 +295,9 @@ namespace ZU
 
 						var first = attrs.FirstOrDefault();
 
-						dict.Add(kind.GetRawConstantValue().ToString(), 
-							new Tuple<string, string, string, bool, bool>
-							(first.KindDescription, first.KindAliases, first.KindParent, first.IsHidden, first.IsAbstract));
+						dict.Add(kind.GetRawConstantValue().ToString(), first);
+							//new Tuple<string, string, string, bool, bool>
+							//(first.KindDescription, first.KindAliases, first.KindParent, first.IsHidden, first.IsAbstract));
 
 
 						//if (first != null)
