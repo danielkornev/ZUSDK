@@ -9,9 +9,29 @@ using ZU.Semantic.Spatial.Collections;
 using ZU.WPF.Data.Schemas;
 namespace ZU.Core
 {
+	/// <summary>
+	/// IModel is an object representation of the Project/App/Metaspaces.
+	/// </summary>
 	public interface IModel
 	{
+		/// <summary>
+		/// Adds an IEntity to the IEntity Graph.
+		/// </summary>
+		/// <param name="IEntity"></param>
 		void Add(IEntity IEntity);
+
+		/// <summary>
+		/// Adds and IEntity to another one as Related.
+		/// </summary>
+		/// <param name="source"></param>
+		/// <param name="target"></param>
+		/// <param name="relation"></param>
+		/// <param name="agentId"></param>
+		/// <param name="force"></param>
+		/// <param name="isExtracted"></param>
+		/// <param name="confidence"></param>
+		/// <returns></returns>
+		bool AddRelatedEntity(IEntity source, IEntity target, string relation, string agentId, bool force, bool isExtracted, double confidence);
 		/// <summary>
 		/// 
 		/// </summary>
