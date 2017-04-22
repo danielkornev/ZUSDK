@@ -14,6 +14,14 @@ namespace ZU.Core.Apps
 	{
 		IZetApp app;
 
+        /// <summary>
+        /// Used for XAML designer only.
+        /// </summary>
+	    public AppPaneBase()
+	    {
+	        
+	    }
+
 		public AppPaneBase(IAppAccount appAccount)
 		{
 			var parentApp = appAccount.App;
