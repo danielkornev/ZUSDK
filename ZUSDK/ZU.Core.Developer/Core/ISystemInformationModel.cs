@@ -129,7 +129,7 @@ namespace ZU.Core
 
 		IEntityView GetEntityViewFromEntity(IEntity entity);
 
-	    bool ContainsLinkToEntity(IEntity entity, string relationshipKind, string agendId, EntityFragmentState relationshipState);
+	    bool ContainsLinkToEntity(IEntity entity, string relationshipKind, IEntity linkedEntity, string agendId, EntityFragmentState relationshipState);
 
 
         int GetChildrenEntitiesCount(IEntity entity);
