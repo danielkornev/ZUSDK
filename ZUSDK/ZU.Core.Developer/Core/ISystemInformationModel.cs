@@ -129,7 +129,10 @@ namespace ZU.Core
 
 		IEntityView GetEntityViewFromEntity(IEntity entity);
 
-		int GetChildrenEntitiesCount(IEntity entity);
+	    bool ContainsLinkToEntity(IEntity entity, string relationshipKind, string agendId, EntityFragmentState relationshipState);
+
+
+        int GetChildrenEntitiesCount(IEntity entity);
 
 		bool IsEntityContainer(IEntity entity, out ContainerKinds containerKind);
 		
