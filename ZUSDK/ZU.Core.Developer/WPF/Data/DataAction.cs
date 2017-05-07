@@ -12,6 +12,7 @@ namespace ZU.WPF.Data
 	{
 		Cut,
 		Copy,
-		MarkAsVisibleInSpace
+		MarkAsVisibleInSpace,
+        CreateSameEntity
 	} // enum
 } // namespace
