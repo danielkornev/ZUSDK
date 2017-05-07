@@ -75,7 +75,20 @@ namespace ZU.Core
 
 
 		IEntity GetEntityOfSpace(string spaceEntityId);
+	    /// <summary>
+	    /// Resolves a list of entities referenced by the given entity. It doesn't give a list of entities that reference this entity, though.
+	    /// This is a computationally simple task.
+	    /// </summary>
+	    /// <param name="entity"></param>
+	    /// <returns></returns>
 		System.Collections.Generic.List<IEntity> GetReferencedEntities(IEntity entity);
+	    /// <summary>
+	    /// Resolves a list of entities that reference this entity across the entire System Information Model.
+	    /// This is a computationally hard task.
+	    /// </summary>
+	    /// <param name="entity"></param>
+	    /// <param name="currentModel"></param>
+	    /// <returns></returns>
 		System.Collections.Generic.List<IEntity> GetReferencingEntities(IEntity entity, bool currentModel);
 		System.Collections.Generic.List<System.Collections.Generic.IEnumerable<object>> GetStats();
 		void InitializeAppManager();
