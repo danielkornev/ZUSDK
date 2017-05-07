@@ -256,11 +256,15 @@ namespace ZU.Core
 		/// Color status
 		/// </summary>
 		ZU.Core.Structured.ReviewStatus ReviewStatus { get; set; }
-		
-		#endregion
+        /// <summary>
+        /// Top/normal status
+        /// </summary>
+	    bool TopStatus { get; set; }
 
-		#region Keyphrases
-		ZU.Collections.ObjectModel.IRangeObservableCollection<ZU.Semantic.Keyphrases.IKeyphrase> Keyphrases { get; set; }
+        #endregion
+
+        #region Keyphrases
+        ZU.Collections.ObjectModel.IRangeObservableCollection<ZU.Semantic.Keyphrases.IKeyphrase> Keyphrases { get; set; }
 		System.Collections.Generic.List<ZU.Semantic.Keyphrases.IKeyphrase> NewKeyphrases { get; set; }
 
 		#endregion

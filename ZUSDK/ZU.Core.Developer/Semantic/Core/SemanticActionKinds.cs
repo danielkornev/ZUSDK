@@ -192,12 +192,15 @@ namespace ZU.Semantic.Core
 		[Description("Resized")]
 		EntityTemplateResized = 316,
 		[Description("Changed privacy status")]
-		EntityIsPrivatePropertyChanged =317
+		EntityIsPrivatePropertyChanged =317,
+	    [Description("Flagged as top")]
+	    UserMarkedEntityAsTop = 318,
+	    [Description("Flagged as normal")]
+	    UserMarkedEntityAsNotTop = 319,
+        #endregion
 
-		#endregion
 
 
 
-
-	} // enum
+    } // enum
 } // namespace
