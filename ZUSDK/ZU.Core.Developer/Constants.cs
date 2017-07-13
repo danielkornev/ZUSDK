@@ -62,10 +62,14 @@ namespace ZU
 			[KindMetadata("Communication", "Communication", Constants.Kinds.Kind, false, true)]
 			public const string Communication = "ZetUniverse.Kinds.Communication";
 
-			/// <summary>
-			/// Strange, but Document is a Media, actually.
-			/// </summary>
-			[Description("Document")]
+            [Description("Concept")]
+            [KindMetadata("Concept", "Concept", Constants.Kinds.Kind, false, false)]
+            public const string Concept = "ZetUniverse.Kinds.Concept";
+
+            /// <summary>
+            /// Strange, but Document is a Media, actually.
+            /// </summary>
+            [Description("Document")]
 			[KindMetadata("Document", "Document", Constants.Kinds.Media)]
 			public const string Document = "ZetUniverse.Kinds.Documents.Document";
 
