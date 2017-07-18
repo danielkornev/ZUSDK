@@ -157,10 +157,12 @@ namespace ZU.Semantic.Core
 		#region Kinds: 240-249
 		[Description("System identified item's kind")]
 		EntityKindIdentified = 240,
-		#endregion
+        [Description("Changed item's kind")]
+        EntityKindChanged = 241,
+        #endregion
 
-		#region Same Entities: 250-259
-		[Description("Same entity was found")]
+        #region Same Entities: 250-259
+        [Description("Same entity was found")]
 		SameEntityResolved = 250,
 		[Description("Same person was found")]
 		SamePersonResolved = 251,
