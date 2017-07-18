@@ -19,6 +19,7 @@ namespace ZU.Semantic.Text
 		private string kindAliases;
 		private string kindDescription;
 		private string kindParent;
+		private bool isDataOrganizationalType;
 		private bool isAbstract;
 		private ZoomableSpaceTemplateShapes shape;
 
@@ -33,7 +34,7 @@ namespace ZU.Semantic.Text
 		/// <param name="shape"></param>
 		public KindMetadataAttribute(
 			string lcKindAliases, string lcKindDescription, 
-			string lcKindParent, bool isHidden = false, bool isAbstract = false, ZoomableSpaceTemplateShapes shape = ZoomableSpaceTemplateShapes.Square)
+			string lcKindParent, bool isHidden = false, bool isAbstract = false, ZoomableSpaceTemplateShapes shape = ZoomableSpaceTemplateShapes.Square, bool isDataOrganizationType = false)
 		{
 			this.kindAliases = lcKindAliases;
 			this.kindDescription = lcKindDescription;
@@ -41,6 +42,7 @@ namespace ZU.Semantic.Text
 			this.isHidden = isHidden;
 			this.IsAbstract = isAbstract;
 			this.Shape = shape;
+			this.isDataOrganizationalType = isDataOrganizationType;
 		}
 
 		public bool IsHidden

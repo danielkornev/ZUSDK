@@ -79,7 +79,7 @@ namespace ZU
 
 
 			[Description("Folder")]
-			[KindMetadata("File Folder Directory", "File Folder", Constants.Kinds.Kind, false, true)]
+			[KindMetadata("File Folder Directory", "File Folder", Constants.Kinds.Kind, false, true, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string Folder = "ZetUniverse.Kinds.Folder";
 
 			[Description("Generic File")]
@@ -87,7 +87,7 @@ namespace ZU
 			public const string GenericFile = "ZetUniverse.Kinds.File";
 
 			[Description("Graph View")]
-			[KindMetadata("GraphView Graph View", "Graph View", Constants.Kinds.View)]
+			[KindMetadata("GraphView Graph View", "Graph View", Constants.Kinds.View, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string GraphView = "ZetUniverse.Kinds.Views.GraphView";
 
 			[Description("Instant Message")]
@@ -103,18 +103,18 @@ namespace ZU
 			/// Link represents a link to a given entity, placed in the same or a different Model.
 			/// </summary>
 			[Description("Link")]
-			[KindMetadata("Link Relationship Relation", "Link", Constants.Kinds.Kind)]
+			[KindMetadata("Link Relationship Relation", "Link", Constants.Kinds.Kind, true)]
 			public const string Link = "ZetUniverse.Kinds.Link";
 			
 			/// <summary>
-			/// List is a fundamental organizing and grouping concept in Zet Universe. List represents a 1D group of things where order of things is not explicitely defined.
+			/// List is a fundamental organizing and grouping concept in Zet Universe. List represents a 1D group of things where order of things is not explicitly defined.
 			/// </summary>
 			[Description("List")]
-			[KindMetadata("List", "List", Constants.Kinds.Kind)]
+			[KindMetadata("List", "List", Constants.Kinds.Kind, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string List = "ZetUniverse.Kinds.List";
 
 			[Description("Location")]
-			[KindMetadata("Location", "Location", Constants.Kinds.Kind, true, false)]
+			[KindMetadata("Location", "Location", Constants.Kinds.Kind, false, false)]
 			public const string Location = "ZetUniverse.Kinds.Locations.Location";
 
 			/// <summary>
@@ -146,7 +146,7 @@ namespace ZU
 			/// This is the class of musical playlists that may be created by Zet Universe users. A Playlist is composed of a number of musical works. A Playlist is a kind of List.
 			/// </summary>
 			[Description("Music Playlist")]
-			[KindMetadata("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist", Constants.Kinds.List)]
+			[KindMetadata("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist", Constants.Kinds.List, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string MusicalPlaylist = "ZetUniverse.Kinds.Media.Music.MusicalPlaylist";
 
 			[Description("Organization")]
@@ -173,7 +173,7 @@ namespace ZU
 			public const string Picture = "ZetUniverse.Kinds.Media.Picture";
 
 			[Description("Place")]
-			[KindMetadata("Place Geo Location", "Place", Constants.Kinds.Location, true, false)]
+			[KindMetadata("Place Geo Location", "Place", Constants.Kinds.Location, false, false)]
 			public const string Place = "ZetUniverse.Kinds.Locations.Place";
 
 			[Description("PowerPoint Presentation")]
@@ -209,7 +209,7 @@ namespace ZU
 			public const string User = "ZetUniverse.Kinds.UserIdentificator";
 
 			[Description("View")]
-			[KindMetadata("View", "View", Constants.Kinds.Kind)]
+			[KindMetadata("View", "View", Constants.Kinds.Kind, false, true, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string View = "ZetUniverse.Kinds.Views.View";
 
 
@@ -217,7 +217,7 @@ namespace ZU
 			/// Visual Cluster is a fundamental organizing and grouping concept in Zet Universe. Visual Cluster represents a 2D group of things where relative location of things is explicitely defined by user or automatic layout algorithm.
 			/// </summary>
 			[Description("Visual Cluster")]
-			[KindMetadata("Visual Cluster Topic", "Visual Cluster", Constants.Kinds.Kind)]
+			[KindMetadata("Visual Cluster Topic", "Visual Cluster", Constants.Kinds.Kind, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string VisualCluster = "ZetUniverse.Kinds.Topic";
 
 			/// <summary>
