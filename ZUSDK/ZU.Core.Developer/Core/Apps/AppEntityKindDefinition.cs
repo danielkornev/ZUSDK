@@ -13,6 +13,8 @@ namespace ZU.Core.Apps
 		public string DisplayNamePlural { get; set; }
 		public string FullTextAliases { get; set; }
 
+        public bool IsDataOrganizationalType { get; set; }
+
 		public ZoomableSpaceTemplateShapes Shape { get; set; }
 
 		public DataTemplate Template { get; set; }
