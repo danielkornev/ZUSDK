@@ -119,5 +119,17 @@ namespace ZU.Semantic.Text
 				isAbstract = value;
 			}
 		}
+
+        public bool IsDataOrganizationalType
+        {
+            get
+            {
+                return isDataOrganizationalType;
+            }
+            set
+            {
+                isDataOrganizationalType = value;
+            }
+        }
 	} // class
 } // namespace
