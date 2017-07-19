@@ -20,6 +20,11 @@ namespace ZU.Core.Apps
 		public DataTemplate Template { get; set; }
 		public System.Windows.Media.ImageSource DefaultThumbnail { get; set; }
 
+        /// <summary>
+        /// Used to register custom kinds' default thumbnails
+        /// </summary>
+        public string DefaultThumbnailUri { get; set; }
+
 		//public Func<Entity, System.Windows.Media.ImageSource> GetEntityThumbnail;
 
 		public string AppTitle { get; set; }
