@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZU
+namespace ZU.Core.Apps
 {
 	public class AppRelationshipDefinition : RelationshipMetadataAttribute
 	{
@@ -15,7 +15,9 @@ namespace ZU
 
 		public string Relation { get; set; }
 
-		public List<Tuple<string, string>> AllowedParticipatingKinds
+        public bool IsCustomOntologyType { get; set; }
+
+        public List<Tuple<string, string>> AllowedParticipatingKinds
 		{
 			get;
 			set;

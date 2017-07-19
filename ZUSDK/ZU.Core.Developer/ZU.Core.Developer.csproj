@@ -85,7 +85,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppRelationshipDefinition.cs" />
+    <Compile Include="Core\Apps\AppRelationshipDefinition.cs" />
     <Compile Include="BasePropertyChanged.cs" />
     <Compile Include="Collections\Generic\IPriorityQuadTree.cs" />
     <Compile Include="ComponentModel\IInstantiateProperty.cs">

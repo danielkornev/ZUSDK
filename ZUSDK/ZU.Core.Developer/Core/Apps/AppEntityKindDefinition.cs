@@ -14,6 +14,7 @@ namespace ZU.Core.Apps
 		public string FullTextAliases { get; set; }
 
         public bool IsDataOrganizationalType { get; set; }
+        public bool IsCustomOntologyType { get; set; }
 
 		public ZoomableSpaceTemplateShapes Shape { get; set; }
 
