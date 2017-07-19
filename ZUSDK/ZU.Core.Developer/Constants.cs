@@ -24,78 +24,78 @@ namespace ZU
 		public static partial class Kinds
 		{
 			[Description("Agent")]
-			[KindMetadata("Agent", "Agent", Constants.Kinds.Kind, false, true)]
+			[KindMetadata("Agent", "Agent", "Agents", Constants.Kinds.Kind, false, true)]
 			public const string Agent = "ZetUniverse.Kinds.Agent";
 
 			[Description("Application")]
-			[KindMetadata("Application", "Application", Constants.Kinds.ZetUniverse, true)]
+			[KindMetadata("Application", "Application", "Applications", Constants.Kinds.ZetUniverse, true)]
 			public const string Application = "ZetUniverse.Kinds.System.Application";
 
 			[Description("Appointment")]
-			[KindMetadata("Appointment Calendar Event", "Appointment", Constants.Kinds.Calendar, false)]
+			[KindMetadata("Appointment Calendar Event", "Appointment", "Appointments", Constants.Kinds.Calendar, false)]
 			public const string Appointment = "ZetUniverse.Kinds.Calendar.Appointment";
 
 			/// <summary>
 			/// App Space is an organizing concept designed for keeping app-specific entities separated from other apps.
 			/// </summary>
 			[Description("App Space")]
-			[KindMetadata("App Space", "App Space", Constants.Kinds.ProjectSpace, true, false)]
+			[KindMetadata("App Space", "App Space", "App Spaces", Constants.Kinds.ProjectSpace, true, false)]
 			public const string AppSpace = "ZetUniverse.Kinds.AppSpace";
 
 			[Description("Article")]
-			[KindMetadata("Article Media", "Article", Constants.Kinds.Document)]
+			[KindMetadata("Article Media", "Article", "Articles", Constants.Kinds.Document)]
 			public const string Article = "ZetUniverse.Kinds.Documents.Article";
 
 			[Description("Book")]
-			[KindMetadata("Book Media", "Book", Constants.Kinds.Document)]
+			[KindMetadata("Book Media", "Book", "Books", Constants.Kinds.Document)]
 			public const string Book = "ZetUniverse.Kinds.Documents.Book";
 
 			[Description("Call")]
-			[KindMetadata("Call Communication", "Call", Constants.Kinds.Communication)]
+			[KindMetadata("Call Communication", "Call", "Calls", Constants.Kinds.Communication)]
 			public const string Call = "ZetUniverse.Kinds.Communications.Call";
 
 			[Description("Calendar Entry")]
-			[KindMetadata("Calendar Entry", "Calendar Entry", Constants.Kinds.Kind, false, true)]
+			[KindMetadata("Calendar Entry", "Calendar Entry", "Calendar Entries", Constants.Kinds.Kind, false, true)]
 			public const string Calendar = "ZetUniverse.Kinds.Calendar";
 
 			[Description("Communication")]
-			[KindMetadata("Communication", "Communication", Constants.Kinds.Kind, false, true)]
+			[KindMetadata("Communication", "Communication", "Communications", Constants.Kinds.Kind, false, true)]
 			public const string Communication = "ZetUniverse.Kinds.Communication";
 
             [Description("Concept")]
-            [KindMetadata("Concept", "Concept", Constants.Kinds.Kind, false, false)]
+            [KindMetadata("Concept", "Concept", "Concepts", Constants.Kinds.Kind, false, false)]
             public const string Concept = "ZetUniverse.Kinds.Concept";
 
             /// <summary>
             /// Strange, but Document is a Media, actually.
             /// </summary>
             [Description("Document")]
-			[KindMetadata("Document", "Document", Constants.Kinds.Media)]
+			[KindMetadata("Document", "Document", "Documents", Constants.Kinds.Media)]
 			public const string Document = "ZetUniverse.Kinds.Documents.Document";
 
 			[Description("Email")]
-			[KindMetadata("Email Communication E-mail", "Email", Constants.Kinds.Communication)]
+			[KindMetadata("Email Communication E-mail", "Email", "Emails", Constants.Kinds.Communication)]
 			public const string Email = "ZetUniverse.Kinds.Communications.Email";
 
 
 			[Description("Folder")]
-			[KindMetadata("File Folder Directory", "File Folder", Constants.Kinds.Kind, false, true, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
+			[KindMetadata("File Folder Directory", "File Folder", "File Folders", Constants.Kinds.Kind, false, true, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string Folder = "ZetUniverse.Kinds.Folder";
 
 			[Description("Generic File")]
-			[KindMetadata("Generic File GenericFile", "Generic File", Constants.Kinds.Kind)]
+			[KindMetadata("Generic File GenericFile", "Generic File", "Generic Files", Constants.Kinds.Kind)]
 			public const string GenericFile = "ZetUniverse.Kinds.File";
 
 			[Description("Graph View")]
-			[KindMetadata("GraphView Graph View", "Graph View", Constants.Kinds.View, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
+			[KindMetadata("GraphView Graph View", "Graph View", "Graph Views", Constants.Kinds.View, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string GraphView = "ZetUniverse.Kinds.Views.GraphView";
 
 			[Description("Instant Message")]
-			[KindMetadata("Instant Message IM InstantMessage Communication", "Instant Message", Constants.Kinds.Communication)]
+			[KindMetadata("Instant Message IM InstantMessage Communication", "Instant Message", "Instant Messages", Constants.Kinds.Communication)]
 			public const string InstantMessage = "ZetUniverse.Kinds.Communications.InstantMessage";
 
 			[Description("Kind")]
-			[KindMetadata("Kind", "Kind", Constants.Kinds.Thing, false, true)]
+			[KindMetadata("Kind", "Kind", "Kinds", Constants.Kinds.Thing, false, true)]
 			public const string Kind = "ZetUniverse.Kinds.Kind";
 
 
@@ -103,113 +103,113 @@ namespace ZU
 			/// Link represents a link to a given entity, placed in the same or a different Model.
 			/// </summary>
 			[Description("Link")]
-			[KindMetadata("Link Relationship Relation", "Link", Constants.Kinds.Kind, true)]
+			[KindMetadata("Link Relationship Relation", "Link", "Links", Constants.Kinds.Kind, true)]
 			public const string Link = "ZetUniverse.Kinds.Link";
 			
 			/// <summary>
 			/// List is a fundamental organizing and grouping concept in Zet Universe. List represents a 1D group of things where order of things is not explicitly defined.
 			/// </summary>
 			[Description("List")]
-			[KindMetadata("List", "List", Constants.Kinds.Kind, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
+			[KindMetadata("List", "List", "Lists", Constants.Kinds.Kind, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string List = "ZetUniverse.Kinds.List";
 
 			[Description("Location")]
-			[KindMetadata("Location", "Location", Constants.Kinds.Kind, false, false)]
+			[KindMetadata("Location", "Location", "Locations", Constants.Kinds.Kind, false, false)]
 			public const string Location = "ZetUniverse.Kinds.Locations.Location";
 
 			/// <summary>
 			/// 
 			/// </summary>
 			[Description("Meeting")]
-			[KindMetadata("Meeting Calendar Event", "Meeting", Constants.Kinds.Calendar)]
+			[KindMetadata("Meeting Calendar Event", "Meeting", "Meetings", Constants.Kinds.Calendar)]
 			public const string Meeting = "ZetUniverse.Kinds.Calendar.Meeting";
 
 			[Description("Media")]
-			[KindMetadata("Media", "Media", Constants.Kinds.Kind, false, true)]
+			[KindMetadata("Media", "Media", "Media", Constants.Kinds.Kind, false, true)]
 			public const string Media = "ZetUniverse.Kinds.Media";
 
 			/// <summary>
 			/// This is the class of motion pictures created by recording using cameras or by creating images using animation or other special techniques.
 			/// </summary>
 			[Description("Movie")]
-			[KindMetadata("Movie Film Video Media", "Movie", Constants.Kinds.Video)]
+			[KindMetadata("Movie Film Video Media", "Movie", "Movies", Constants.Kinds.Video)]
 			public const string Movie = "ZetUniverse.Kinds.Media.Video.Movie";
 			
 			/// <summary>
 			/// The class of artifacts that are closely related to music. Musical artifacts include compositions themselves and related artifacts such as cover art on albums, written scores, lyrics, and other things.
 			/// </summary>
 			[Description("Music")]
-			[KindMetadata("Music Media", "Music", Constants.Kinds.Media)]
+			[KindMetadata("Music Media", "Music", "Music", Constants.Kinds.Media)]
 			public const string Music = "ZetUniverse.Kinds.Media.Music";
 			
 			/// <summary>
 			/// This is the class of musical playlists that may be created by Zet Universe users. A Playlist is composed of a number of musical works. A Playlist is a kind of List.
 			/// </summary>
 			[Description("Music Playlist")]
-			[KindMetadata("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist", Constants.Kinds.List, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
+			[KindMetadata("MusicalPlaylist Musical Playlist MusicPlaylist Music Playlist", "Music Playlist", "Music Playlists", Constants.Kinds.List, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string MusicalPlaylist = "ZetUniverse.Kinds.Media.Music.MusicalPlaylist";
 
 			[Description("Organization")]
-			[KindMetadata("Organization Org", "Organization", Constants.Kinds.Agent)]
+			[KindMetadata("Organization Org", "Organization", "Organizations", Constants.Kinds.Agent)]
 			public const string Organization = "ZetUniverse.Kinds.Organization";
 
 			[Description("PDF Document")]
-			[KindMetadata("PDF Document PDFDocument PDF Media", "PDF Document", Constants.Kinds.Document)]
+			[KindMetadata("PDF Document PDFDocument PDF Media", "PDF Document", "PDF Documents", Constants.Kinds.Document)]
 			public const string PdfDocument = "ZetUniverse.Kinds.Documents.PdfDocument";
 
 			[Description("Person")]
-			[KindMetadata("Person Persona People", "Person", Constants.Kinds.Agent, true, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Circle)]
+			[KindMetadata("Person Persona People", "Person", "People", Constants.Kinds.Agent, true, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Circle)]
 			public const string Person = "ZetUniverse.Kinds.People.Person";
 
 			/// <summary>
 			/// Generic list of people organized into a group. 
 			/// </summary>
 			[Description("People Group")]
-			[KindMetadata("People Group Group", "People Group", Constants.Kinds.Agent)]
+			[KindMetadata("People Group Group", "People Group", "People Groups", Constants.Kinds.Agent)]
 			public const string PeopleGroup = "ZetUniverse.Kinds.People.Group";
 
 			[Description("Picture")]
-			[KindMetadata("Picture Image Photo Media", "Picture", Constants.Kinds.Media)]
+			[KindMetadata("Picture Image Photo Media", "Picture", "Pictures", Constants.Kinds.Media)]
 			public const string Picture = "ZetUniverse.Kinds.Media.Picture";
 
 			[Description("Place")]
-			[KindMetadata("Place Geo Location", "Place", Constants.Kinds.Location, false, false)]
+			[KindMetadata("Place Geo Location", "Place", "Places", Constants.Kinds.Location, false, false)]
 			public const string Place = "ZetUniverse.Kinds.Locations.Place";
 
 			[Description("PowerPoint Presentation")]
-			[KindMetadata("PowerPoint Presentation Slidedeck Slides Document Media", "PowerPoint Presentation", Constants.Kinds.Document)]
+			[KindMetadata("PowerPoint Presentation Slidedeck Slides Document Media", "PowerPoint Presentation", "PowerPoint Presentations", Constants.Kinds.Document)]
 			public const string PptxDocument = "ZetUniverse.Kinds.Documents.PptxDocument";
 
 			[Description("Property")]
-			[KindMetadata("Property", "Property", "rdfs:Resource", true, true)]
+			[KindMetadata("Property", "Property", "Properties", "rdfs:Resource", true, true)]
 			public const string Property = "owl:Property";
 
 			/// <summary>
 			/// (Project) Space is a fundamental organizing and grouping concept in Zet Universe. It contains individual entities grouped into visual clusters, or into lists. Every single entity always belongs to one or more visual clusters.
 			/// </summary>
 			[Description("Project")]
-			[KindMetadata("Project Space", "Project", Constants.Kinds.Kind, true, true)]
+			[KindMetadata("Project Space", "Project", "Projects", Constants.Kinds.Kind, true, true)]
 			public const string ProjectSpace = "ZetUniverse.Kinds.Space";
 			
 			/// <summary>
 			/// Recorded TVs are a special kind of entities that represent TVs recorded using Windows Media Center. Recorded TV is a kind of Video.
 			/// </summary>
 			[Description("Recorded TV")]
-			[KindMetadata("Recorded TV RecordedTV Video Media", "Recorded TV", Constants.Kinds.Video)]
+			[KindMetadata("Recorded TV RecordedTV Video Media", "Recorded TV", "Recorded TV", Constants.Kinds.Video)]
 			public const string RecordedTV = "ZetUniverse.Kinds.Media.Video.RecordedTV";
 			//[Description("Sticky Note")]
 			//public const string StickyNote = "ZetUniverse.Kinds.Notes.StickyNote";
 
 			[Description("Thing")]
-			[KindMetadata("Thing", "Thing", "rdfs:Resource", true, true)]
+			[KindMetadata("Thing", "Thing", "Things", "rdfs:Resource", true, true)]
 			public const string Thing = "owl:Thing";
 			
 			[Description("User")]
-			[KindMetadata("User", "User", Constants.Kinds.Agent, true, false)]
+			[KindMetadata("User", "User", "Users", Constants.Kinds.Agent, true, false)]
 			public const string User = "ZetUniverse.Kinds.UserIdentificator";
 
 			[Description("View")]
-			[KindMetadata("View", "View", Constants.Kinds.Kind, false, true, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
+			[KindMetadata("View", "View", "Views", Constants.Kinds.Kind, false, true, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string View = "ZetUniverse.Kinds.Views.View";
 
 
@@ -217,40 +217,40 @@ namespace ZU
 			/// Visual Cluster is a fundamental organizing and grouping concept in Zet Universe. Visual Cluster represents a 2D group of things where relative location of things is explicitely defined by user or automatic layout algorithm.
 			/// </summary>
 			[Description("Visual Cluster")]
-			[KindMetadata("Visual Cluster Topic", "Visual Cluster", Constants.Kinds.Kind, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
+			[KindMetadata("Visual Cluster Topic", "Visual Cluster", "Visual Clusters", Constants.Kinds.Kind, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Square, true)]
 			public const string VisualCluster = "ZetUniverse.Kinds.Topic";
 
 			/// <summary>
 			/// Movies, television programs, YouTube videos, and any other recorded "moving picture" is classified as a video.
 			/// </summary>
 			[Description("Video")]
-			[KindMetadata("Video Media", "Video", Constants.Kinds.Media)]
+			[KindMetadata("Video Media", "Video", "Videos", Constants.Kinds.Media)]
 			public const string Video = "ZetUniverse.Kinds.Media.Video";
 
 			/// <summary>
 			/// Web Page is a Media
 			/// </summary>
 			[Description("Web Page")]
-			[KindMetadata("Web Page WebPage Web", "Web Page", Constants.Kinds.Media)]
+			[KindMetadata("Web Page WebPage Web", "Web Page", "Web Pages", Constants.Kinds.Media)]
 			public const string WebPage = "ZetUniverse.Kinds.WebPage";
 			
 			/// <summary>
 			/// Zet Universe is the name of the information organization, tracking, analysis, and retrieval system.
 			/// </summary>
 			[Description("Zet Universe")]
-			[KindMetadata("Zet Universe System", "Zet Universe", Constants.Kinds.Kind, true, false)]
+			[KindMetadata("Zet Universe System", "Zet Universe", "Zet Universe", Constants.Kinds.Kind, true, false)]
 			public const string ZetUniverse = "ZetUniverse.Kinds.System";
 
 			/// <summary>
-			/// Returns given kind's description
+			/// Returns given kind's display name (singular)
 			/// </summary>
 			/// <param name="kind"></param>
 			/// <returns></returns>
-			public static string GetKindDescription(string kind)
+			public static string GetKindDisplayNameSingular(string kind)
 			{
 				var kindsDict = Constants.Kinds.BuiltInKindsDictionary;
 
-				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].KindDescription;
+				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].DisplayNameSingular;
 
 				return "Unknown Kind";
 			}
@@ -264,7 +264,7 @@ namespace ZU
 			{
 				var kindsDict = Constants.Kinds.BuiltInKindsDictionary;
 
-				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].KindAliases;
+				if (kindsDict.ContainsKey(kind)) return kindsDict[kind].FullTextAliases;
 
 				return "Unknown Kind";
 			}

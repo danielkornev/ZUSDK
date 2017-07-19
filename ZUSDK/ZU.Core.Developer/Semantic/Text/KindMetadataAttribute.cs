@@ -17,27 +17,29 @@ namespace ZU.Semantic.Text
 	{
 		private bool isHidden;
 		private string kindAliases;
-		private string kindDescription;
+		private string kindDisplayNameSingular;
 		private string kindParent;
 		private bool isDataOrganizationalType;
 		private bool isAbstract;
 		private ZoomableSpaceTemplateShapes shape;
+        private string kindDisplayNamePlural;
 
-		/// <summary>
-		/// Creates a new KindMetadataAttribute object.
-		/// </summary>
-		/// <param name="lcKindAliases"></param>
-		/// <param name="lcKindDescription"></param>
-		/// <param name="lcKindParent"></param>
-		/// <param name="isHidden"></param>
-		/// <param name="isAbstract"></param>
-		/// <param name="shape"></param>
-		public KindMetadataAttribute(
-			string lcKindAliases, string lcKindDescription, 
+        /// <summary>
+        /// Creates a new KindMetadataAttribute object.
+        /// </summary>
+        /// <param name="lcKindAliases"></param>
+        /// <param name="lcKindDescription"></param>
+        /// <param name="lcKindParent"></param>
+        /// <param name="isHidden"></param>
+        /// <param name="isAbstract"></param>
+        /// <param name="shape"></param>
+        public KindMetadataAttribute(
+			string lcKindAliases, string lcKindDisplayNameSingular, string lcKindDisplayNamePlural, 
 			string lcKindParent, bool isHidden = false, bool isAbstract = false, ZoomableSpaceTemplateShapes shape = ZoomableSpaceTemplateShapes.Square, bool isDataOrganizationType = false)
 		{
 			this.kindAliases = lcKindAliases;
-			this.kindDescription = lcKindDescription;
+			this.kindDisplayNameSingular = lcKindDisplayNameSingular;
+            this.kindDisplayNamePlural = lcKindDisplayNamePlural;
 			this.kindParent = lcKindParent;
 			this.isHidden = isHidden;
 			this.IsAbstract = isAbstract;
@@ -70,8 +72,8 @@ namespace ZU.Semantic.Text
 			}
 		}
 
-		public string KindAliases
-		{
+		public string FullTextAliases
+        {
 			get
 			{
 				return this.kindAliases;
@@ -81,16 +83,28 @@ namespace ZU.Semantic.Text
 				this.kindAliases = value;
 			}
 		}
+        
+        public string DisplayNamePlural
+        {
+            get
+            {
+                return this.kindDisplayNamePlural;
+            }
+            set
+            {
+                this.kindDisplayNameSingular = value;
+            }
+        }
 
-		public string KindDescription
-		{
+        public string DisplayNameSingular
+        {
 			get
 			{
-				return this.kindDescription;
+				return this.kindDisplayNameSingular;
 			}
 			set
 			{
-				this.kindDescription = value;
+				this.kindDisplayNameSingular = value;
 			}
 		}
 
@@ -131,5 +145,7 @@ namespace ZU.Semantic.Text
                 isDataOrganizationalType = value;
             }
         }
-	} // class
+
+        public bool IsCustomOntologyType { get; set; }
+    } // class
 } // namespace
