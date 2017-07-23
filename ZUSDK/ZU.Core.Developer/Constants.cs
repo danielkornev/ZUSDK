@@ -158,7 +158,7 @@ namespace ZU
 			public const string PdfDocument = "ZetUniverse.Kinds.Documents.PdfDocument";
 
 			[Description("Person")]
-			[KindMetadata("Person Persona People", "Person", "People", Constants.Kinds.Agent, true, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Circle)]
+			[KindMetadata("Person Persona People", "Person", "People", Constants.Kinds.Agent, false, false, Semantic.Spatial.ZoomableSpaceTemplateShapes.Circle)]
 			public const string Person = "ZetUniverse.Kinds.People.Person";
 
 			/// <summary>
